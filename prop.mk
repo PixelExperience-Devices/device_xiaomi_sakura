@@ -182,7 +182,8 @@ debug.sf.early_gl_app_phase_offset_ns=15000000
     
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.timed.enable=true
+persist.timed.enable=true \
+persist.delta_time.enable=true
 
 # Tcp
 PRODUCT_PROPERTY_OVERRIDES += \
