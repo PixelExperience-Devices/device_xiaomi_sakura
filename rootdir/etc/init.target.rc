@@ -162,22 +162,13 @@ service vendor.imsrcsservice /system/vendor/bin/imsrcsd
 on property:vendor.ims.DATA_DAEMON_STATUS=1
    restart vendor.ims_rtp_daemon
 
-on property:init.svc.surfaceflinger=stopped
+on property:init.svc.hwcomposer-2-1=stopped
     stop ppd
 
-on property:init.svc.surfaceflinger=running
+on property:init.svc.hwcomposer-2-1=running
     start ppd
 
-on property:init.svc.surfaceflinger=restarting
-    stop ppd
-
-on property:init.svc.zygote=stopped
-    stop ppd
-
-on property:init.svc.zygote=running
-    start ppd
-
-on property:init.svc.zygote=restarting
+on property:init.svc.hwcomposer-2-1=restarting
     stop ppd
 
 service energy-awareness /system/vendor/bin/energy-awareness
