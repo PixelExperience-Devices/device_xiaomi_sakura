@@ -288,6 +288,7 @@ PRODUCT_BOOT_JARS += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.msm.usb.configfs.rc \
     init.goodix.sh \
     init.qcom.bt.sh \
     init.qti.fm.sh \
