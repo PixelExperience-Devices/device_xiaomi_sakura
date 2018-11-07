@@ -214,6 +214,25 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PACKAGES += \
     libjson
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.class_main.sh \
+    init.msm.usb.configfs.rc \
+    init.goodix.sh \
+    init.qcom.bt.sh \
+    init.qti.fm.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.target.rc \
+    init.sakura.rc \
+    move_time_data.sh \
+    move_wifi_data.sh \
+    ueventd.qcom.rc
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
