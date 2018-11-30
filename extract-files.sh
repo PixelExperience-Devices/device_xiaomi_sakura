@@ -70,4 +70,10 @@ patchelf --replace-needed android.frameworks.sensorservice@1.0.so android.framew
 patchelf --replace-needed libminikin.so libminikin-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libMiWatermark.so
 patchelf --replace-needed libicuuc.so libicuuc-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libMiWatermark.so
 
+patchelf --replace-needed vendor.qti.hardware.camera.device@1.0_vendor.so vendor.qti.hardware.camera.device@1.0.so $DEVICE_BLOB_ROOT/vendor/bin/hw/android.hardware.camera.provider@2.4-service
+patchelf --replace-needed vendor.qti.hardware.camera.device@1.0_vendor.so vendor.qti.hardware.camera.device@1.0.so $DEVICE_BLOB_ROOT/vendor/lib/camera.device@1.0-impl.so
+patchelf --replace-needed vendor.qti.hardware.camera.device@1.0_vendor.so vendor.qti.hardware.camera.device@1.0.so $DEVICE_BLOB_ROOT/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+patchelf --replace-needed vendor.qti.hardware.camera.device@1.0_vendor.so vendor.qti.hardware.camera.device@1.0.so $DEVICE_BLOB_ROOT/vendor/lib64/camera.device@1.0-impl.so
+patchelf --replace-needed vendor.qti.hardware.camera.device@1.0_vendor.so vendor.qti.hardware.camera.device@1.0.so $DEVICE_BLOB_ROOT/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+
 "$MY_DIR"/setup-makefiles.sh
