@@ -533,4 +533,7 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">94.0px</dimen>
     <dimen name="status_bar_height_landscape">24.0dp</dimen>
+	
+   <!-- Component name for default assistant on this device -->
+   <string name="config_defaultAssistantComponentName">com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService</string>
 </resources>
