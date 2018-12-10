@@ -27,7 +27,6 @@ TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 
 TARGET_BOARD_SUFFIX := _64
-TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom msm_rtb.filter=0x237
