@@ -140,10 +140,9 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (DozeUtils.ALWAYS_ON_DISPLAY.equals(preference.getKey())) {
             DozeUtils.enableAlwaysOn(getActivity(), (Boolean) newValue);
-        } else {
-            DozeUtils.enableGesture(getActivity(), preference.getKey(), (Boolean) newValue);
         }
-        DozeUtils.checkDozeService(getActivity());
+
+        mHandler.post(() -> DozeUtils.checkDozeService(getActivity()));
 
         return true;
     }
