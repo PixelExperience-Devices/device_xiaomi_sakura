@@ -1,4 +1,5 @@
 allow hal_camera_default camera_data_file:sock_file write;
+allow hal_camera_default camera_data_file:dir search;
 allow hal_camera_default camera_socket:sock_file write;
 allow hal_camera_default camera_socket:dir search;
 allow hal_camera_default hal_configstore_ISurfaceFlingerConfigs:hwservice_manager find;
