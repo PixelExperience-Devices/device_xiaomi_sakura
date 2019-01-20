@@ -63,12 +63,11 @@ extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
 
 DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
-sed -i \
-    's/\/system\/etc\//\/vendor\/etc\//g' \
-    "$DEVICE_BLOB_ROOT"/vendor/lib/libmmcamera2_sensor_modules.so
+patchelf --set-soname libicuuc-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libicuuc-v27.so
+patchelf --set-soname libminikin-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libminikin-v27.so
 
-sed -i \
-     "s|/data/misc/camera/cam_socket|/data/vendor/qcam/cam_socket|g" \
-     "$DEVICE_BLOB_ROOT"vendor/bin/mm-qcamera-daemon
+patchelf --replace-needed android.frameworks.sensorservice@1.0.so android.frameworks.sensorservice@1.0-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libvidhance_gyro.so
+patchelf --replace-needed libminikin.so libminikin-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libMiWatermark.so
+patchelf --replace-needed libicuuc.so libicuuc-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libMiWatermark.so
 
 "$MY_DIR"/setup-makefiles.sh
