@@ -123,6 +123,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0_vendor \
     Snap
 
+# Consumerir
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
