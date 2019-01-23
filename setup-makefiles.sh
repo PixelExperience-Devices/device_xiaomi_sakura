@@ -21,7 +21,7 @@ set -e
 INITIAL_COPYRIGHT_YEAR=2017
 
 # Required!
-export DEVICE=mido
+export DEVICE=sakura
 export VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
@@ -41,7 +41,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_headers "mido tissot"
+write_headers "sakura"
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files-qc.txt true

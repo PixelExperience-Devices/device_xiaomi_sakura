@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=mido
+DEVICE=sakura
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks

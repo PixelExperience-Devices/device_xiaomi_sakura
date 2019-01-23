@@ -1,5 +1,5 @@
 #
-# system.prop for mido
+# system.prop for sakura
 #
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
