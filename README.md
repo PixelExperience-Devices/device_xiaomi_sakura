@@ -1,4 +1,4 @@
-# Device Tree for Xiaomi Redmi Note 4 & 4x (Mido)
+# Device Tree for Xiaomi Redmi 6 Pro (sakura)
 
 ## Spec Sheet
 
@@ -7,17 +7,18 @@
 | CPU                     | Octa-core 2.0 GHz Cortex-A53      |
 | Chipset                 | Qualcomm MSM8953 Snapdragon 625   |
 | GPU                     | Adreno 506                        |
-| Memory                  | 2/3/4 GB                          |
-| Shipped Android Version | 6.0.1                             |
+| Memory                  | 3/4 GB                            |
+| Shipped Android Version | 8.1.0                             |
 | Storage                 | 32/64 GB                          |
 | MicroSD                 | Up to 256 GB                      |
-| Battery                 | 4100 mAh (non-removable)          |
-| Dimensions              | 151 x 76 x 8.5 mm                 |
-| Display                 | 1920x1080 pixels, 5.5 (~401 PPI)  |
-| Rear Camera             | 13 MP, LED flash                  |
-| Front Camera            | 5 MP                              |
-| Release Date            | January 2017                      |
+| Battery                 | 4000 mAh (non-removable)          |
+| Dimensions              | 149.3 x 71.7 x 8.8 mm             |
+| Display                 | 1080 x 2280 pixels (~432 ppi)     |
+| Rear Camera             | 12 MP, f/2.2, 1.25 μm, PDAF       |
+|                         | 5 MP, f/2.2, 1.12 μm, depth sensor|
+| Front Camera            | 5 MP, f/2.0                       |
+| Announced Date          | July 2018                         |
 
 ## Device Picture
 
-![Redmi Note 4](http://i01.appmifile.com/webfile/globalimg/7/537557F3-A4F1-2490-E9D3-138B2A11DBF6.png "Redmi Note 4")
+![Xiaomi Redmi 6 Pro](https://xiaomi.world/9773-large_default/xiaomi-redmi-6-pro-4-gb-64-gb-rosso.jpg "Xiaomi Redmi 6 Pro")
