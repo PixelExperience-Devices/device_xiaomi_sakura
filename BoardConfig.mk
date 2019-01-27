@@ -222,3 +222,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # Inherit from the proprietary version
 -include vendor/xiaomi/sakura/BoardConfigVendor.mk
 -include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+
+# OTA Assert
+TARGET_OTA_ASSERT_DEVICE := sakura,sakura_india
