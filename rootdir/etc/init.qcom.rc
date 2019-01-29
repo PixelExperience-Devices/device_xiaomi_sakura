@@ -563,9 +563,10 @@ on property:sys.fp.onstart=1
    setprop ro.hardware.fingerprint goodix
    start fps_hal
 
+# fingerprint-goodix
 service goodix_script /vendor/bin/init.goodix.sh
     class late_start
-    user system
+    user root
     oneshot
 
 on property:dev.bootcomplete=1
