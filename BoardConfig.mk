@@ -103,6 +103,9 @@ BOARD_USES_QCNE := true
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
+# Dual Wifi
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
