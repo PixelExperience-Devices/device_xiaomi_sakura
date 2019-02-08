@@ -618,10 +618,10 @@ vendor/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_ili7807_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_otm1911_fhdplus_video_mode_dsi_panel.xml
 
-# Fingerprint firmware
+# Fingerprint firmware - from Sakura MIUI PIE Beta Rom
 etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
 
-# Fingerprint - from sakura
+# Fingerprint - from Sakura MIUI PIE Beta Rom
 lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 vendor/etc/permissions/com.fingerprints.extension.xml
