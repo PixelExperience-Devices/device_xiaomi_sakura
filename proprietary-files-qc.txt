@@ -1,3 +1,4 @@
+
 # Audio ACDB - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
 vendor/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb|6291d5e7457a962d9ba7bc0b3a33392abfe2cb27
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|7d233a9a4c9d3e7824114e415c02773385da5719
@@ -9,7 +10,7 @@ vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|71b2d317d1d1cc8bfb3bd6c52c7df9d6177
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|12c0aa04541cf104719dfa8412a4682640ea78c2
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|3c6ddbb151ea09cd8a312709e0c89381546a0771
 
-# ADSP - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
+# ADSP - from Sakura MIUI PIE RELEASE
 vendor/bin/adsprpcd|3d1e7e14dfc2f2468a06e0af9c0d34f4bda28d4b
 vendor/lib/libadsprpc.so|a2ff69f96a9242d4be0fe5cae2475c23294f937a
 vendor/lib/libadsp_default_listener.so|d9de89d55eba2d35a7583584b51335a663705fa7
@@ -22,7 +23,7 @@ vendor/lib64/libfastcvadsp_stub.so|ad72fe745a7a8f4b3a355cc0aaf177c29301f29f
 vendor/lib64/libfastcvopt.so|8a5bc4a2f5b2b14c421eac5f7e828146ac0f0119
 vendor/lib64/libmdsprpc.so|1b11f9ee7a61d3b8f599f60a9d749d5829a750e6
 
-# ADSP modules - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
+# ADSP modules - from Sakura MIUI PIE RELEASE
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
 vendor/lib/rfsa/adsp/libdspCV_skel.so|628985174b0088bed21c866d7984d23855e5e150
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb4f7
@@ -66,7 +67,7 @@ lib/com.qualcomm.qti.ant@1.0.so|fcd6a7130c480bfe4e4d9cc00702ed8444cddc82
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|d60fdc9dcf9565a60a2a5dffecba1691d9b14ef5
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|3a19c81d66ef1190d0b2f361420d5cbf707cc600
 
-# Bluetooth - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Bluetooth - from Sakura MIUI PIE RELEASE
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|9178856dc8651b499d1b155825b6115a486ee05e
 vendor/bin/wcnss_filter|a8c9bb84629693a3e57fd9d24d8819454bfcc38a
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
@@ -74,7 +75,7 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|20e66aaca57c6ba6df800
 vendor/lib64/libbtnv.so|136dc47f7d16a841e9c6ad909753e96a41392534
 vendor/lib64/libbt-hidlclient.so|0b0b69ef9787e3cd5409f0050cad03698dd6ce26
 
-# Camera firmware- - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Camera firmware- - from Sakura MIUI PIE RELEASE
 vendor/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
 vendor/firmware/cpp_firmware_v1_5_0.fw|ac19cd179b7b118bb3ea01a35fdfc78dc58164a1
 vendor/firmware/cpp_firmware_v1_6_0.fw|dcd3d1f904c7ee3d731f8f28b5f78f2503916ada
@@ -87,10 +88,10 @@ vendor/firmware/cpp_firmware_v1_10_0.fw|cf9458601aa4bbe9c57acfc1c7d0f158386ace9f
 vendor/firmware/cpp_firmware_v1_5_2.fw|58dd7f7c09dbb62bc6f334a8885064b292610675
 vendor/firmware/cpp_firmware_v1_1_6.fw|6b2c9fe0a43a9ce86a921e18faffe4d0a35746ee
 
-# Charger - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Charger - from Sakura MIUI PIE RELEASE
 vendor/bin/hvdcp_opti|7ee82dd264c7c349fb498111a61d5009ae9f0da2
 
-# CNE - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# CNE - from Sakura MIUI PIE RELEASE
 etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
 etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
 framework/cneapiclient.jar|af7db889362e562a4c5073bb6aae32947218abf0
@@ -162,14 +163,14 @@ vendor/lib64/libcneqmiutils.so|cf5b5620754c28002d081d795e89c1aa50b96032
 vendor/lib64/libwqe.so|47afecb9615f1dcad01e2d36f47a08229f5c43aa
 vendor/lib64/libxml.so|dba175d291e1adc004bf1463db091cde95a0d92d
 
-# DPM - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# DPM - from Sakura MIUI PIE RELEASE
 vendor/bin/dpmQmiMgr|31e019a02d25a959a2edfe2c9a04ab958562bb67
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|2af88934e4039edaac842576a1861cbdfe39838b
 vendor/lib64/libdpmqmihal.so|4254cc9f10f6f3d990958c17f4e43d8e9e09c382
 vendor/lib/com.qualcomm.qti.dpm.api@1.0.so|658b574dc31f2f7f87e52c75c9564d59bed8873f
 vendor/lib/libdpmqmihal.so|150b719f2a33ed70cd50e5f6d6ccad8ea3c34eea
 
-# DRM
+# DRM - from Sakura MIUI PIE RELEASE
 vendor/bin/qseecomd|8ba233a028eec55d2f57ed7c85c6751e8f5c5d16
 vendor/lib/libQSEEComAPI.so|3a4de1c673d0e196c553fbfcec0ee4a3275915af
 vendor/lib64/libGPreqcancel.so|942e96e6c1706b52e0b2f898c5947f16f8612994
@@ -185,16 +186,16 @@ vendor/lib64/libsecureui.so|66befbd91628d464b71e1cd523eb111d517a5b84
 vendor/lib64/libsecureui_svcsock.so|ab9ec06666c6c63e4a30b2fe503e6088aab3629d
 vendor/lib64/libssd.so|0e988e6ef7b1d356f4b92a26a61b96a840de1d20
 
-# DRM - Widevine - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# DRM - Widevine - from Sakura MIUI PIE RELEASE
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine|9743c4ecd0fb8773795bcbfbb406f25616c04129
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|458dd241f5f8536eccb57f012b3eba0061736e8e
 vendor/lib64/libwvhidl.so|a3444ac0deb8144a08ba2ed1dad2f2369096c7af
 
-# FM Radio - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# FM Radio - from Sakura MIUI PIE RELEASE
 vendor/bin/fm_qsoc_patches|b7fc7406c7d6096841498a8bc0f09901cf6f855f
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|dc576dfcb0bf390a106b5ed8861e7f547110cbf1
 
-# Gatekeeper
+# Gatekeeper - from Sakura MIUI PIE RELEASE
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|eeb4ba9eacb57c958051a47d307968254ee081d0
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|23ea2258775e3ba5150afdc2f567d47db3ad5010
@@ -256,7 +257,7 @@ vendor/lib64/vendor.qti.gnss@1.2.so|fc002fdced5768ed97936fde007476c1e9eaabb2
 vendor/lib64/vendor.qti.gnss@2.0.so|58e69a003eb530cf59bbe204251b9652d28a4b89
 vendor/lib64/vendor.qti.gnss@2.1.so|e7d80a2a46bcda7445d21701ba94983a43ab46af
 
-# Graphics - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Graphics - from Sakura MIUI PIE RELEASE
 #lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so
 #lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so
 vendor/lib/egl/eglSubDriverAndroid.so|8468cd8e90386a102d202a48b0c69045fed4af21
@@ -310,11 +311,11 @@ vendor/lib64/libsdm-diag.so|87a4f764e894f16246c9a0d6e3f5885df76b750b
 vendor/lib64/libsdmextension.so|b26b05c09aac03153fdb6ece475cc5866f390e1d
 vendor/lib64/libtinyxml2_1.so|b225b16e689e7e4c26fc6144637f6b0c416063f8
 
-# Graphics (HDR) - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Graphics (HDR) - from Sakura MIUI PIE RELEASE
 vendor/lib/libhdr_tm.so|8060a5d9ed0283c7b89716165ba8af4b86ef0210
 vendor/lib64/libhdr_tm.so|df15d487e73560f81017bcf4a73c28c9697b1ed9
 
-# Graphics (Postprocessing) - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Graphics (Postprocessing) - from Sakura MIUI PIE RELEASE
 etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
 framework/com.qti.snapdragon.sdk.display.jar|db5b8dd09100aab238b5972192f5ab944f38208c
 -lib/vendor.display.color@1.0.so|68f3b191767e32ebe6d1e77725d22bfd1152ce14
@@ -337,11 +338,11 @@ vendor/lib64/vendor.display.color@1.0.so|ec75654927c63b74c7f8d0760fa463f0e8287f2
 vendor/lib64/vendor.display.postproc@1.0.so|b95e9f990a207d5c62db4d66f5aaf088adc02ba8
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|de6aade2863c03d5b3e234bf87bd398b8f23b13d
 
-# Graphics (Vulkan) - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Graphics (Vulkan) - from Sakura MIUI PIE RELEASE
 vendor/lib/hw/vulkan.msm8953.so|6259874ee4fe1a414b5e2109ec63af55a70d3733
 vendor/lib64/hw/vulkan.msm8953.so|e1905916771354829868a65e6757615c7de20b71
 
-# Graphics firmware - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Graphics firmware - from Sakura MIUI PIE RELEASE
 vendor/firmware/a506_zap.b00|c45a7b34456844f5deb73e2dce79cbfcfb9ae71c
 vendor/firmware/a506_zap.b01|374b5c4a2212b2636d5dfc2deda66b56b6bf2d03
 vendor/firmware/a506_zap.b02|b79957c47f0a6757ac1d721dbe06551508454634
@@ -349,10 +350,10 @@ vendor/firmware/a506_zap.mdt|621df918f1d6ef0a0c3fe25c8f6a58d56af4b26a
 vendor/firmware/a530_pfp.fw|137b74a30e664f387fcd1e5562474a6c5d8dd6b4
 vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
 
-# Ipacm - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Ipacm - from Sakura MIUI PIE RELEASE
 vendor/bin/ipacm-diag|4dc647f49c278905e69af0ba9d8271927cd1859c
 
-# Keymaster
+# Keymaster - from Sakura MIUI PIE RELEASE
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|023a0e237fbc068a3191e91e5a1ec0ea5831d52b
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|4df4634632c36bd48ccc9de73b77713cd658b012
@@ -364,7 +365,7 @@ vendor/lib/libkeymasterdeviceutils.so|1860ef88bd3d007329b1ce1938fd9e4c1aba0c4e
 vendor/lib/libkeymasterprovision.so|900ee91eb14e6184f6e92df0e1dd65217306e6e3
 vendor/lib/libkeymasterutils.so|7e5e92470b5e7e42557cd07e4cd8873499df0346
 
-# Listen - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Listen - from Sakura MIUI PIE RELEASE
 vendor/lib/hw/sound_trigger.primary.msm8953.so|c5da1142ec362219503e546221866f36e3d50be4
 vendor/lib/libadpcmdec.so|eeaef8dd6cad3da613860bb263f192cda56c60b6
 vendor/lib/libsmwrapper.so|3ba2c53973436a805dc32395af83129d1b984dca
@@ -372,7 +373,7 @@ vendor/lib/vendor.qti.voiceprint@1.0.so|9471c39c87ef693362533255d40299ae8a6f39fa
 vendor/lib64/hw/sound_trigger.primary.msm8953.so|2b36d17a046f590394d99dcdd8de4af7fcf29b5e
 vendor/lib64/vendor.qti.voiceprint@1.0.so|bccca33094f7bbc1868f20a7943a2a022500c993
 
-# Media - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Media - from Sakura MIUI PIE RELEASE
 vendor/lib/libI420colorconvert.so|eed42cd41b14f8921d668eca1a798aae76cfebe1
 vendor/lib/libmmosal_proprietary.so|dfa0b9751df0a52ffd69e00af463ad65f54c01e5
 vendor/lib/libOmxAacDec.so|364628180f938a005c6c9bc9db56d2a9e414f263
@@ -407,11 +408,11 @@ vendor/lib64/libOmxWmaDec.so|b8251245e3f5109be57c12309c05336a17725076
 vendor/lib64/libmm-color-convertor.so|cae7366bd9ef8e677e55dd67be3ebac78aa151d9
 vendor/lib64/libvpplibrary.so|ce0466b9973660981c908aa77e98daf7822ce4e4
 
-# Modem - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Modem - from Sakura MIUI PIE RELEASE
 vendor/lib/libwms.so|61efcd8bc52e28b7a9b978da0af62355b358887c
 vendor/lib64/libwms.so|57d9f33071f4ae42ac77c98fb82f4e1fe8ac4754
 
-# Perf - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Perf - from Sakura MIUI PIE RELEASE
 lib/vendor.qti.hardware.perf@1.0.so|39a81e7cc35f542e5e2eeed6f38152b44063928f
 lib64/vendor.qti.hardware.perf@1.0.so|978a16bc6f27967f6345c5b51386d50768553ab5
 vendor/bin/energy-awareness|d9b3f1cc791e0e9612a5ff5df6836af4c921a52b
@@ -433,13 +434,13 @@ vendor/lib64/libqti-perfd.so|96806732f4e5f8c25ba2e12a3a939fc2889c7341
 vendor/lib64/libqti-util.so|30dc90c1636fd100a8e101dfa659e0b7299ff813
 vendor/lib64/vendor.qti.hardware.perf@1.0.so|978a16bc6f27967f6345c5b51386d50768553ab5
 
-# Peripheral manager - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Peripheral manager - from Sakura MIUI PIE RELEASE
 vendor/bin/pm-proxy|56e9bdaa39270aa4456c9995a8a9e4618ba616a6
 vendor/bin/pm-service|7cbca1671529a805177f11f3f72defdbbe48a61c
 vendor/lib/libperipheral_client.so|6e06ff7e89cb8054612c98c25240e7570c069752
 vendor/lib64/libperipheral_client.so|e2fbf94c589dbf8ae6c544a34441783ae9db3a08
 
-# Power-off alarm- from Daisy PKQ1.180917.001/V10.0.1.0.PDLMIFJ
+# Power-off alarm - from Sakura MIUI PIE RELEASE
 framework/vendor.qti.hardware.alarm-V1.0-java.jar|ca5bf830ebb4fbf8fc1994200ec6e03dc83c274b
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk|3fbc64ee84b17eaaf5f9002b58f4615216de0389
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|b7f648c81773214202aaa3620863d048c90713c7
@@ -477,7 +478,7 @@ vendor/lib64/libqti-iopd-client.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
-# QMI - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# QMI - from Sakura MIUI PIE RELEASE
 etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 lib/libdiag_system.so|a15e5ae70d1a73501b05b3aefbbc662048e6fbd3
@@ -516,7 +517,7 @@ vendor/lib64/libqmi_csi.so|60daf27b600facfc9cceb13255e5caba75362ad3
 vendor/lib64/libqmi_encdec.so|68fb631317150d66fd1a39c48f8ef9e0405bbdf2
 vendor/lib64/libqmiservices.so|d2fb17ea115e103d2dbbe1c0c67ba50d917a850b
 
-# Radio - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Radio - from Sakura MIUI PIE RELEASE
 -app/QtiTelephonyService/QtiTelephonyService.apk|420b39e20a5166940c1e2e55e8d9c92ec910cebb
 etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
 etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
@@ -588,7 +589,7 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|f3a3051e4a904268
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|ab552724f7d723a70a4e730dba52ab220d33a33e
 vendor/radio/qcril_database/qcril.db|f25a9215fcc2445e73d1aa0b7ef9bdbd97e33f56
 
-# Radio (IMS) - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Radio (IMS) - from Sakura MIUI PIE RELEASE
 -priv-app/ims/ims.apk|06d6c890647b51c05b948e945dd019ed43b8075f
 lib/com.qualcomm.qti.imscmservice@1.0.so|3f85ff059bffe0c7c38d96ceaae1e41f61902e4d
 lib/com.qualcomm.qti.imscmservice@2.0.so|3a07377505e1fb6911581658075e09be69ff72e4
@@ -656,7 +657,7 @@ vendor/lib64/vendor.qti.ims.callinfo@1.0.so|5862ab34c0d040dba63eced727146dd233cf
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so|f4eef520bbf98e6e1ac8697ef7eef0109487dba1
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so|559a2dbf409d86746ed4303f2e0089256bb91a07
 
-# Sensors - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Sensors - from Sakura MIUI PIE RELEASE
 vendor/bin/sensors.qti|cdd054e0fc3a39af4561d6fbb953d7a6a2efb202
 vendor/lib/hw/activity_recognition.msm8953.so|a1fe9691b93cace08ec27e3ae9b04255fa6f7338
 vendor/lib/libsensor1.so|1ea8cc3968d77ccfc116b30a36cf03ffda0d1338
@@ -669,19 +670,19 @@ vendor/lib64/libsensor_reg.so|e48d096044cda0d9e0dac3d3442e9f5d396862e8
 vendor/lib64/libsensor_user_cal.so|3965ea663c25ee07897ef003a13b94f0addde8ab
 vendor/lib64/sensors.ssc.so|dabcea6d758a88dfabd1837fa4bba9c6085ee465
 
-# Thermal - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Thermal - from Sakura MIUI PIE RELEASE
 vendor/bin/thermal-engine|e24c041613a4a522e15d54f700e1d1befe7e171e
 -vendor/lib/libthermalclient.so|390eda2d80df6825c09eb504f0630650ea2d30f7
 -vendor/lib64/libthermalclient.so|796c3e071fe9d6fa57598e1205a762cb55720f88
 vendor/lib64/libthermalioctl.so|5c126fa39bd8fbdb456c661be36e16ae5c6c3ec0
 
-# Time services - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Time services - from Sakura MIUI PIE RELEASE
 -vendor/app/TimeService/TimeService.apk|78109530538aa8fb533ad288c9d356c57481a10e
 vendor/bin/time_daemon|d67f1c50583b5efca0f5baea00a51056a798b7f8
 -vendor/lib/libtime_genoff.so|24f6064818bc53c5ea17a3608766e3cc1e889f64
 -vendor/lib64/libtime_genoff.so|8f4c1f9ace6af463b241b130d6872b5d39cc7b2a
 
-# TUI - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# TUI - from Sakura MIUI PIE RELEASE
 lib/vendor.qti.hardware.tui_comm@1.0.so|c0e0c4c9e186d2fcfbb234bf8fcb72091cc78c02
 lib64/vendor.qti.hardware.tui_comm@1.0.so|acbbf758ec18b79b7fa0b557a55fd700fa76d577
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|86c327a8310fcc42f69c85ec0868c630903c7d79
@@ -689,7 +690,7 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|c0e0c4c9e186d2fcfbb234bf8fcb72091cc78c02
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|acbbf758ec18b79b7fa0b557a55fd700fa76d577
 
-# Wi-Fi - from Daisy PKQ1.180917.001/V10.0.2.0.PDLMIFJ
+# Wi-Fi - from Sakura MIUI PIE RELEASE
 vendor/bin/wcnss_service|8c18c578a6b96a76e7f2ca614b411d4143d9ba4c
 
 # Wi-Fi Display
