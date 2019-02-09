@@ -48,6 +48,9 @@ service gx_fpd /vendor/bin/gx_fpd
      group system drmrpc
      writepid /dev/cpuset/system-background/tasks
 
+    # For generic DT2W
+    chown system input /dev/input/event2
+	
 on property:sys.fp.vendor=switchf
     stop gx_fpd
     setprop sys.fp.vendor searchf
