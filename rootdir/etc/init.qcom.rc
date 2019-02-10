@@ -176,10 +176,6 @@ on boot
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
 
-    # DT2W
-    chmod 0666 /proc/tp_wakeup_gesture
-    chown system system /proc/tp_wakeup_gesture
-
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
@@ -554,14 +550,14 @@ on property:sys.fp.vendor=switchf
     setprop fpc.fp.miui.token 0
     setprop ro.boot.fpsensor fpc
     setprop ro.hardware.fingerprint searchf
-    start fps_hal
+    start vendor.fps_hal
 
 on property:sys.fp.onstart=1
    setprop goodix.fp.miui.analyse 1
    setprop goodix.fp.miui.token 0
    setprop ro.boot.fpsensor gdx
    setprop ro.hardware.fingerprint goodix
-   start fps_hal
+   start vendor.fps_hal
 
 # fingerprint-goodix
 service goodix_script /vendor/bin/init.goodix.sh

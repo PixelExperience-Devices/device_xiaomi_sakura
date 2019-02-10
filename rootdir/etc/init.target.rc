@@ -173,6 +173,9 @@ on charger
     start thermal-engine
 
 on boot
+# For generic DT2W
+    chown system input /dev/input/event1
+
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
 

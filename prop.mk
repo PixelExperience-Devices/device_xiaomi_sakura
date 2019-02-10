@@ -181,6 +181,7 @@ persist.dbg.ims_volte_enable=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
 persist.dbg.wfc_avail_ovr=0 \
+persist.radio.aosp_usr_pref_sel=true \
 persist.radio.calls.on.ims=0 \
 persist.radio.csvt.enabled=false \
 persist.radio.jbims=0 \
@@ -203,7 +204,8 @@ telephony.lteOnCdmaDevice=1
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.timed.enable=true
+persist.timed.enable=true \
+persist.delta_time.enable=true
 
 # Tcp
 PRODUCT_PROPERTY_OVERRIDES += \
