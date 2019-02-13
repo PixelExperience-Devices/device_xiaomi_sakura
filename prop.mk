@@ -65,6 +65,7 @@ camera.lowpower.record.enable=1 \
 media.camera.ts.monotonic=1 \
 persist.camera.CDS=off \
 persist.camera.video.CDS=off \
+persist.camera.dual.camera=0 \
 persist.camera.gyro.disable=0 \
 persist.camera.isp.clock.optmz=0 \
 persist.camera.stats.test=5 \
