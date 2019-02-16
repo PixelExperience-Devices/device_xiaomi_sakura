@@ -1,4 +1,3 @@
-
 # Audio ACDB - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
 vendor/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb|6291d5e7457a962d9ba7bc0b3a33392abfe2cb27
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|7d233a9a4c9d3e7824114e415c02773385da5719
@@ -661,11 +660,12 @@ vendor/lib64/libsensor_reg.so|e48d096044cda0d9e0dac3d3442e9f5d396862e8
 vendor/lib64/libsensor_user_cal.so|3965ea663c25ee07897ef003a13b94f0addde8ab
 vendor/lib64/sensors.ssc.so|dabcea6d758a88dfabd1837fa4bba9c6085ee465
 
-# Thermal - from Sakura MIUI PIE RELEASE
-vendor/bin/thermal-engine|e24c041613a4a522e15d54f700e1d1befe7e171e
--vendor/lib/libthermalclient.so|390eda2d80df6825c09eb504f0630650ea2d30f7
--vendor/lib64/libthermalclient.so|796c3e071fe9d6fa57598e1205a762cb55720f88
-vendor/lib64/libthermalioctl.so|5c126fa39bd8fbdb456c661be36e16ae5c6c3ec0
+# Thermal - from ASUS_X01AD OPM1/15.2016.1901.156-20190126
+vendor/bin/thermal-engine|4cde623cbf00364ec81ac859375919a472015be8
+vendor/lib/libthermalclient.so|a28e037c32fa3d7a68678161a019e725d4d61075
+vendor/lib/hw/thermal.msm8953.so|c904b4ae00aa887568593eee2d0284d28319fdee
+vendor/lib64/libthermalclient.so|f9770f6d6b90faff51e07e9435741dfc57e2080b
+vendor/lib64/hw/thermal.msm8953.so|d01d618f667075d3f1fc98fe357b6b5706f90995
 
 # Time services - from Sakura MIUI PIE RELEASE
 -vendor/app/TimeService/TimeService.apk|78109530538aa8fb533ad288c9d356c57481a10e
