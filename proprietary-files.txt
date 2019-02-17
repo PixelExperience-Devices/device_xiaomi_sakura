@@ -2794,7 +2794,7 @@ vendor/bin/rmt_storage
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
-vendor/etc/init/qcrild.rc
+vendor/etc/init/qcrild.rc|f9c32f5e7a8e7f4a0df1dcce174de169b8d7c060
 vendor/lib/lib-dplmedia.so
 vendor/lib/libconfigdb.so
 vendor/lib/liblqe.so
