@@ -150,6 +150,10 @@ on boot
     mkdir /mnt/vendor/persist/secnvm 0770 system system
     restorecon_recursive /mnt/vendor/persist
 
+    #create port-bridge log dir
+    mkdir /data/vendor/port_bridge 0770 radio radio
+    chmod 0770 /data/vendor/port_bridge
+
     #Create NETMGR daemon socket area
     mkdir /dev/socket/netmgr 0750 radio radio
 
@@ -513,6 +517,13 @@ service atfwd /vendor/bin/ATFWD-daemon
     user system
     group system radio
     writepid /dev/cpuset/system-background/tasks
+
+service vendor.port-bridge /system/vendor/bin/port-bridge
+    class main
+    user radio
+    group radio system inet
+    disabled
+    oneshot
 
 service vendor.netmgrd /system/vendor/bin/netmgrd
     class main
