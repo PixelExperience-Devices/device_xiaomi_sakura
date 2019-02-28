@@ -2,10 +2,14 @@
 type camera_socket, file_type, data_file_type;
 
 # Fingerprint
-type fpc_data_file, file_type, data_file_type;
+type fpc_data_file, file_type, data_file_type, core_data_file_type;
 type fpce_socket, file_type;
 type fpc_sysfs, fs_type, sysfs_type;
-type gx_fpd_data_file, file_type, data_file_type;
+type gx_fpd_data_file, file_type, data_file_type, core_data_file_type;
+type fingerprintd_device, file_type, dev_type;
+type fingerprint_data_file, data_file_type, file_type;
+type fingerprint_persist_file, file_type;
+type sysfs_fpc_dev, sysfs_type, fs_type;
 
 # Input
 type idc_file, file_type, vendor_file_type;
