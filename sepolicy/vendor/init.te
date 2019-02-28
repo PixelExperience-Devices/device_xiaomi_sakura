@@ -3,3 +3,7 @@ allow init adsprpcd_file:filesystem { mount relabelfrom relabelto };
 
 # leds
 allow init sysfs_leds:lnk_file read;
+
+allow init self:capability2 block_suspend;
+allow init socket_device:sock_file { create setattr unlink };
+allow init sysfs:file { open read write };

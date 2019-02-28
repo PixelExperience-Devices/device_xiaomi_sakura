@@ -1,3 +1,6 @@
+# binder
+allow system_server init:binder call;
+
 # camera
 allow system_server vendor_camera_prop:file { open read getattr };
 
