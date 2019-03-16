@@ -199,9 +199,6 @@ TARGET_USE_OLD_MNC_FORMAT := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-01-05
 
-# Seccomp
-BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
-
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
