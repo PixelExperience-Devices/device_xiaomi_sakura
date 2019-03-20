@@ -75,6 +75,10 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|20e66aaca57c6ba6df800
 vendor/lib64/libbtnv.so|136dc47f7d16a841e9c6ad909753e96a41392534
 vendor/lib64/libbt-hidlclient.so|0b0b69ef9787e3cd5409f0050cad03698dd6ce26
 
+# Bluetooth (aptX) - from crosshatch - PD1A.180720.030
+lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
+lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
+
 # Camera firmware- - from Sakura MIUI PIE RELEASE
 vendor/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
 vendor/firmware/cpp_firmware_v1_5_0.fw|ac19cd179b7b118bb3ea01a35fdfc78dc58164a1
