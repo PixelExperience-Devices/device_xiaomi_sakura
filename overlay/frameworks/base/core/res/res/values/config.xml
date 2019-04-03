@@ -572,4 +572,7 @@
    <!-- Whether auto face unlock is enabled by default -->
    <bool name="config_autoFaceUnlockEnabledByDefault">true</bool>
 
+    <!-- Whether to show multiuser icon on keyguard -->
+    <bool name="config_showMultiuserIconKeyguard">false</bool>
+
 </resources>
