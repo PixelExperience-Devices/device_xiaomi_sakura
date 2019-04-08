@@ -297,6 +297,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.target.rc \
+    init.sakura.rc \
     move_time_data.sh \
     move_wifi_data.sh \
     ueventd.qcom.rc
