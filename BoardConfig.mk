@@ -200,7 +200,7 @@ TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 TARGET_USE_OLD_MNC_FORMAT := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-01-05
+VENDOR_SECURITY_PATCH := 2019-02-01
 
 # SELinux
 # include device/qcom/sepolicy/sepolicy.mk
