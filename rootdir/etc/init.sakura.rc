@@ -49,7 +49,7 @@ service gx_fpd /vendor/bin/gx_fpd
      writepid /dev/cpuset/system-background/tasks
 
     # For generic DT2W
-    chown system input /dev/input/event2
+    chown system input /proc/tp_wakeup_gesture
 	
 on property:sys.fp.vendor=switchf
     stop gx_fpd
