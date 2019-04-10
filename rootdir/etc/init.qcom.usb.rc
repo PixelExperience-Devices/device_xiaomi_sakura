@@ -26,6 +26,7 @@
 #
 
 on charger
+    setprop sys.usb.configfs 1
     mkdir /dev/usb-ffs 0770 shell shell
     mkdir /dev/usb-ffs/adb 0770 shell shell
     mount configfs none /config
@@ -100,6 +101,7 @@ on boot
     mkdir /dev/usb-ffs/adb 0770 shell system
     mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=1000,rmode=0770,fmode=0660
     write /sys/class/android_usb/android0/f_ffs/aliases adb
+    setprop sys.usb.mtp.device_type 2
     setprop vendor.usb.controller ${sys.usb.controller}
 
     write /sys/class/android_usb/f_mass_storage/lun/nofua 1

@@ -121,7 +121,7 @@ service adsprpcd /system/vendor/bin/adsprpcd
    group media
 
 service wcnss-service /system/vendor/bin/wcnss_service
-    class main
+    class late_start
     user system
     group system wifi radio
     oneshot
@@ -187,9 +187,18 @@ on charger
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
+    start vendor.hvdcp_opti
+    start vendor.power_off_alarm
     start thermal-engine
 
 on boot
+    # Update cpusets on boot and we want better load balancing
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-6
+    write /dev/cpuset/background/cpus 0-1
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/restricted/cpus 0-3
+
     # add a cpuset for the camera daemon
     # we want all cores for camera
     mkdir /dev/cpuset/camera-daemon

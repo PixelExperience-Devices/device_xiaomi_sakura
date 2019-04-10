@@ -59,10 +59,13 @@ ro.qualcomm.bt.hci_transport=smd
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-camera.display.lmax=1280x720 \
-camera.display.umax=1920x1080 \
+persist.vendor.camera.display.lmax=1280x720 \
+persist.vendor.camera.display.umax=1920x1080 \
 camera.lowpower.record.enable=1 \
 media.camera.ts.monotonic=1 \
+persist.camera.CDS=off \
+persist.camera.video.CDS=off \
+persist.camera.dual.camera=0 \
 persist.camera.gyro.disable=0 \
 persist.camera.isp.clock.optmz=0 \
 persist.camera.stats.test=5 \
@@ -86,6 +89,7 @@ debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
 debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=0 \
+debug.sf.latch_unsignaled=1 \
 debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
 persist.demo.hdmirotationlock=false \
@@ -211,6 +215,10 @@ persist.delta_time.enable=true
 PRODUCT_PROPERTY_OVERRIDES += \
 net.tcp.2g_init_rwnd=10
 
+# UI
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.use_fifo_ui=1
+
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.usb.config.extra=none
@@ -223,3 +231,32 @@ wifi.interface=wlan0
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.wfd.enable=1 \
 persist.sys.wfd.virtual=0
+
+# Unsorted properties
+PRODUCT_PROPERTY_OVERRIDES += \
+keyguard.no_require_sim=true \
+persist.backup.ntpServer=0.pool.ntp.org \
+persist.dirac.acs.controller=afm \
+persist.dirac.acs.storeSettings=1 \
+persist.dirac.afm.mode=global \
+persist.dirac.poolsize=3 \
+persist.fuse_sdcard=true \
+persist.mm.sta.enable=0 \
+persist.vendor.audio.speaker.prot.enable=false \
+persist.vendor.data.profile_update=true \
+persist.vendor.radio.prefer_spn=1 \
+ro.dalvik.vm.native.bridge=0 \
+ro.memperf.enable=false \
+ro.vendor.display.sensortype=2 \
+ro.vendor.qti.am.reschedule_service=true \
+ro.vendor.qti.sys.fw.bservice_age=5000 \
+ro.vendor.qti.sys.fw.bservice_limit=5 \
+ro.vendor.qti.sys.fw.empty_app_percent=50 \
+ro.vendor.qti.sys.fw.trim_cache_percent=100 \
+ro.vendor.qti.sys.fw.trim_empty_percent=100 \
+ro.vendor.qti.sys.fw.trim_enable_memory=2147483648 \
+ro.vendor.qti.sys.fw.use_trim_settings=true \
+sys.vendor.shutdown.waittime=500 \
+vendor.audio.dolby.ds2.enabled=false \
+vendor.audio.dolby.ds2.hardbypass=false \
+vendor.audio.offload.passthrough=false 
