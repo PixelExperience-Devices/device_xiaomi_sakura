@@ -15,3 +15,15 @@ allow init sysfs:file { open write };
 allow init tmpfs:lnk_file create;
 allow init vendor_toolbox_exec:file execute_no_trans;
 allow init vfat:file { open read };
+allow init cgroup:file create;
+
+allow init fsck:process noatsecure;
+allow init hal_gatekeeper_qti:process noatsecure;
+allow init hal_keymaster_qti:process noatsecure;
+allow init hal_wifi_supplicant_default:process noatsecure;
+allow init mm-qcamerad:process noatsecure;
+allow init qti_init_shell:process noatsecure;
+allow init sysfs:dir write;
+allow init system_file:file execute_no_trans;
+allow init ueventd:process noatsecure;
+allow init vendor_init:process noatsecure;

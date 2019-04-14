@@ -1,0 +1,1 @@
+allow mediaprovider bootloader_boot_reason_prop:file read;
