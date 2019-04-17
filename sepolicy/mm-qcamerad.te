@@ -4,3 +4,4 @@ allow mm-qcamerad camera_data_file:dir search;
 allow mm-qcamerad crash_dump:process noatsecure;
 allow mm-qcamerad fwk_sensor_hwservice:hwservice_manager find;
 allow mm-qcamerad kernel:system module_request;
+allow mm-qcamerad sysfs_graphics:file read;

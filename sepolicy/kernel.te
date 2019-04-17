@@ -1,2 +1,3 @@
 allow kernel init:process noatsecure;
 allow kernel self:security setenforce;
+allow kernel tmpfs:dir search;

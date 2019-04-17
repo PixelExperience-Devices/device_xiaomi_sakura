@@ -7,6 +7,8 @@ allow hal_fingerprint_default property_socket:sock_file write;
 allow hal_fingerprint_default sysfs:file write;
 allow hal_fingerprint_default system_prop:property_service set;
 allow hal_fingerprint_default sdcardfs:dir search;
+allow hal_fingerprint_default media_rw_data_file:dir { open read };
+allow hal_fingerprint_default sdcardfs:file { getattr open };
 
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;

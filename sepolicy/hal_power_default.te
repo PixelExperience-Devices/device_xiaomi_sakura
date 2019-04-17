@@ -3,3 +3,4 @@ allow hal_power_default proc_touchpanel:dir search;
 allow hal_power_default proc_touchpanel:file rw_file_perms;
 allow hal_power_default init:binder call;
 allow hal_power_default sysfs:file { read write };
+allow hal_power_default proc:file { open write };
