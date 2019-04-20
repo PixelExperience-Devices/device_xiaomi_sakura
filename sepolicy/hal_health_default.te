@@ -1,1 +1,1 @@
-allow hal_health_default sysfs:file read;
+allow hal_health_default sysfs:file { getattr open read };

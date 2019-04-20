@@ -1,2 +1,6 @@
 allow mediaprovider bootloader_boot_reason_prop:file read;
 allow mediaprovider runtime_event_log_tags_file:file read;
+allow mediaprovider bg_boot_complete_prop:file read;
+allow mediaprovider bg_daemon_prop:file read;
+allow mediaprovider bluetooth_prop:file read;
+allow mediaprovider boottime_prop:file read;
