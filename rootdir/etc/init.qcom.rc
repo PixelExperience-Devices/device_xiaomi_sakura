@@ -392,6 +392,10 @@ on post-fs-data
     mkdir /data/vendor/swap 0770 root system
     chmod 2770 /data/vendor/swap
 
+    # Processgroup
+    chown system system /acct/uid_*
+    chmod 0777 /acct/uid_*
+
     # Sensors
     chmod 0775 /persist/sensors
     chmod 0664 /persist/sensors/sensors_settings
