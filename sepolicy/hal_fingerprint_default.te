@@ -73,3 +73,9 @@ allow hal_fingerprint_default mnt_user_file:dir search;
 allow hal_fingerprint_default mnt_user_file:lnk_file read;
 allow hal_fingerprint_default fuse:dir search;
 allow hal_fingerprint_default fuse:file getattr;
+allow hal_fingerprint_default device:chr_file { ioctl };
+
+allow hal_fingerprint_default media_rw_data_file:file { getattr };
+allow hal_fingerprint_default sdcardfs:dir { write };
+allow hal_fingerprint_default media_rw_data_file:file { append open };
+allow hal_fingerprint_default rootfs:dir { open };

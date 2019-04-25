@@ -8,3 +8,5 @@ allow system_app console_silent_prop:file read;
 allow system_app ctl_LKCore_prop:file read;
 allow system_app ctl_atfwd_prop:file read;
 allow system_app fs_bpf:dir search;
+allow system_app ctl_bootanim_prop:file { read };
+allow system_app ctl_console_prop:file { read };
