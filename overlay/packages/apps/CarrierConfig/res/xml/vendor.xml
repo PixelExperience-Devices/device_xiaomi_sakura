@@ -1466,6 +1466,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_parse_number_on_forward_call_bool" value="true" />
         <boolean name="config_auto_retry_cfu_bool" value="true" />
         <boolean name="config_enable_video_crbt" value="true" />
+        <boolean name="config_update_service_status" value="true"/>
+        <boolean name="allow_add_call_during_video_call" value="false" />
+        <boolean name="allow_holding_video_call" value="false" />
+        <boolean name="config_common_callsettings_support_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="460" mnc="04">
         <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
@@ -1650,6 +1654,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_parse_number_on_forward_call_bool" value="true" />
         <boolean name="config_auto_retry_cfu_bool" value="true" />
         <boolean name="config_enable_video_crbt" value="true" />
+        <boolean name="config_update_service_status" value="true"/>
+        <boolean name="allow_add_call_during_video_call" value="false" />
+        <boolean name="allow_holding_video_call" value="false" />
+        <boolean name="config_common_callsettings_support_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="460" mnc="12">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -1673,6 +1681,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="ignore_reset_ut_capability_bool" value="true" />
         <boolean name="config_auto_retry_cfu_bool" value="true" />
         <boolean name="config_enable_video_crbt" value="true" />
+        <boolean name="allow_add_call_during_video_call" value="false" />
+        <boolean name="allow_holding_video_call" value="false" />
+        <boolean name="config_common_callsettings_support_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="310" mnc="00">
         <boolean name="carrier_rtt_supported" value="true" />
