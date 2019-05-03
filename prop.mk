@@ -272,6 +272,9 @@ service.qti.ims.enabled=1 \
 telephony.lteOnCdmaDevice=1 \
 persist.vendor.radio.data_con_rprt=1
 
+# SurfaceFlinger
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+ro.surface_flinger.protected_contents=true
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
