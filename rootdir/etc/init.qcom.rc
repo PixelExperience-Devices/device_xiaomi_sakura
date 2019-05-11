@@ -257,6 +257,9 @@ on post-fs-data
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
 
+    #Change ownership to system
+    chown system system /data/vendor/tombstones
+
     mkdir /data/vendor/ramdump 0771 root system
     mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
     mkdir /data/vendor/bluetooth 0770 bluetooth bluetooth
@@ -650,11 +653,6 @@ on charger
     setprop persist.sys.usb.config mass_storage
     load_system_props
     start qcom-post-boot
-
-#Mixed HWC versions among targets
-on property:init.svc.surfaceflinger=restarting
-    restart vendor.hwcomposer-2-1
-    restart vendor.hwcomposer-2-2
 
 service time_daemon /system/vendor/bin/time_daemon
     class main
