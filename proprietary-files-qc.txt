@@ -43,7 +43,7 @@ lib/com.qualcomm.qti.ant@1.0.so|0072c1caf854732b64365702bba060597cd5d333
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|30e9721d990e7fe018f0397e7ed5fff4a688400e
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|3facdbf7d1204ae99cf4da813233dfea2492754f
 
-# Bluetooth (aptX) - from crosshatch - PD1A.180720.030
+# Bluetooth (aptX) - from crosshatch - PQ3A.190505.002/5450365
 lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
 lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
 
