@@ -538,6 +538,9 @@
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M -186,0 L -186,94 L 186,94 L 186,0 Z</string>
 
+    <!-- Whether device has screen with higher aspect ratio -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">94.0px</dimen>
     <dimen name="status_bar_height_landscape">24.0dp</dimen>
