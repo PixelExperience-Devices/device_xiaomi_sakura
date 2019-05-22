@@ -33,6 +33,13 @@ vendor/lib64/libqtigef.so|79e811fd04172b0afda1229d182014be28a146b2
 vendor/lib64/soundfx/libqcbassboost.so|0b92d65381d9722c579ccfda12f86c7e3fcaedd1
 vendor/lib64/soundfx/libqcvirt.so|815b3a7cd762cdb6f162dde12c866acb23cdd022
 
+# Audio Dirac - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
+-priv-app/DiracAudioControlService/DiracAudioControlService.apk
+vendor/etc/diracvdd.bin
+vendor/etc/diracmobile.config
+vendor/lib/soundfx/libdirac.so
+vendor/lib/libDiracAPI_SHARED.so
+
 # ANT+ (system) - from enchilada - PKQ1.180716.001/1904032100
 lib64/com.qualcomm.qti.ant@1.0.so|7b03f4a99e2153a6b0a9bce1ca84f7c7577ec4b1
 -lib64/libantradio.so|fb958cb68c99c71455f969afdf96225f5110f0df

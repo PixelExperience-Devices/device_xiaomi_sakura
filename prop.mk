@@ -81,6 +81,13 @@ persist.vendor.cne.feature=1
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
 
+# Dirac - D2AO-1004
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.dirac.acs.controller=afm \
+persist.dirac.afm.mode=global \
+persist.dirac.acs.storeSettings=1 \
+persist.dirac.poolsize=3
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.egl.hw=0 \
