@@ -1,15 +1,15 @@
-# Audio ACDB - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
+# Audio ACDB - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
 vendor/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb|6291d5e7457a962d9ba7bc0b3a33392abfe2cb27
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|7d233a9a4c9d3e7824114e415c02773385da5719
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|71d06907c9fe8c123d6390a4478fce02868d0ff6
 vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|d2bdb61a06db632f2f15bda7a90334ae51624ded
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|4f5537eaadd53c434d34b838f76fda03fbc6fd22
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|181f82dd994e889999ffc004544ced6c1d901c6d
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|8128588f77afc8fc9b1d7f3a64e83b18b110b22c
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|be4871b20fd45fc8ac5edaf8c19643b78eeb0276
 vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|7e7d37c292a2b081eaa8b6c0ea88f3bb834a0cf4
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|71b2d317d1d1cc8bfb3bd6c52c7df9d617720bf3
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|12c0aa04541cf104719dfa8412a4682640ea78c2
-vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|3c6ddbb151ea09cd8a312709e0c89381546a0771
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|cd739f7132b585ee95afab2db168a2c3f353875c
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|8bec81e255420fdee9507081dd12779dd27c2b78
+vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|3a5b3e291b1ee87221c12524791b58b6131b86c1
 
-# Audio - from Tissot PKQ1.180917.001/V10.0.2.0.PDHMIFK
+# Audio - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
 vendor/lib/libacdb-fts.so|f140cc5c13855f411d9b944316828b42dd6b7d75
 vendor/lib/libacdbloader.so|52fb25441a742d744f6574d1065ae1b822769c48
 vendor/lib/libacdbrtac.so|8a469a26ed1ecff8e22ee141d98bde97513a6212
@@ -68,21 +68,21 @@ vendor/lib/libvidhance_gyro.so|b5e3fd3ce40e3c2ea2a225fe05704052474b9ddd
 # Camera QCOM libs - from Sakura MIUI PIE RELEASE
 vendor/lib/hw/camera.msm8953.so|4b2ca77a95bd3252d5474959fe2585c06cf00d35
 
-# Fingerprint - from Tissot
-lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so|6437ed7a7a68733fdde95cc788a3354f4bbe664e
+# Fingerprint - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
+lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so|00d41f88a980241b29267e16419704f8e05c5bcd
 
-# GPS - from Tissot PKQ1.180917.001 V10.0.2.0.PDHMIFK
+# GPS - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
 vendor/bin/hw/vendor.qti.gnss@1.0-service|049201d8e22064b87eb52df208d8cda7066d140a
 vendor/bin/loc_launcher|23a4470552c0c418662a7d91fa7f593bee767459
 vendor/bin/lowi-server|f83f6ab9b978c618c87d2b5c66854533d0e3a66f
-vendor/bin/slim_daemon|387c807c831fd75b3d21f3be0bf7d3a76fe572ca
+vendor/bin/slim_daemon|070d038b64a1268d644e266ae3cd9982663f1b78
 vendor/bin/xtra-daemon|f4fdd2d7fc56472066b05899340eb19ff67d54b4
-vendor/etc/cacert_location.pem|6a05f324e7d9ff584811e62aabeb6d89a5239bbe
+vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
 vendor/etc/init/vendor.qti.gnss@1.0-service.rc|98655e2adc2158a052b0ecf06b065535f0a2aac7
 vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
-vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so|f9ecde86bbf6c4c0e83677d882f16820bb374ea9
+vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so|32b44f96799fc96f540006b3960f9bc3fc228ea8
 vendor/lib64/libalarmservice_jni.so|86b5ea03823f037ae79a367f7f1155d4d72ecfb5
-vendor/lib64/libdataitems.so|7c4dcb377e2f736f41ea19099e2ab834aa372f2b
+vendor/lib64/libdataitems.so|2ae06cb5a687fdf2c5a533a17d9529a1984b2803
 vendor/lib64/libdrplugin_client.so|ba6de3e6a872ec53d7b4e11bd5b9371428a26909
 vendor/lib64/lib_drplugin_server.so|43604ff825782aa381ba903b4192ca47ee7df672
 vendor/lib64/libDRPlugin.so|d60dffb3751b5095ead2747610c6d022d052a560
@@ -92,25 +92,25 @@ vendor/lib64/libgdtap.so|29b7978c234e7b18f003af756154fb7be24fea56
 vendor/lib64/libgeofence.so|c7250877898a17f4bfdc244f613dd1e1a9397cb6
 vendor/lib64/libizat_client_api.so|853e4ccd91718edac986f755fc9800603d3a284a
 vendor/lib64/libizat_core.so|381f72f4c0030f88e5acaf6a3498d9036fb30215
-vendor/lib64/liblbs_core.so|0bc140c9c3dc405d8ea34f6823ea7ae269909a95
--vendor/lib64/libloc_api_v02.so|13d8d25a07c517d471aee382ccf4fe885f73d99f
-vendor/lib64/libloc_ds_api.so|fe39b70814d459cd1c4eb3c1a583c336ef31d41f
+vendor/lib64/liblbs_core.so|2dcf1cfffcc3db13b06c90feec6d81a7a8f7d428
+-vendor/lib64/libloc_api_v02.so|e3dafec13d58ad2c1d7dfe5aad14371d5f47e295
+vendor/lib64/libloc_ds_api.so|158c9d75eb01b7ae55877ee9e9c9046ad3cafea8
 vendor/lib64/libloc_externalDr.so|0527ae9d0bc5b67a21f337cba66f2e9d89f7383b
-vendor/lib64/liblocationservice.so|2cf42d3a1ce732286230f2448ad2574bea1b273c
-vendor/lib64/liblocationservice_glue.so|7a1f636d64c547ad72a3c9994695e7a2fec0bad8
+vendor/lib64/liblocationservice.so|f9e6a94c260abafa857d2bcc96f23adef56527e7
+vendor/lib64/liblocationservice_glue.so|d423896f97fa4a1c3f9fecda11df97baf3fa0969
 vendor/lib64/liblowi_client.so|34f65f866c950733c72d5a4f0de00580d2ac3cf5
 vendor/lib64/liblowi_wifihal.so|cdb5477319b7acf35978eaae741192392d2c875f
 vendor/lib64/libquipc_os_api.so|0dd27d3164e69f076563b48c3945bcac66833783
-vendor/lib64/libsensorndkbridge.so|f1550d2526654448abf14a8c373f6b4e7dfe2063
-vendor/lib64/libslimclient.so|9cb9fa553272754babed6b15aec6e4fd6a9c6e7e
-vendor/lib64/libulp2.so|9ad87b8926b43cea1d51feaf2aa65ab5d45f731a
+vendor/lib64/libsensorndkbridge.so|e3b264db678333fe4f55b6346df242f3db2a7778
+vendor/lib64/libslimclient.so|2b0dac28f15c722ee68b8cfab792064d338fd0d3
+vendor/lib64/libulp2.so|275cb2f94d8b59fe8bfd8a28a5c1c39994c4569c
 vendor/lib64/libxtadapter.so|d404e8c5c6e14a556926ba772ca99aa51cbd6a36
 vendor/lib64/libxtwifi_ulp_adaptor.so|58b20fbdbb500add11784acce0808c7198c96c34
-vendor/lib64/vendor.qti.gnss@1.0.so|90b465adc4542f16fbdd935d0592df73d778909b
-vendor/lib64/vendor.qti.gnss@1.1.so|1edcf36fc3afbc465e53e3b74f99fde1e952f718
-vendor/lib64/vendor.qti.gnss@1.2.so|fc002fdced5768ed97936fde007476c1e9eaabb2
-vendor/lib64/vendor.qti.gnss@2.0.so|58e69a003eb530cf59bbe204251b9652d28a4b89
-vendor/lib64/vendor.qti.gnss@2.1.so|e7d80a2a46bcda7445d21701ba94983a43ab46af
+vendor/lib64/vendor.qti.gnss@1.0.so|4dfa66f66b406c1aff3d32bb44382898beaaa39a
+vendor/lib64/vendor.qti.gnss@1.1.so|a622c409e1d20d2799904e47d8fb07753e830d7a
+vendor/lib64/vendor.qti.gnss@1.2.so|104f245c358ab202a57211f99898406cd5ad8e0e
+vendor/lib64/vendor.qti.gnss@2.0.so|b3f7ae76d4db00edce0c4f5a7084d7abeac0180a
+vendor/lib64/vendor.qti.gnss@2.1.so|eb908fd65d8b9d1f9cac629815f7adfb48361d16
 
 # Graphics - from Sakura MIUI PIE RELEASE
 vendor/lib/egl/eglSubDriverAndroid.so|8468cd8e90386a102d202a48b0c69045fed4af21
