@@ -221,6 +221,12 @@ on boot
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
 
+# Camera Blobs
+    mount none /system/lib/android.frameworks.sensorservice@1.0-v27.so /vendor/lib/android.frameworks.sensorservice@1.0-v27.so bind
+    mount none /system/lib/libvidhance_gyro.so /vendor/lib/libvidhance_gyro.so bind
+    mount none /system/lib/hw/camera.msm8953.so /vendor/lib/hw/camera.msm8953.so bind
+    mount none /system/lib64/android.frameworks.sensorservice@1.0-v27.so /vendor/lib64/android.frameworks.sensorservice@1.0-v27.so bind
+
 service ppd /vendor/bin/mm-pp-dpps
     class late_start
     user system
