@@ -19,6 +19,7 @@
 set -e
 
 DEVICE=sakura
+DEVICE_COMMON=msm8953-common
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2018
@@ -29,7 +30,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 LINEAGE_ROOT="$MY_DIR"/../../..
 
-HELPER="$LINEAGE_ROOT"/vendor/lineage/build/tools/extract_utils.sh
+HELPER="$LINEAGE_ROOT"/vendor/viper/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -39,6 +40,10 @@ fi
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
+# Allow pulling device/device_common only
+export DEVICE_ONLY=false
+export COMMON_ONLY=false
+
 while [ "$1" != "" ]; do
     case $1 in
         -n | --no-cleanup )     CLEAN_VENDOR=false
@@ -46,6 +51,12 @@ while [ "$1" != "" ]; do
         -s | --section )        shift
                                 SECTION=$1
                                 CLEAN_VENDOR=false
+                                ;;
+        -d | --device-only )    DEVICE_ONLY=true
+                                COMMON_ONLY=false
+                                ;;
+        -c | --common-only )    COMMON_ONLY=true
+                                DEVICE_ONLY=false
                                 ;;
         * )                     SRC=$1
                                 ;;
@@ -57,18 +68,26 @@ if [ -z "$SRC" ]; then
     SRC=adb
 fi
 
-# Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
+if [ "$COMMON_ONLY" = false ]; then
+    # Initialize the helper
+    setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
 
-extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
-extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
+    extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
+fi
+if [ "$DEVICE_ONLY" = false ]; then
+    # Initialize the helper
+    setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
+
+    extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
+fi
 
 DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+COMMON_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary
 
 patchelf --set-soname libicuuc-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libicuuc-v27.so
 patchelf --set-soname libminikin-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libminikin-v27.so
 
-patchelf --replace-needed android.frameworks.sensorservice@1.0.so android.frameworks.sensorservice@1.0-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libvidhance_gyro.so
+patchelf --replace-needed android.frameworks.sensorservice@1.0.so android.frameworks.sensorservice@1.0-v27.so $COMMON_BLOB_ROOT/vendor/lib/libvidhance_gyro.so
 patchelf --replace-needed libminikin.so libminikin-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libMiWatermark.so
 patchelf --replace-needed libicuuc.so libicuuc-v27.so $DEVICE_BLOB_ROOT/vendor/lib/libMiWatermark.so
 
