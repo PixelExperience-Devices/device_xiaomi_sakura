@@ -121,6 +121,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     Snap
 
+PRODUCT_BOOT_JARS += \
+    com.qualcomm.qti.camera
+
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
