@@ -404,3 +404,6 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Include AmbientSense if it's available
+-include vendor/ambientmusic/AmbientMusic.mk
