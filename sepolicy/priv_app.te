@@ -44,3 +44,6 @@ allow priv_app ctl_vendor_qmuxd_prop:file { read };
 allow priv_app ctl_vendor_rild_prop:file { read };
 allow priv_app ctl_vendor_rmt_storage_prop:file { read };
 allow priv_app ctl_vendor_wigigsvc_prop:file { read };
+allow priv_app mnt_vendor_file:dir { search };
+allow priv_app sysfs:file { read };
+allow priv_app proc_interrupts:file { open };

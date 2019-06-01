@@ -22,3 +22,4 @@ allow untrusted_app ctl_rildaemon_prop:file { read };
 allow untrusted_app ctl_sigstop_prop:file { read };
 allow untrusted_app ctl_start_prop:file { read };
 allow untrusted_app ctl_stop_prop:file { read };
+allow untrusted_app sysfs_thermal:file { write };
