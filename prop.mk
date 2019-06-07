@@ -56,7 +56,6 @@ bluetooth.hfp.client=1 \
 vendor.qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd \
-ro.bluetooth.library_name=libbluetooth_qti.so \
 persist.vendor.btstack.enable.splita2dp=false
 
 # Camera
