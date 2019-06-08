@@ -47,3 +47,6 @@ allow priv_app ctl_vendor_wigigsvc_prop:file { read };
 allow priv_app mnt_vendor_file:dir { search };
 allow priv_app sysfs:file { read };
 allow priv_app proc_interrupts:file { open };
+allow priv_app firmware_file:file { getattr };
+allow priv_app firmware_file:file { read };
+allow priv_app firmware_file:file { open };
