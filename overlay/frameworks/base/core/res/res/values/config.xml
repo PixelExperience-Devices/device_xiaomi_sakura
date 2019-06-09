@@ -561,4 +561,7 @@
         before setting power profiles on boot. -->
    <bool name="config_waitForMpctlOnBoot">true</bool>
 
+   <!-- Whether the always on display mode is available. -->
+   <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
 </resources>
