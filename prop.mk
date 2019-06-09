@@ -77,6 +77,7 @@ persist.camera.HAL3.enabled=1 \
 vendor.camera.lowpower.record.enable=1 \
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,org.lineageos.snap \
 vendor.camera.aux.packagelist2=com.android.systemui,com.huaqin.cameraautotest,com.huaqin.runtime \
+vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner
 
 # Cne
 PRODUCT_PROPERTY_OVERRIDES += \
