@@ -23,3 +23,5 @@ allow system_server device:chr_file { ioctl };
 allow system_server device:chr_file { read write };
 allow system_server mm-qcamerad:binder { call };
 allow system_server sysfs:file { getattr };
+
+allow system_server default_android_hwservice:hwservice_manager { find };
