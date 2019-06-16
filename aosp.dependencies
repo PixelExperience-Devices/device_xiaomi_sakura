@@ -8,7 +8,7 @@
    {
    "remote": "evo-devices",
    "repository": "Evolution-X-Devices/vendor_xiaomi_sakura",
-   "target_path": "vendor/xiaomi",
+   "target_path": "vendor/xiaomi/sakura",
    "branch": "pie"
  },
     {
