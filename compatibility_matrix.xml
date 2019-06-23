@@ -79,4 +79,28 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>com.quicinc.cne.api</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IApiService</name>
+            <instance>cnd</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>com.quicinc.cne.server</name>
+        <version>2.0-2</version>
+        <interface>
+            <name>IServer</name>
+            <instance>cnd</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.wifi.keystore</name>
+        <version>1.0</version>
+        <interface>
+            <name>IKeystoreExt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
