@@ -1,19 +1,19 @@
 [
  {
    "remote": "evo-devices",
-   "repository": "Evolution-X-Devices/device_xiaomi_sakura",
+   "repository": "device_xiaomi_sakura",
    "target_path": "device/xiaomi/sakura",
    "branch": "pie"
  },
    {
    "remote": "evo-devices",
-   "repository": "Evolution-X-Devices/vendor_xiaomi_sakura",
+   "repository": "vendor_xiaomi_sakura",
    "target_path": "vendor/xiaomi/sakura",
    "branch": "pie"
  },
     {
    "remote": "evo-devices",
-   "repository": "Evolution-X-Devices/kernel_xiaomi_msm8953-sakura",
+   "repository": "kernel_xiaomi_msm8953-sakura",
    "target_path": "kernel/xiaomi/msm8953",
    "branch": "pie"
  }
