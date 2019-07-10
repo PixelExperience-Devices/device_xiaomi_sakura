@@ -58,6 +58,10 @@ ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd \
 persist.vendor.bt.aac_frm_ctl.enabled=true \
 
+# Boot
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.vendor.shutdown.waittime=500
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.camera.display.lmax=1280x720 \
