@@ -64,6 +64,10 @@ persist.vendor.bt.aac_frm_ctl.enabled=true \
 ro.qualcomm.bt.hci_transport=smd \
 persist.vendor.btstack.enable.splita2dp=false
 
+# Boot
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.vendor.shutdown.waittime=500
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.camera.display.lmax=1280x720 \
