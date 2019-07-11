@@ -22,11 +22,14 @@ $(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/sakura.mk)
 # Inherit from sakura device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
-# Inherit some common AOSP stuff.
+# Inherit CAF stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 CUSTOM_BUILD_TYPE := OFFICIAL
-$(call inherit-product, vendor/aosp/config/common.mk)
+
+# Inherit from our common CAF device tree.
+include device/qcom/common/common.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
