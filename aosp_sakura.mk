@@ -37,10 +37,11 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+BUILD_FINGERPRINT := "xiaomi/sakura_india/sakura_india:9/PKQ1.180917.001/9.4.18:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sakura-user 9 PKQ1.180917.001 9.7.4 release-keys"
+    PRIVATE_BUILD_DESC="sakura_india-user 9 PKQ1.180917.001 9.4.18 release-keys" \
+    PRODUCT_NAME="sakura_india" \
+    TARGET_DEVICE="sakura_india"
 
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "xiaomi/sakura/sakura:9/PKQ1.180917.001/9.7.4:user/release-keys"
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
