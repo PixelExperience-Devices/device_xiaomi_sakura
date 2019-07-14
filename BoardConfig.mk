@@ -41,6 +41,7 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_KERNEL_CONFIG := sakura_defconfig
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 firmware_class.path=/vendor/firmware_mnt/image androidboot.usbconfigfs=true
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -201,10 +202,10 @@ TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 TARGET_USE_OLD_MNC_FORMAT := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-06-05
+VENDOR_SECURITY_PATCH := 2019-07-05
 
 # SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+# BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # We modify several neverallows, so let the build proceed
 SELINUX_IGNORE_NEVERALLOWS := true
