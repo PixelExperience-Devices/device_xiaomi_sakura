@@ -6,3 +6,7 @@ allow mm-qcamerad crash_dump:process noatsecure;
 allow mm-qcamerad fwk_sensor_hwservice:hwservice_manager find;
 allow mm-qcamerad kernel:system module_request;
 allow mm-qcamerad sysfs_graphics:file read;
+allow mm-qcamerad persist_camera_prop:file read;
+allow mm-qcamerad sysfs:file read;
+allow mm-qcamerad persist_camera_prop:file open;
+allow mm-qcamerad persist_camera_prop:file getattr;

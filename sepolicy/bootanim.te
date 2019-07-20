@@ -1,1 +1,2 @@
 allow bootanim device:chr_file { ioctl read write };
+allow bootanim system_data_file:dir read;

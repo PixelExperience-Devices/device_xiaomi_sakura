@@ -5,3 +5,4 @@ allow qti_init_shell ctl_default_prop:property_service set;
 allow qti_init_shell ctl_start_prop:property_service set;
 allow qti_init_shell sysfs_devices_system_cpu:dir write;
 allow qti_init_shell sysfs_lowmemorykiller:dir write;
+allow qti_init_shell self:capability dac_override;
