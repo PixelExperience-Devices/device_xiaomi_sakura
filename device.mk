@@ -86,6 +86,7 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
+    libaudioroute \
     libaacwrapper \
     libaudio-resampler \
     libqcomvisualizer \
