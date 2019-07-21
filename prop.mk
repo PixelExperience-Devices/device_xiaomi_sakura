@@ -25,6 +25,7 @@ persist.vendor.audio.fluence.speaker=true \
 persist.vendor.audio.fluence.voicecall=true \
 persist.vendor.audio.fluence.voicerec=false \
 persist.vendor.audio.hw.binder.size_kbyte=1024 \
+ro.bluetooth.library_name=libbluetooth_qti.so \
 persist.vendor.btstack.enable.splita2dp=false \
 persist.vendor.audio.speaker.prot.enable=false \
 ro.audio.soundfx.dirac=true \
@@ -82,7 +83,8 @@ persist.camera.HAL3.enabled=1 \
 vendor.camera.lowpower.record.enable=1 \
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,org.lineageos.snap \
 vendor.camera.aux.packagelist2=com.android.systemui,com.huaqin.cameraautotest,com.huaqin.runtime \
-vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner
+vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,com.mi.AutoTest
 
 # Cne
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -91,6 +93,15 @@ persist.vendor.cne.feature=1
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
+
+# Console
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.console.silent.config=1
+
+# Cpu in core control
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.core_ctl_min_cpu=2 \
+ro.vendor.qti.core_ctl_max_cpu=4
 
 # Dirac - D2AO-1004
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -181,12 +192,13 @@ ro.sys.fw.dex2oat_thread_count=8 \
 ro.vendor.extension_library=libqti-perfd-client.so \
 ro.vendor.qti.sys.fw.bservice_enable=true
 
-#QTI Performance
+# QTI Performance
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.enable_prefetch=1 \
 vendor.iop.enable_uxe=1 \
 vendor.iop.enable_prefetch_ofr=1 \
 vendor.perf.iop_v3.enable=1 \
+ro.vendor.gt_library=libqti-gt.so \
 ro.vendor.at_library=libqti-at.so \
 persist.vendor.qti.games.gt.prof=1
 
@@ -280,6 +292,7 @@ persist.vendor.audio.speaker.prot.enable=false \
 persist.vendor.data.profile_update=true \
 persist.vendor.radio.prefer_spn=1 \
 ro.dalvik.vm.native.bridge=0 \
+ro.memperf.lib=libmemperf.so \
 ro.memperf.enable=false \
 ro.vendor.display.sensortype=2 \
 ro.vendor.qti.am.reschedule_service=true \
