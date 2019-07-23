@@ -54,3 +54,4 @@ allow init tzdatacheck:process noatsecure;
 allow init usbd:process noatsecure;
 allow init zygote:process noatsecure;
 allow init adbd:process { noatsecure };
+allow init vendor_file:file mounton;
