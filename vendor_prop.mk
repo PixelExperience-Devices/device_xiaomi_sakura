@@ -167,6 +167,13 @@ ro.hwui.text_small_cache_height=1024 \
 ro.hwui.text_large_cache_width=2048 \
 ro.hwui.text_large_cache_height=1024
 
+# IMS debug
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.ims.disableADBLogs=1 \
+persist.vendor.ims.disableDebugLogs=1 \
+persist.vendor.ims.disableIMSLogs=1 \
+persist.vendor.ims.disableQXDMLogs=1
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.hw.aac.encoder=true \
