@@ -14,3 +14,4 @@ allow mm-qcamerad sysfs:file open;
 allow mm-qcamerad sysfs:file getattr;
 allow mm-qcamerad camera_data_file:dir write;
 allow mm-qcamerad camera_data_file:dir add_name;
+allow mm-qcamerad camera_data_file:file create;
