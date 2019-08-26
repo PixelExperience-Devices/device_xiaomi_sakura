@@ -47,6 +47,9 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sakura
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CONFIG := sakura_defconfig
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := sakura,sakura_india
+
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
@@ -124,6 +127,10 @@ BOARD_HAVE_QCOM_FM := true
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_msm8953
+TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
+
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
@@ -185,6 +192,3 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/sakura/BoardConfigVendor.mk
-
-# OTA Assert
-TARGET_OTA_ASSERT_DEVICE := sakura,sakura_india
