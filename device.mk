@@ -273,6 +273,10 @@ PRODUCT_PACKAGES += \
 # Perf
 -include vendor/qcom/common/qti-vendor.mk
 
+# Pre-opt SystemUI
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.1-service-qti
