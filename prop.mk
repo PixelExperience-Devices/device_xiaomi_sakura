@@ -219,6 +219,10 @@ persist.vendor.radio.nitz_sons_1="" \
 persist.vendor.radio.nitz_sons_2="" \
 persist.vendor.radio.nitz_sons_3=""
 
+# Rescue party
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.disable_rescue=true
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PROVISIONED=1 \
