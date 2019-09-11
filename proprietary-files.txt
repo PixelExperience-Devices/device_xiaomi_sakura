@@ -2784,8 +2784,6 @@ etc/permissions/telephonyservice.xml
 framework/QtiTelephonyServicelibrary.jar
 framework/qcrilhook.jar
 framework/qti-telephony-common.jar
-lib/libnativehelper.so:vendor/lib/libnativehelper.so
-lib64/libnativehelper.so:vendor/lib64/libnativehelper.so
 vendor/bin/ATFWD-daemon
 vendor/bin/hw/qcrild
 vendor/bin/ipacm-diag
