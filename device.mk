@@ -122,9 +122,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     Snap
 
-PRODUCT_BOOT_JARS += \
-    com.qualcomm.qti.camera
-
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
@@ -292,11 +289,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
-	
-#QTI performance
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -410,10 +402,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-
-# Wi-Fi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # Include AmbientSense if it's available
 -include vendor/ambientmusic/AmbientMusic.mk
