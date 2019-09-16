@@ -648,3 +648,6 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
 
 on property:dev.bootcomplete=1
     setprop sys.io.scheduler "bfq"
+
+on property:apexd.status=ready
+    mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
