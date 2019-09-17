@@ -25,3 +25,4 @@ allow system_server device:chr_file { ioctl };
 allow system_server sysfs:file { getattr };
 
 allow system_server default_android_hwservice:hwservice_manager { find };
+allow system_server vendor_file:file { getattr open read };
