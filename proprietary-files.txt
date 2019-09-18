@@ -2872,7 +2872,7 @@ vendor/radio/qcril_database/qcril.db
 
 # Radio (IMS) - from sakura
 -app/imssettings/imssettings.apk
--app/ims/ims.apk
+-app/ims/ims.apk|99052a0da79c597cf30031d3dcfa09ffebc56ace
 framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/com.qualcomm.qti.imscmservice@2.0.so
