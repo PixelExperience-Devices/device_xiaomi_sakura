@@ -2971,11 +2971,11 @@ vendor/bin/thermal-engine|562035759ae60b3c5267a01293f1aeaa3f40c44b
 vendor/lib/libthermalfeature.so|1f1eb616ba26b309a2fda7de40c2163a4acaaa35
 vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
 
-# Time services - from sakura
--vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
--vendor/lib/libtime_genoff.so
--vendor/lib64/libtime_genoff.so
+# Time services - from raphael-user 10 QKQ1.190716.003 V10.4.6.0.QFKCNXM release-keys
+-vendor/app/TimeService/TimeService.apk|27f9b81621c446baa8c37581d9bfbca2fd67b496
+vendor/bin/time_daemon|2652ed04ebe55219b5da38db021d43b38e9227d3
+vendor/lib/libtime_genoff.so|cd8a5cc7ccc598e3c3308980c45acb804baa5986
+vendor/lib64/libtime_genoff.so|746db5267fde236de820fa7d887386f65aea7a8a
 
 # TUI - from sakura
 lib/vendor.qti.hardware.tui_comm@1.0.so
