@@ -591,6 +591,7 @@ service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
 service charger /system/bin/charger
     class charger
     group system graphics
+    capabilities SYS_BOOT
     seclabel u:r:healthd:s0
 
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
