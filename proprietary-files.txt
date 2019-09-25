@@ -2430,10 +2430,10 @@ vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 
-# DRM - Widevine - from sakura
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
-vendor/lib64/libwvhidl.so
+# DRM (Widevine) - from LA.UM.8.6.2.r1-03700-89xx.0
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c9d0e5183fc47388d
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|e3cb732c0bd519988100675edf385d947abf5f6c
+vendor/lib64/libwvhidl.so|f7c13ba3323b5b4363e013d4f2fd8c979b695c7c
 
 # Fingerprint firmware - from Sakura MIUI PIE Beta Rom
 etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin

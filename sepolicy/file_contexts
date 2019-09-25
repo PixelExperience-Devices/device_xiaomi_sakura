@@ -31,8 +31,8 @@
 /persist/data/gxfp(/.*)?			u:object_r:gx_fpd_data_file:s0
 
 # HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service\.clearkey					u:object_r:hal_drm_clearkey_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service\.widevine					u:object_r:hal_drm_widevine_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service\.clearkey					u:object_r:hal_drm_clearkey_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.2-service\.widevine					u:object_r:hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.sakura					u:object_r:hal_light_default_exec:s0
 
 # Input files
