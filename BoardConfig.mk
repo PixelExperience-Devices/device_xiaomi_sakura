@@ -205,7 +205,7 @@ TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 TARGET_USE_OLD_MNC_FORMAT := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # We modify several neverallows, so let the build proceed
