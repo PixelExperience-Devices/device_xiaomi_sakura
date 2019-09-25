@@ -2704,7 +2704,7 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Power-off charging daemon
--sbin/charger:sbin/chargeonlymode;rootfs|664dfa548b81cac348f1699222160f8d2b4d247c
+-sbin/charger:bin/chargeonlymode|664dfa548b81cac348f1699222160f8d2b4d247c
 
 # QCOM Boost framework blobs
 bin/perfservice

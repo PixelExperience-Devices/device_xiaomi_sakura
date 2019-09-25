@@ -13,6 +13,9 @@
 # Camera
 /data/vendor/qcam(/.*)?                         u:object_r:camera_socket:s0
 
+# Executables
+/system/bin/chargeonlymode                      u:object_r:charger_exec:s0
+
 # Firmware
 /firmware(/.*)?          u:object_r:firmware_file:s0
 
