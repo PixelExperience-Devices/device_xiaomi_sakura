@@ -60,6 +60,7 @@ bluetooth.hfp.client=1 \
 persist.bluetooth.bluetooth_audio_hal.disabled=true \
 vendor.qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
+persist.vendor.bt.aac_frm_ctl.enabled=true \
 ro.qualcomm.bt.hci_transport=smd \
 persist.vendor.btstack.enable.splita2dp=false
 
