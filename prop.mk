@@ -274,11 +274,14 @@ persist.vendor.radio.data_con_rprt=1
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-ro.surface_flinger.protected_contents=true
+ro.surface_flinger.protected_contents=true \
+ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
+ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000 \
+ro.surface_flinger.use_color_management=true
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.delta_time.enable=true
+persist.vendor.delta_time.enable=true \
 persist.delta_time.enable=true
 
 # Tcp
