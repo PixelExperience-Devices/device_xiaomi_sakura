@@ -185,7 +185,7 @@ TARGET_PER_MGR_ENABLED := true
 
 # Power
 TARGET_HAS_NO_WLAN_STATS := true
-TARGET_TAP_TO_WAKE_NODE := "/proc/tp_wakeup_gesture"
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wakeup_gesture"
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true

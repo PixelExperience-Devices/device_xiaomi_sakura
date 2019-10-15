@@ -218,6 +218,15 @@ on boot
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
 
+# Power HAL
+    mount none /system/lib/hw/power.qcom.so /vendor/lib/hw/power.qcom.so bind
+    mount none /system/lib64/hw/power.qcom.so /vendor/lib64/hw/power.qcom.so bind
+
+on boot
+    # DT2W Node
+    chown system system /proc/touchpanel/wakeup_gesture
+    chmod 0660 /proc/touchpanel/wakeup_gesture
+
 # Camera Blobs
     mount none /system/lib/android.frameworks.sensorservice@1.0-v27.so /vendor/lib/android.frameworks.sensorservice@1.0-v27.so bind
     mount none /system/lib/libvidhance_gyro.so /vendor/lib/libvidhance_gyro.so bind
