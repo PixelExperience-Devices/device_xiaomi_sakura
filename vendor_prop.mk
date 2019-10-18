@@ -183,6 +183,10 @@ ro.sys.fw.dex2oat_thread_count=8 \
 ro.vendor.extension_library=libqti-perfd-client.so \
 ro.vendor.qti.sys.fw.bservice_enable=true
 
+# Qualcomm
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.va_aosp.support=1
+
 # QTI Performance
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.enable_prefetch=1 \
