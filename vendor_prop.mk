@@ -244,7 +244,8 @@ ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,20 \
 service.qti.ims.enabled=1 \
 telephony.lteOnCdmaDevice=1 \
-persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.data_con_rprt=1 \
+persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
