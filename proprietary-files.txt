@@ -2613,25 +2613,27 @@ vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib64/hw/sound_trigger.primary.msm8953.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
-# Media - from sakura
-vendor/lib/libI420colorconvert.so
-vendor/lib/libmmosal_proprietary.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxVideoDSMode.so
+# Media - from LA.UM.8.6.r1-01900-89xx.0
+vendor/lib/libI420colorconvert.so|309927237aa3e17ae4294a5012df293a03f93121
+vendor/lib/libmmosal_proprietary.so|4b0788590e1ecfccd3b20b3181a4add528acb2b6
+vendor/lib/libOmxAacDec.so|8e10de2b6ce36f611268dcb2b3f0ee9f6e4862e6
+vendor/lib/libOmxAlacDec.so|dc149a80c341aeccfc908f2d90d3f3f0eb2194e8
+vendor/lib/libOmxAlacDecSw.so|e2e9c926434e1a34b82b92831d231b203b68c10a
+vendor/lib/libOmxAmrDec.so|e8991419794c7a1d75e41761f768cb83e0afc26c
+vendor/lib/libOmxAmrwbplusDec.so|aa55931f0a5b6265c83ab92172ae57881ddb0b4f
+vendor/lib/libOmxApeDec.so|0ab0a081606c73e6b5fa5ac59e25b7cfc81d7c82
+vendor/lib/libOmxApeDecSw.so|a780d0080b6f9e180070393838882e164fc1efe8
+vendor/lib/libOmxDsdDec.so|9a6a3621e2e07db7881712536cc4ef0433515199
+vendor/lib/libOmxEvrcDec.so|7ac2ca1c4f6aa5c31b1e54be9f82b6128bcc6c50
+vendor/lib/libOmxG711Dec.so|dde0ae7ee761e7faddba9c6e7fcf536ac523add5
+vendor/lib/libOmxQcelp13Dec.so|c19e3495cf9c300ffd802c5270cb88adf2ddba7d
+vendor/lib/libOmxVideoDSMode.so|f3f96d9ba16ebda2d3e9d5a726010d9356d3d0ac
 vendor/lib/libOmxVpp.so
-vendor/lib/libOmxWmaDec.so
--vendor/lib/libgpustats.so
-vendor/lib/libmm-color-convertor.so
+vendor/lib/libOmxWmaDec.so|c1d071accf3eacd7c69e6d07765e14494754ff60
+vendor/lib/libgpustats.so|e1ffdfcdd7c03b9fb9de7b95e76541780ec34a1e
+vendor/lib/libmm-color-convertor.so|4191173950988206b70d14c4e25f911a1bd6abd9
 vendor/lib/libvpplibrary.so
-vendor/lib/libvqzip.so
+vendor/lib/libvqzip.so|9cb3212b118b6626918850abc907c41d1b819ac4
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAlacDec.so
@@ -2644,7 +2646,7 @@ vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
--vendor/lib64/libgpustats.so
+vendor/lib64/libgpustats.so|7f884a3e4ddc6f7016120ab9aed952f1261e210f
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libvpplibrary.so
 
@@ -3014,16 +3016,16 @@ lib/com.qualcomm.qti.wifidisplayhal@1.0.so|47e7949bceaff2d4ef11c51073fa2a173b82e
 lib64/extractors/libmmparser.so
 lib64/libFileMux.so
 lib64/libmmparser_lite.so
-lib64/libmmosal.so
+lib64/libmmosal.so|9ceff2581e86d32bc2795dffb96ebe4bdc88f2f7
 lib64/libwfdclient.so|884bfd6710f05d567eb0083a00ee4889f73d796d
 lib64/libwfdnative.so|e109284a91ad1eb6b64b29b78ae5130c3d73e60e
-lib/extractors/libmmparser.so
-lib/libFileMux.so
-lib/libmmparser_lite.so
-lib/libmmosal.so
+lib/extractors/libmmparserextractor.so|41d5ee2c7f76f21f7566956ad0a490f6927c2f95
+lib/libFileMux.so|79661e6dffc90234ad446641264fd0fa1a3fe6ab
+lib/libmmparser_lite.so|b1b4161b7097f5feeff0f043e8b94cd94553e4ad
+lib/libmmosal.so|9464733295e192301b2577f52fab720e72c0d152
 lib/libmmrtpdecoder.so|ff871cfac4a4d9dac89a612f100ca9de9add9344
 lib/libmmrtpencoder.so|eb32452859323bdfdabcf3780bebad781b367ac4
-lib/libOmxMux.so
+lib/libOmxMux.so|2803ebee03e8372844a278f8ee637c6226e33139
 lib/libwfdavenhancements.so|94de9381e10e4cdac47cd379b7e883f717fa8439
 lib/libwfdclient.so|9c075928fa35c57863bd16a5571fe97d599a988a
 lib/libwfdnative.so|c691e94b79943dbcf570e8ca9a7f4407070f0ba7
