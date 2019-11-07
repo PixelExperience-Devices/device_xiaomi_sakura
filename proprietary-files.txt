@@ -21,20 +21,26 @@ vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 
-# Audio
+# Audio - from Sakura
+vendor/lib/hw/audio.primary.msm8953.so|BA830639280C8E0151CC77A4D4EAFCBE9DC560E6
+vendor/lib/libaudio_log_utils.so|C0187996E4AA81683518645D1E1931AFEA5491DE
+vendor/lib/libtinycompress_vendor.so|FCB516620A215B7CB2AFEB2626599F69715A3C45
+vendor/lib64/hw/audio.primary.msm8953.so|94A255A6D9B20B80C190B9F1ADDE9C8C79808046
+vendor/lib64/libaudio_log_utils.so|7200B1D05406530EF20FB8AC1BFD2B2E1845D0DD
+vendor/lib64/libtinycompress_vendor.so|27487B2C33AFD2704DEC9A90B6428955AC1E08E8
 etc/permissions/audiosphere.xml
 framework/audiosphere.jar
 
-# Audio ACDB - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
+# Audio ACDB - from Sakura
 vendor/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb|6291d5e7457a962d9ba7bc0b3a33392abfe2cb27
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|71d06907c9fe8c123d6390a4478fce02868d0ff6
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|d2bdb61a06db632f2f15bda7a90334ae51624ded
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|8128588f77afc8fc9b1d7f3a64e83b18b110b22c
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|be4871b20fd45fc8ac5edaf8c19643b78eeb0276
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|7e7d37c292a2b081eaa8b6c0ea88f3bb834a0cf4
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|cd739f7132b585ee95afab2db168a2c3f353875c
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|8bec81e255420fdee9507081dd12779dd27c2b78
-vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|3a5b3e291b1ee87221c12524791b58b6131b86c1
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|5438A8AE33D7F323173779BB81EE0AC42DA879E6
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|AC77C80D2DDC5853F9BCDEB599D4F0C0AD8CDB58
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|279DC326A549DF780082151793ADDE266FEDB480
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|AE8AC3DCE358DBFEACB90B736793D5CA023AA9DB
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|144C397B093137A3AF9CC618A6F5434DA4A01D08
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|DF515758FCD2D5EB6EDFAD627D2C02642D3B5220
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|BA3D7670485F5E3F5D0F4B5753873875408E0746
+vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|B780C7D8FDD350A3F7AEFFAA0BCF311F5FDDA0F6
 
 # Audio - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
 vendor/lib/libacdb-fts.so|f140cc5c13855f411d9b944316828b42dd6b7d75
