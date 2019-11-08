@@ -2,17 +2,17 @@
    {
    "repository": "vendor_xiaomi_sakura",
    "target_path": "vendor/xiaomi/sakura",
-   "branch": "pie"
+   "branch": "ten"
  },
     {
    "repository": "kernel_xiaomi_msm8953",
    "target_path": "kernel/xiaomi/msm8953",
-   "branch": "pie_sakura"
+   "branch": "ten"
  },
  {
    "repository": "android_packages_resources_devicesettings",
    "target_path": "packages/resources/devicesettings",
-   "branch": "lineage-16.0",
+   "branch": "lineage-17.0",
    "remote": "lineage"
   }
 ]
