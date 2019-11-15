@@ -56,3 +56,8 @@ allow init zygote:process noatsecure;
 allow init adbd:process { noatsecure };
 allow init vendor_file:file mounton;
 allow init sysfs_battery_supply:file setattr;
+allow init hal_keymaster_hwservice:hwservice_manager add;
+allow init hal_power_stats_hwservice:hwservice_manager add;
+allow init hidl_base_hwservice:hwservice_manager add;
+allow init hwservicemanager:binder { call transfer };
+allow init vendor_file:file { execute execute_no_trans };

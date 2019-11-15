@@ -1,1 +1,2 @@
 allow surfaceflinger device:chr_file ioctl;
+allow surfaceflinger sysfs_kgsl:lnk_file read;
