@@ -16,3 +16,4 @@ allow platform_app ctl_fuse_prop:file { read };
 allow platform_app ctl_interface_restart_prop:file { read };
 allow platform_app ctl_interface_start_prop:file { read };
 allow platform_app ctl_interface_stop_prop:file { read };
+allow platform_app fs_bpf:dir search;
