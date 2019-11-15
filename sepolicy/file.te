@@ -1,3 +1,6 @@
+# Avb
+type avb_file, file_type;
+
 # Camera
 type camera_socket, file_type, data_file_type;
 

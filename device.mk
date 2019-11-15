@@ -122,9 +122,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     Snap
 
-PRODUCT_BOOT_JARS += \
-    com.qualcomm.qti.camera
-
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
@@ -232,10 +229,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.sakura
-	
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -296,11 +289,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
-	
-#QTI performance
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -370,10 +358,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ThermalController
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.xiaomi_8996
@@ -418,6 +402,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+
+# Wallpapers
+PRODUCT_PACKAGES += \
+    WallpapersBReel2019
 
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
