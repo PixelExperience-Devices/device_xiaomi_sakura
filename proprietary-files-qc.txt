@@ -48,6 +48,10 @@ vendor/lib64/soundfx/libqcvirt.so
 # ANT+ (vendor)
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
+# Bluetooth (aptX) - from crosshatch QP1A.190711.020
+lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
+
 # Bluetooth - from LA.UM.8.6.2.r1-03700-89xx.0
 -lib/libbtconfigstore.so|c88af75a5c8e62c75d505a89c574117feefc11c6
 -lib64/libbtconfigstore.so|0448de689901f7b3d9bd95224aebf674cefc6c89
