@@ -247,6 +247,10 @@ persist.vendor.radio.nitz_sons_3=""
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.disable_rescue=true
 
+# Recovery
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.recovery_update=true
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PROVISIONED=1 \
