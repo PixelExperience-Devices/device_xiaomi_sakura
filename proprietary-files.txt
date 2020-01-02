@@ -2980,18 +2980,18 @@ vendor/lib/vendor.qti.imsrtpservice@2.0.so|0f9ddab22abb67603d36223cc04e7d3920bad
 vendor/lib/vendor.qti.imsrtpservice@2.1-service-Impl.so|e4d3a2ff11896050f4cf6493ab5f599a66f68e59
 vendor/lib/vendor.qti.imsrtpservice@2.1.so|44f0bd9af5018f33b0dda1f11e8bfa2444b7d895
 
-# Sensors - from sakura
-vendor/bin/sensors.qti
-vendor/lib/hw/activity_recognition.msm8953.so
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
-vendor/lib/libsensor_user_cal.so
-vendor/lib/sensors.ssc.so
-vendor/lib64/hw/activity_recognition.msm8953.so
-vendor/lib64/libsensor1.so
-vendor/lib64/libsensor_reg.so
-vendor/lib64/libsensor_user_cal.so
-vendor/lib64/sensors.ssc.so
+# Sensors - from LA.UM.8.6.r1-02600-89xx.0
+vendor/bin/sensors.qti|a3e75e6b68125c14f2189945b8ced945b82e05b8
+vendor/lib/hw/activity_recognition.msm8953.so|8775b59a5b99a37eace38f06cb821007bd7c88ae
+vendor/lib/libsensor1.so|5bb6c35dabadb59301e870e319b43212154fa12c
+vendor/lib/libsensor_reg.so|db6e00ba09e2d7cb65c070a3aecf374f7ea4cea1
+vendor/lib/libsensor_user_cal.so|5bb430aee52db949f49eff66b193e4fbf6802270
+vendor/lib/sensors.ssc.so|bdb1f587d78722c6b4e5e2f5df86c5dfeb49ccf3
+vendor/lib64/hw/activity_recognition.msm8953.so|19637d97c2cf50a6c7b34d7529f2636198404522
+vendor/lib64/libsensor1.so|4a63118bc426116643216c5f43f70ce0cd52d537
+vendor/lib64/libsensor_reg.so|b977629681598d927830ed99986e818c01c2d34a
+vendor/lib64/libsensor_user_cal.so|a9cd76f06c02e23cb7f1552aa7d51567259faa47
+vendor/lib64/sensors.ssc.so|23f60022a6415f0fb644aed853b3ee5dceecd0de
 
 # Thermal - from Onclite PKQ1.181021.001/V10.2.7.0.PFLCNXM
 vendor/bin/thermal-engine|562035759ae60b3c5267a01293f1aeaa3f40c44b
