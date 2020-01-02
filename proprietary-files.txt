@@ -2324,8 +2324,8 @@ vendor/etc/camera/vince_ov5675_ofilm_chromatix_india.xml
 vendor/etc/camera/vince_ov5675_qtech_chromatix.xml
 vendor/etc/camera/vince_ov5675_qtech_chromatix_india.xml
 
-# Charger - from sakura
-vendor/bin/hvdcp_opti
+# Charger - from LA.UM.8.6.r1-02600-89xx.0
+vendor/bin/hvdcp_opti|bd0808db92452c5fd7ec272a35924f23fb4ffa01
 
 # CNE - from LA.UM.8.6.2.r1-03700-89xx.0
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|75e8a824d368cd4172985c884796381327d950da
