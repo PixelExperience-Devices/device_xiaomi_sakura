@@ -12,6 +12,10 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaq
 vendor.camera.aux.packagelist2=com.android.systemui,com.huaqin.cameraautotest,com.huaqin.runtime
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,com.mi.AutoTest
 
+# DPM
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.dpm.feature=0
+
 # LMKD
 ro.lmk.low=1001
 ro.lmk.medium=800
