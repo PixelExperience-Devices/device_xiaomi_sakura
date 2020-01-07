@@ -370,6 +370,9 @@ esac
 # Remove recovery cache from persist
 rm -rf /mnt/vendor/persist/cache/recovery
 
+# Remove settings cache, avoids derps after dirty flash
+rm -rf /data/system/package_cache
+
 # Set shared touchpanel nodes ownership (these are proc_symlinks to the real sysfs nodes)
 chown -LR system.system /proc/touchpanel
 
