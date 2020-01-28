@@ -2540,6 +2540,7 @@ vendor/lib/libgsl.so|36e89400f3684813276a9263c930b4703b6b9c3b
 vendor/lib/libhdr_tm.so|f1d9566f7c6bb92521b86fcbd03b76b1375b3d15
 vendor/lib/libllvm-glnext.so|fbaea67d81d87ce447f5c6ef0b6ba02bd7a3ee1d
 vendor/lib/libllvm-qcom.so|8a96fc2e1f51442327ef93797d8fb85b2769b9a7
+vendor/lib/libllvm-qgl.so|7634FBBD955FB40765CA817F0F5DB5F860A0DBE5
 vendor/lib/libmm-hdcpmgr.so|fe151b56e2cbe2ca9eb624d911808eb287fea483
 vendor/lib/librs_adreno.so|5242c974a6bf83759cf042f9e4075bcd24ebc5af
 vendor/lib/librs_adreno_sha1.so|baae82ba5d188fd4e4a5ba7200c837a25ef343ba
@@ -2562,6 +2563,7 @@ vendor/lib64/libgsl.so|9d5a0612bcab9a7357239a323628b859fb9f27c5
 vendor/lib64/libhdr_tm.so|208637299f17b43013b88f5e5538c562b54ad644
 vendor/lib64/libllvm-glnext.so|ce0f154e6d3f39bbbb142686a10f632109af2caa
 vendor/lib64/libllvm-qcom.so|f9e4173b36ba354c2671fc6dfe974fac7aaf727b
+vendor/lib64/libllvm-qgl.so|C4FFB2E870488A9D843666142EDB50319036888C
 vendor/lib64/libmm-hdcpmgr.so|6929f0f7feaceb9a6d71ea6c0a0b7851d7934e04
 vendor/lib64/librs_adreno.so|c60de02ed47887f1e7e64f67ec40429ac5286e66
 vendor/lib64/librs_adreno_sha1.so|3fe3528fe6958db0d46144441996c06ddce4027c
