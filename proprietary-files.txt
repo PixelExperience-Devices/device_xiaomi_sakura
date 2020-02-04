@@ -42,7 +42,7 @@ vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|DF515758FCD2D5EB6EDFAD627D2C02642D3
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|BA3D7670485F5E3F5D0F4B5753873875408E0746
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|B780C7D8FDD350A3F7AEFFAA0BCF311F5FDDA0F6
 
-# Audio - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
+# Audio - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
 vendor/lib/libacdb-fts.so|f140cc5c13855f411d9b944316828b42dd6b7d75
 vendor/lib/libacdbloader.so|52fb25441a742d744f6574d1065ae1b822769c48
 vendor/lib/libacdbrtac.so|8a469a26ed1ecff8e22ee141d98bde97513a6212
@@ -66,10 +66,10 @@ vendor/lib64/libqtigef.so|79e811fd04172b0afda1229d182014be28a146b2
 vendor/lib64/soundfx/libqcbassboost.so|0b92d65381d9722c579ccfda12f86c7e3fcaedd1
 vendor/lib64/soundfx/libqcvirt.so|815b3a7cd762cdb6f162dde12c866acb23cdd022
 
-# Audio Dirac - from Unknown
-vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
-vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
-vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+# Audio Dirac - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
+vendor/etc/diracmobile.config|4b12ad67107332a77c308d58065a7e0a77d90566
+vendor/lib/soundfx/libdirac.so|b43db3b8044dc72af1b90fa82321c53c0e4fb24d
+vendor/lib/libDiracAPI_SHARED.so|14f268dde7e13c5721a6eefc300d21d9f9549042
 
 # ANT+ (system) - from enchilada - PKQ1.180716.001/1904032100
 lib64/com.qualcomm.qti.ant@1.0.so|7b03f4a99e2153a6b0a9bce1ca84f7c7577ec4b1
@@ -113,7 +113,7 @@ vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|94c983b85ba5bcb0902e18f334
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|0d3d5de154e6d40d99a9bbca4cb170dc02bc3902
 vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|81ac65e4317355abe11ee1ccc7d55f73d16ea69a
 
-# Camera Actuators - from sakura
+# Camera Actuators - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
 vendor/lib/libactuator_ad5816g.so
 vendor/lib/libactuator_ad5823.so
 vendor/lib/libactuator_ak7345.so
@@ -135,7 +135,7 @@ vendor/lib/libactuator_sakura_dw9714v_sunny.so
 vendor/lib/libactuator_vince_dw9714v_ofilm.so
 vendor/lib/libactuator_vince_dw9763_sunny.so
 
-# Camera Chromatix - from sakura
+# Camera Chromatix - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
 vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
@@ -691,7 +691,6 @@ vendor/lib/libchromatix_ov12a10_sunny_sakura_snapshot.so
 vendor/lib/libchromatix_ov12a10_sunny_sakura_video_4k.so
 vendor/lib/libchromatix_ov12a10_sunny_sakura_zsl_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_sakura_zsl_video_dw9763.so
-
 vendor/lib/libchromatix_ov12a10_sunny_vince_4k_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_4k_video_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_common.so
@@ -744,7 +743,6 @@ vendor/lib/libchromatix_ov12a10_sunny_vince_snapshot.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_video_4k.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_zsl_preview_dw9763.so
 vendor/lib/libchromatix_ov12a10_sunny_vince_zsl_video_dw9763.so
-
 vendor/lib/libchromatix_ov13850_common.so
 vendor/lib/libchromatix_ov13850_cpp_ds_chromatix.so
 vendor/lib/libchromatix_ov13850_cpp_hfr_120.so
@@ -1229,7 +1227,6 @@ vendor/lib/libchromatix_s5k3p8sp_cpp_video.so
 vendor/lib/libchromatix_s5k3p8sp_postproc.so
 vendor/lib/libchromatix_s5k3p8sp_preview.so
 vendor/lib/libchromatix_s5k3p8sp_snapshot.so
-
 vendor/lib/libchromatix_sakura_cn_imx486_ofilm_common.so
 vendor/lib/libchromatix_sakura_cn_imx486_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_sakura_cn_imx486_ofilm_cpp_hfr_60.so
@@ -1356,7 +1353,6 @@ vendor/lib/libchromatix_sakura_cn_s5k5e8_sunny_preview.so
 vendor/lib/libchromatix_sakura_cn_s5k5e8_sunny_snapshot.so
 vendor/lib/libchromatix_sakura_cn_s5k5e8_sunny_zsl_preview_3a.so
 vendor/lib/libchromatix_sakura_cn_s5k5e8_sunny_zsl_video_3a.so
-
 vendor/lib/libchromatix_sakura_factory_imx486_ofilm_common.so
 vendor/lib/libchromatix_sakura_factory_imx486_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_sakura_factory_imx486_ofilm_cpp_hfr_60.so
@@ -1714,7 +1710,6 @@ vendor/lib/libchromatix_sakura_s5k5e8_sunny_preview.so
 vendor/lib/libchromatix_sakura_s5k5e8_sunny_snapshot.so
 vendor/lib/libchromatix_sakura_s5k5e8_sunny_zsl_preview_3a.so
 vendor/lib/libchromatix_sakura_s5k5e8_sunny_zsl_video_3a.so
-
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_cpp_hfr_120.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_cpp_hfr_60.so
 vendor/lib/libchromatix_soft_light_auto_vince_india_ov5675_ofilm_cpp_hfr_90.so
@@ -2029,7 +2024,6 @@ vendor/lib/libchromatix_vince_ov5675_qtech_preview.so
 vendor/lib/libchromatix_vince_ov5675_qtech_snapshot.so
 vendor/lib/libchromatix_vince_ov5675_qtech_zsl_preview_3a.so
 vendor/lib/libchromatix_vince_ov5675_qtech_zsl_video_3a.so
-
 vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dummyalgo.so
@@ -2104,22 +2098,28 @@ vendor/lib/libmmcamera_vince_ov12a10_sunny.so
 vendor/lib/libmmcamera_vince_ov5675_ofilm.so
 vendor/lib/libmmcamera_vince_ov5675_qtech.so
 
-# Camera firmware - from sakura
-vendor/firmware/cpp_firmware_v1_8_0.fw
-vendor/firmware/cpp_firmware_v1_5_0.fw
-vendor/firmware/cpp_firmware_v1_6_0.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
-vendor/firmware/cpp_firmware_v1_4_0.fw
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_5_1.fw
-vendor/firmware/cpp_firmware_v1_12_0.fw
-vendor/firmware/cpp_firmware_v1_10_0.fw
-vendor/firmware/cpp_firmware_v1_5_2.fw
-vendor/firmware/cpp_firmware_v1_1_6.fw
+# Camera Patched Blobs - (Those Are Patched To Make Camera Work On Ten)
+vendor/lib/hw/camera.msm8953.so|A641667072191288918F2616C4B9131D26D9D3A9
+vendor/lib/camera.msm8953.shim.so|81CD983FA40D23A569D4DCEFD87624E88533F55D
+vendor/lib/libMiWatermark.so|14E7FBBD029F9A2C012DB1323FDB8444D8836467
+lib/libicuuc.so:vendor/lib/libicuuc-v27.so|3F0149A03EB65921589BB8D96441AEDB7477DB75
+lib/libminikin.so:vendor/lib/libminikin-v27.so|A35C0B1B3471694009511FDF8DFBB14D7988F62C
+
+# Camera firmware - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
+vendor/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
+vendor/firmware/cpp_firmware_v1_5_0.fw|ac19cd179b7b118bb3ea01a35fdfc78dc58164a1
+vendor/firmware/cpp_firmware_v1_6_0.fw|dcd3d1f904c7ee3d731f8f28b5f78f2503916ada
+vendor/firmware/cpp_firmware_v1_2_0.fw|5ff0d66bcdbb29f4e924d011ae825583e48b3962
+vendor/firmware/cpp_firmware_v1_4_0.fw|11eba982212797920102912142940a9e08931c52
+vendor/firmware/cpp_firmware_v1_1_1.fw|04b8eb253d630eaeadab296e1607dc6a29d93d3c
+vendor/firmware/cpp_firmware_v1_5_1.fw|f3f622ab29a560b170d0f2c6ddec14b933f2d476
+vendor/firmware/cpp_firmware_v1_12_0.fw|de18ccdf371824059acfdf3c7754c6e1bc1c2f8c
+vendor/firmware/cpp_firmware_v1_10_0.fw|cf9458601aa4bbe9c57acfc1c7d0f158386ace9f
+vendor/firmware/cpp_firmware_v1_5_2.fw|58dd7f7c09dbb62bc6f334a8885064b292610675
+vendor/firmware/cpp_firmware_v1_1_6.fw|6b2c9fe0a43a9ce86a921e18faffe4d0a35746ee
 
 # Camera HIDL - from sakura (HACK NEEDED)
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
-vendor/lib/camera.msm8953.shim.so
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
@@ -2151,16 +2151,13 @@ vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
 vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
 vendor/lib/libvidhance_gyro.so|b5e3fd3ce40e3c2ea2a225fe05704052474b9ddd
 
-# Camera OIS
+# Camera OIS from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
 vendor/lib/libois_lc898122.so
 
-# Camera QCOM Daemon - from sakura
-vendor/bin/mm-qcamera-daemon
+# Camera QCOM Daemon - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
+vendor/bin/mm-qcamera-daemon|af2ab6f15c50daec46a39a831b24bd63a2c7f0e0
 
-# Camera QCOM libs - from Sakura MIUI PIE RELEASE
-vendor/lib/hw/camera.msm8953.so|4b2ca77a95bd3252d5474959fe2585c06cf00d35
-
-# Camera QCOM Libraries - from sakura
+# Camera QCOM Libraries - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
 vendor/bin/mm-qcamera-app
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_dualcam_refocus.so
@@ -2186,7 +2183,6 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libvidhance.so
 vendor/lib/libXMFD_AgeGender.so
-
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
@@ -2258,7 +2254,6 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera2_is.so
 vendor/lib64/libmmcamera2_q3a_core.so
@@ -2266,63 +2261,58 @@ vendor/lib64/libmmcamera2_stats_algorithm.so
 vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
-
 -framework/com.qualcomm.qti.camera.jar
 lib/vendor.qti.hardware.camera.device@1.0.so
 lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 
-lib/libicuuc.so:vendor/lib/libicuuc-v27.so
-lib/libminikin.so:vendor/lib/libminikin-v27.so
-vendor/lib/libMiWatermark.so
-
-# Camera XML Configs - from sakura
-vendor/etc/camera/camera_config.xml
-vendor/etc/camera/csidtg_camera.xml
-vendor/etc/camera/csidtg_chromatix.xml
-vendor/etc/camera/imx214_chromatix.xml
-vendor/etc/camera/imx230_chromatix.xml
-vendor/etc/camera/imx230_qc2002_chromatix.xml
-vendor/etc/camera/imx230_qc2002_with_gyro_chromatix.xml
-vendor/etc/camera/ov2281_chromatix.xml
-vendor/etc/camera/ov2680_chromatix.xml
-vendor/etc/camera/ov7251_chromatix.xml
-vendor/etc/camera/ov8865_chromatix.xml
-vendor/etc/camera/s5k3p3sm_chromatix.xml
-vendor/etc/camera/s5k3p8sp_chromatix.xml
-vendor/etc/camera/sakura_imx486_ofilm_chromatix.xml
-vendor/etc/camera/sakura_imx486_ofilm_chromatix_cn.xml
-vendor/etc/camera/sakura_imx486_ofilm_chromatix_factory.xml
-vendor/etc/camera/sakura_imx486_ofilm_chromatix_india.xml
-vendor/etc/camera/sakura_ov12a10_sunny_chromatix.xml
-vendor/etc/camera/sakura_ov12a10_sunny_chromatix_cn.xml
-vendor/etc/camera/sakura_ov12a10_sunny_chromatix_factory.xml
-vendor/etc/camera/sakura_ov12a10_sunny_chromatix_india.xml
-vendor/etc/camera/sakura_ov5675_ofilm_chromatix.xml
-vendor/etc/camera/sakura_ov5675_ofilm_chromatix_cn.xml
-vendor/etc/camera/sakura_ov5675_ofilm_chromatix_factory.xml
-vendor/etc/camera/sakura_ov5675_ofilm_chromatix_india.xml
-vendor/etc/camera/sakura_ov5675_qtech_chromatix.xml
-vendor/etc/camera/sakura_ov5675_qtech_chromatix_cn.xml
-vendor/etc/camera/sakura_ov5675_qtech_chromatix_factory.xml
-vendor/etc/camera/sakura_ov5675_qtech_chromatix_india.xml
-vendor/etc/camera/sakura_s5k5e8_ofilm_chromatix.xml
-vendor/etc/camera/sakura_s5k5e8_ofilm_chromatix_cn.xml
-vendor/etc/camera/sakura_s5k5e8_ofilm_chromatix_factory.xml
-vendor/etc/camera/sakura_s5k5e8_ofilm_chromatix_india.xml
-vendor/etc/camera/sakura_s5k5e8_sunny_chromatix.xml
-vendor/etc/camera/sakura_s5k5e8_sunny_chromatix_cn.xml
-vendor/etc/camera/sakura_s5k5e8_sunny_chromatix_factory.xml
-vendor/etc/camera/sakura_s5k5e8_sunny_chromatix_india.xml
-vendor/etc/camera/vince_imx486_ofilm_chromatix.xml
-vendor/etc/camera/vince_imx486_ofilm_chromatix_india.xml
-vendor/etc/camera/vince_ov12a10_sunny_chromatix.xml
-vendor/etc/camera/vince_ov12a10_sunny_chromatix_india.xml
-vendor/etc/camera/vince_ov5675_ofilm_chromatix.xml
-vendor/etc/camera/vince_ov5675_ofilm_chromatix_india.xml
-vendor/etc/camera/vince_ov5675_qtech_chromatix.xml
-vendor/etc/camera/vince_ov5675_qtech_chromatix_india.xml
+# Camera XML Configs - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
+vendor/etc/camera/camera_config.xml|0cad0e573400d9c247e51b91f90dac565b9a0166
+vendor/etc/camera/csidtg_camera.xml|406e2dec13dc910415ff72fc5a7ee084c97ab61f
+vendor/etc/camera/csidtg_chromatix.xml|e95fad08db854906529b4df3c1b238ebbb36b2df
+vendor/etc/camera/imx214_chromatix.xml|c27c3a806a18dfa693c186dbf5fdf48f715acacb
+vendor/etc/camera/imx230_chromatix.xml|5fc002e42292f302f4e5d0f45f94d5e35c6e0821
+vendor/etc/camera/imx230_qc2002_chromatix.xml|409c6201180203e1a63a0af5629d3a79102b6452
+vendor/etc/camera/imx230_qc2002_with_gyro_chromatix.xml|f920cacaefa82096d3a806d0ac7a2a4570a8f83d
+vendor/etc/camera/ov2281_chromatix.xml|b3087a235d7f023b5e68033ff2eeca52b517dfd6
+vendor/etc/camera/ov2680_chromatix.xml|da838a5fe187f12313d03d3e1298ff14bdf6c563
+vendor/etc/camera/ov7251_chromatix.xml|d1f7120f1b78b0d0044172725665441f73d65161
+vendor/etc/camera/ov8865_chromatix.xml|46d95a42640a6ed3d267642a30762effbb68bf8d
+vendor/etc/camera/s5k3p3sm_chromatix.xml|631f0c2cdee0e6839db4242aa40e9336376a6067
+vendor/etc/camera/s5k3p8sp_chromatix.xml|e938c7f51222ede3908ec598e1546c194d18c850
+vendor/etc/camera/sakura_imx486_ofilm_chromatix.xml|a08a0d3c6740f2749f752a44d760828f67cbf5e0
+vendor/etc/camera/sakura_imx486_ofilm_chromatix_cn.xml|e4a8e022c202aef57a3560e43ca4655e37938ed8
+vendor/etc/camera/sakura_imx486_ofilm_chromatix_factory.xml|23402d692cb40e2017228610b73f528a1e20ba48
+vendor/etc/camera/sakura_imx486_ofilm_chromatix_india.xml|506c7758207f22ef6a43a2956d303e8d1fd70adb
+vendor/etc/camera/sakura_ov12a10_sunny_chromatix.xml|b2f8649ef85cbc83e5f371707a9564cfcd40d109
+vendor/etc/camera/sakura_ov12a10_sunny_chromatix_cn.xml|6056fb8d2211bdfc49c225acc0d95a6cdb6ecbaf
+vendor/etc/camera/sakura_ov12a10_sunny_chromatix_factory.xml|255cec4d9f57a35b2eea189c95bd788c3731fcba
+vendor/etc/camera/sakura_ov12a10_sunny_chromatix_india.xml|7591be2cf3bd4aa46ea03a210c510a55af521339
+vendor/etc/camera/sakura_ov5675_ofilm_chromatix.xml|4629c2774800213298f3529c6e4d6b173edd501c
+vendor/etc/camera/sakura_ov5675_ofilm_chromatix_cn.xml|f6fec307a265f3551ad1eae120e1627057aea4e4
+vendor/etc/camera/sakura_ov5675_ofilm_chromatix_factory.xml|56935576e7fbbe1e760b6569f30297d3f84a88c2
+vendor/etc/camera/sakura_ov5675_ofilm_chromatix_india.xml|9f6e00e072649126aab4d22163b00f804f560f76
+vendor/etc/camera/sakura_ov5675_qtech_chromatix.xml|b0bbd4990ec005b60f7083cbdba5573a94f0d091
+vendor/etc/camera/sakura_ov5675_qtech_chromatix_cn.xml|3a3590d4dde5123716b068196d618788d4db1787
+vendor/etc/camera/sakura_ov5675_qtech_chromatix_factory.xml|6791d4124d7e280da3175aee52f4a4f17c1fd3c0
+vendor/etc/camera/sakura_ov5675_qtech_chromatix_india.xml|a87ba0e3d6ebee4553af7dc848c4247f5cb8bf8a
+vendor/etc/camera/sakura_s5k5e8_ofilm_chromatix.xml|9ed441bbbd9692bd2769860a3755427bfcdceebd
+vendor/etc/camera/sakura_s5k5e8_ofilm_chromatix_cn.xml|4c53c8d0114995000db31021dc951085c65bbd34
+vendor/etc/camera/sakura_s5k5e8_ofilm_chromatix_factory.xml|fa67af96fd6c58277439fdf5736b53c1716ea45e
+vendor/etc/camera/sakura_s5k5e8_ofilm_chromatix_india.xml|1d2e70886fd562616795e6624c4a5f9e79dd16e0
+vendor/etc/camera/sakura_s5k5e8_sunny_chromatix.xml|f33f5364c71e0c1b364166f76473476b839c3f1e
+vendor/etc/camera/sakura_s5k5e8_sunny_chromatix_cn.xml|431707c9a2698961dabd8b01b3d72e554ab9ae27
+vendor/etc/camera/sakura_s5k5e8_sunny_chromatix_factory.xml|edd06e3dcacdd1d88638d2870f15cc5c0039dda0
+vendor/etc/camera/sakura_s5k5e8_sunny_chromatix_india.xml|318ebb835e6f5fa5b44380c0f3703d4bf6ea4c4a
+vendor/etc/camera/vince_imx486_ofilm_chromatix.xml|16d255e51e9dc3fa3280b2cad1fa8df6b3740380
+vendor/etc/camera/vince_imx486_ofilm_chromatix_india.xml|f71949b9cdbfe250e5d3eace2f65315f94938a07
+vendor/etc/camera/vince_ov12a10_sunny_chromatix.xml|de3ed705f4b48f2c44762e981f2221afbf4ea140
+vendor/etc/camera/vince_ov12a10_sunny_chromatix_india.xml|3df40bf8d135f51e7671e1694e0db9da631609b3
+vendor/etc/camera/vince_ov5675_ofilm_chromatix.xml|7b1e8d900948b1273e5d003f1f020cd68f052c67
+vendor/etc/camera/vince_ov5675_ofilm_chromatix_india.xml|e7e90221ea1b0687b61423311b6ba301d4ac7e05
+vendor/etc/camera/vince_ov5675_qtech_chromatix.xml|4ac87ed79eba9e8e90ce9a2f04bc754058550091
+vendor/etc/camera/vince_ov5675_qtech_chromatix_india.xml|3c77bcceec7d5d48ac082c6846b41577506d29eb
 
 # Charger - from sakura
 vendor/bin/hvdcp_opti
@@ -2391,20 +2381,20 @@ vendor/lib64/vendor.qti.hardware.factory@1.0.so|7a61c2d4acaf748934d154af3a6b8fe6
 vendor/lib64/vendor.qti.hardware.factory@1.1.so|1bf6d03e47d20df05725dff70c3723d0ac69f4f6
 vendor/lib64/vendor.qti.latency@2.0.so|1b9583d7536064e4f37a4bfeb68f918eaddfee81
 
-# Consumer IR - from sakura
-vendor/lib64/hw/consumerir.default.so
+# Consumer IR - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
+vendor/lib64/hw/consumerir.default.so|809d49cb2056affc460ba4d707add90f53441bea
 
 # Display Calibration - from sakura
 vendor/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_ili7807_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_otm1911_fhdplus_video_mode_dsi_panel.xml
 
-# DPM - from sakura
-lib/com.qualcomm.qti.dpm.api@1.0.so
-lib/libdpmctmgr.so
-lib/libdpmfdmgr.so
-lib/libdpmframework.so
-lib/libdpmtcm.so
+# DPM - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
+lib/com.qualcomm.qti.dpm.api@1.0.so|658b574dc31f2f7f87e52c75c9564d59bed8873f
+lib/libdpmctmgr.so|1be276d0b3b2f3d2a858edde1e6bf197399a037e
+lib/libdpmfdmgr.so|4e22f8a028a915711f4e03bcf43ae4d514b56993
+lib/libdpmframework.so|9e52a99f2be9418e91b504d147960c4851741f53
+lib/libdpmtcm.so|c48c747670ad1495733dd67c68aa5859c89db654
 
 # DPM (Vendor) - from LA.UM.8.6.2.r1-03700-89xx.0
 vendor/bin/dpmQmiMgr|fd59518b55d5cc9ec677a7da9f0d4aad3f03d98a
@@ -2435,30 +2425,30 @@ vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|e3cb732c0bd519988100675edf385d947abf5f6c
 vendor/lib64/libwvhidl.so|f7c13ba3323b5b4363e013d4f2fd8c979b695c7c
 
-# Fingerprint firmware - from Sakura MIUI PIE Beta Rom
-etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
+# Fingerprint firmware - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
+etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
 
-# Fingerprint - from Tissot PKQ1.180917.001/V10.0.8.0.PDHMIXM
+# Fingerprint - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
 lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so|00d41f88a980241b29267e16419704f8e05c5bcd
 
-# Fingerprint - from Sakura MIUI PIE Beta Rom
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
-vendor/etc/permissions/com.fingerprints.extension.xml
-vendor/framework/com.fingerprints.extension.jar
-vendor/lib64/hw/gf_fingerprint.default.so
-vendor/lib64/hw/fingerprint.default.so
-vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/lib64/libgoodixfingerprintd_binder.so
-vendor/lib64/libgf_ca.so
-vendor/lib64/libgf_hal.so
-lib/android.hardware.biometrics.fingerprint@2.1.so
-lib64/android.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+# Fingerprint - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
+-vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|5e96529091dbf7d46031f932e8cfd5d9fcec21f8
+vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
+vendor/framework/com.fingerprints.extension.jar|4d231542a253a8c56737bfef46a6494de2acaeb0
+vendor/lib64/hw/gf_fingerprint.default.so|476c220ea105a01658ba1dc11c005c48cbc79679
+vendor/lib64/hw/fingerprint.default.so|978bd8d96441bc0613cbf492392b0515ce3bd088
+vendor/lib64/com.fingerprints.extension@1.0.so|8535421abc67ffe1386aa8d7c52455c55007d3dd
+vendor/lib64/libgoodixfingerprintd_binder.so|1d5cd0cc9049d837b5771808a156e0b2df1e045d
+vendor/lib64/libgf_ca.so|d62fecde6046483566af2104d04a69af59a8b3d8
+vendor/lib64/libgf_hal.so|965bcf9d994cdc29e3433fa74eefa8c512744bda
+lib/android.hardware.biometrics.fingerprint@2.1.so|d80e596cd45d77ab506aa7837d88939387d6cd78
+lib64/android.hardware.biometrics.fingerprint@2.1.so|218efa319401f42f3278248f65f3ebaaff575334
+vendor/lib64/com.fingerprints.extension@1.0.so|8535421abc67ffe1386aa8d7c52455c55007d3dd
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|4b3e658f52dfe31d7883f19bbeb8e05d323ba607
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|c9d0251df63d8e34b6d70a59ad7b774c9f640fa1
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|e60616145136f8042988054d21a53c3496c6e910
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|32fd80d8b19c91216145d30a8b4d7a61f82bc995
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|0c5745649eac2b5478ef891a51b18b999bb45fce
 
 # Gatekeeper - from sakura
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -2599,7 +2589,7 @@ vendor/lib64/vendor.display.color@1.2.so|4c8662c993e4af6df2d6ebc4101caee0d629e0d
 vendor/lib64/vendor.display.postproc@1.0.so|0f40f80c20906ff2076c548abc984c01209f24bb
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|123e00986f21e4af7bc107da4f3573f58460ca84
 
-# Graphics firmware - from Sakura MIUI PIE RELEASE
+# Graphics firmware - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
 vendor/firmware/a506_zap.b00|c45a7b34456844f5deb73e2dce79cbfcfb9ae71c
 vendor/firmware/a506_zap.b01|374b5c4a2212b2636d5dfc2deda66b56b6bf2d03
 vendor/firmware/a506_zap.b02|b79957c47f0a6757ac1d721dbe06551508454634
@@ -2607,8 +2597,8 @@ vendor/firmware/a506_zap.mdt|621df918f1d6ef0a0c3fe25c8f6a58d56af4b26a
 vendor/firmware/a530_pfp.fw|137b74a30e664f387fcd1e5562474a6c5d8dd6b4
 vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
 
-# Ipacm - from sakura
-vendor/bin/ipacm-diag
+# Ipacm - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
+vendor/bin/ipacm-diag|9300f8da22941c2bfacc2ff96f83f2beebd4dcc1
 
 # Keymaster - from sakura
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
@@ -2711,7 +2701,7 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|c1c19f5f1489309ab08364247fdb6dfd0bda515f
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|c94277fa0ba7ead6a9e2945d3c1fb71a8b409d09
 
-# QCOM Boost framework blobs
+# QCOM Boost framework from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
 bin/perfservice
 etc/init/perfservice.rc
 etc/perf/whitelistedapps.xml
@@ -3011,24 +3001,24 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|685a9c0cebc15f5b8b3825fbcd7396d5b3c62385
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|4b884ee86bd3796bf36ec47ceb8a7c53d26f5a42
 
-# USB firmware - sakura
-etc/firmware/ice40.bin
+# USB firmware - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
+etc/firmware/ice40.bin|a29bdcdbfda7f7dae24a3c8921abe2bcda6ae38e
 
-# Wi-Fi - from sakura
-lib64/libwifikeystorehalext.so
-lib64/vendor.qti.hardware.wifi.hostapd@1.0.so
-lib64/vendor.qti.hardware.wifi.keystore@1.0.so
-lib64/vendor.qti.hardware.wifi.supplicant@2.0.so
-vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
-vendor/bin/wcnss_service
-vendor/lib/vendor.qti.hardware.wifi.hostapd@1.0.so
-vendor/lib/vendor.qti.hardware.wifi.keystore@1.0.so
-vendor/lib/vendor.qti.hardware.wifi.supplicant@2.0.so
-vendor/lib64/libwifi-hal-qcom.so
-vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so
-vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
-vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so
+# Wi-Fi - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
+lib64/libwifikeystorehalext.so|885f2bc17aa3ef71d9138ad2f2b9af3d92623dbd
+lib64/vendor.qti.hardware.wifi.hostapd@1.0.so|b7f4fbc8477fbecffe6a2076bfbcefac4e3b2c17
+lib64/vendor.qti.hardware.wifi.keystore@1.0.so|7bafd1531818f4b214e9ef925b2c55cb21107168
+lib64/vendor.qti.hardware.wifi.supplicant@2.0.so|2116ac9a4969ccf72100fc32479bdbd8c3c68ab0
+vendor/bin/cnss-daemon|86122ce4b9445e2b01b158fb5846c6d831e3df05
+vendor/bin/cnss_diag|925122f40e634ef2d57a9550e621afebd09d9b37
+vendor/bin/wcnss_service|f8ecd38a41b6b7f832380b489e0c9804c34174d8
+vendor/lib/vendor.qti.hardware.wifi.hostapd@1.0.so|500f0148c08b9790400022a181b49b7afa3e74ed
+vendor/lib/vendor.qti.hardware.wifi.keystore@1.0.so|df78704224ceb89b526f467e4c5c499cc4175a28
+vendor/lib/vendor.qti.hardware.wifi.supplicant@2.0.so|8d150679a225fb5cc78351cb8f83f518b57cd3e0
+vendor/lib64/libwifi-hal-qcom.so|8ed15c6e2e4109f36cd0ba042dba1767c5e0c5b2
+vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so|b7f4fbc8477fbecffe6a2076bfbcefac4e3b2c17
+vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so|7bafd1531818f4b214e9ef925b2c55cb21107168
+vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so|2116ac9a4969ccf72100fc32479bdbd8c3c68ab0
 
 # Wi-Fi Display - from LA.UM.8.6.r1-01900-89xx.0
 bin/wfdservice|d9cccfd6ca14a1d83117533296d6cac2c139c310
