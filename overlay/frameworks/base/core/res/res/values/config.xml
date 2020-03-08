@@ -600,9 +600,9 @@
     <dimen name="status_bar_height_portrait">94.0px</dimen>
     <dimen name="status_bar_height_landscape">24.0dp</dimen>
 
-   <!-- Component name for default assistant on this device -->
-   <string name="config_defaultAssistantComponentName">com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService</string>
-    
+   <!-- The name of the package that will hold the assistant role by default. -->
+   <string name="config_defaultAssistant" translatable="false">com.google.android.googlequicksearchbox</string>
+
    <!-- Enable dual LTE capability support-->
    <bool name="config_dual_LTE_capability">true</bool>
 
