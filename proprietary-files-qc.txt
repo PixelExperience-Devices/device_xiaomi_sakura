@@ -45,6 +45,15 @@ vendor/lib64/libqtigef.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcvirt.so
 
+# Audio dirac - from xiaomi
+lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+
+# Audiosphere
+lib/soundfx/libasphere.so
+lib64/soundfx/libasphere.so
+
 # ANT+ (vendor)
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
@@ -466,7 +475,7 @@ product/framework/QtiTelephonyServicelibrary.jar|ea30b05eaad3ebee157421b3f31bf85
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|71d083671c3ea4cd5e287a63fb254bb0ab60ed20
 vendor/bin/adpl|1a2321d3f0b360524d03f16f5ef1f849aeced7ee
 vendor/bin/ATFWD-daemon|2150ef51f710ee8e6b5e953c81157b8da0884e7f
-vendor/bin/ipacm-diag|76f297cc084093cbf8ac7d1cdfc6e6fed19cffc7
+vendor/bin/ipacm-diag|9300f8da22941c2bfacc2ff96f83f2beebd4dcc1
 vendor/bin/netmgrd|0da609f02d602a81b6f7c77a49ba8123a8d88ef1
 vendor/bin/port-bridge|3e13f94cb346fd119c3752e97905869f99de4740
 vendor/bin/qti|24ee326284a9bde051ad2b4c76671ba59532b2db
