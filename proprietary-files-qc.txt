@@ -609,12 +609,12 @@ vendor/bin/thermal-engine
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Time services - from LA.UM.8.6.2.r1-03700-89xx.0
--vendor/app/TimeService/TimeService.apk|c935b678fdaed033513f044f6492361c3370f9f0
-vendor/bin/time_daemon|1a65b0cb7d6953b07820bb012550f73f16898796
-vendor/etc/init/init.time_daemon.rc|edb18291351eb7efcb597d33c2c7f2d9bb7328a9
--vendor/lib/libtime_genoff.so|d140c8f7772f5218557193058eee8c34a7d0e19a
--vendor/lib64/libtime_genoff.so|253aca0fe9ca844886b0ae80d9816f80017a1880
+# Time services - from LA.UM.8.6.2.r1-06600-89xx.0
+-vendor/app/TimeService/TimeService.apk|4a37afd1395758d946580af184a738e3c657b1e2
+vendor/bin/time_daemon|e23ee23d5bdc059273c58dac866cde7b090c764c
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+-vendor/lib/libtime_genoff.so|b158d87db74d2d7f239b79cfc60b568cd1d959d9
+-vendor/lib64/libtime_genoff.so|216cbb72e22a0ca76d766dc0b84055c5b31e0a4c
 
 # TUI - from LA.UM.8.6.2.r1-03700-89xx.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|06dc102cb8c3d86bdf45e960c40dea8cf5d716dd
