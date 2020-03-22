@@ -2450,21 +2450,21 @@ vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|ab5d46cbf14ce90ab44aaab4dc1520378c568033
 vendor/lib64/libdpmqmihal.so|d5b8330b56d7e0c036b00a817754748bf3137774
 
-# DRM - from LA.UM.8.6.2.r1-03700-89xx.0
-vendor/bin/qseecomd|d79a4cb59568c96051538d34bce08030ff74460e
-vendor/lib/libQSEEComAPI.so|bd7c6f1e8d3c17ccafc9fb3277c10d37eb2b5cb1
-vendor/lib64/libGPreqcancel.so|2955d61f145c3320819f334435c9baf6a2743fed
-vendor/lib64/libGPreqcancel_svc.so|a6ab5133ff3eb6d6deac7089ae48d7a178d932c4
-vendor/lib64/libQSEEComAPI.so|fb7be96182999587d97a036495053a3ebb4c3198
-vendor/lib64/libSecureUILib.so|229b12b644e0a6e473a2b19288d9681f8f85e3a9
-vendor/lib64/libStDrvInt.so|7cd68b54dfc076a475d2cad25d9cbcee9254c78a
-vendor/lib64/libdrmfs.so|e11b8e8bf02bdc2ea817e59800d8945ee2a24460
-vendor/lib64/libdrmtime.so|a15a6f30d4e1f11025a3d947991fe54e4c4a9178
-vendor/lib64/libqisl.so|cbf1d38899e7240b943cee8dec127fd8f55b02c1
-vendor/lib64/librpmb.so|001098ad903adc4d17d609b7afa044a2aa86aa16
-vendor/lib64/libsecureui.so|d6ed46e35f5b504e6261478782d6900c4358c9d1
-vendor/lib64/libsecureui_svcsock.so|289c97fa09c4c626bbbc4918108efd3a01932ae0
-vendor/lib64/libssd.so|c7f2ddb2e47d1a3d03ed04e15a883b3ecb8e0b70
+# DRM - from LA.UM.8.6.2.r1-06600-89xx.0
+vendor/bin/qseecomd|b6b1b78a4dc7085c2f49d40072094152fb2aecc5
+vendor/lib/libQSEEComAPI.so|bfa1d200090f27f6c67022dbdf3f6638143d0988
+vendor/lib64/libGPreqcancel.so|bfff7b7d51e917a16b9a15a27fb81e16d0359348
+vendor/lib64/libGPreqcancel_svc.so|b89242ce41cfd237f963e1e2c5a8326c3676c434
+vendor/lib64/libQSEEComAPI.so|5908d79ae12f2e8b00573b97ed22dea636e25681
+vendor/lib64/libSecureUILib.so|f81fb938598c3cd81dfe10a6c50a7babfd111935
+vendor/lib64/libStDrvInt.so|8c8776fc21988ceca25f6877a10862e12ba02681
+vendor/lib64/libdrmfs.so|213aed3ca4d08cd9b41113ab3b101110d043b3ff
+vendor/lib64/libdrmtime.so|fe3512ddedbe49c4b6c39d5dec19a398bddbc816
+vendor/lib64/libqisl.so|c4e7f283f3d416b784f2ec0f7000d607e044809b
+vendor/lib64/librpmb.so|e8c4f3aec58a248d70094194d2831c1f337bacd2
+vendor/lib64/libsecureui.so|fc29832bebb89e7edb8cb46d45ee5cb8fdcdf3d8
+vendor/lib64/libsecureui_svcsock.so|7441cfd83ed51ab13d564f81bc3744c488f08fe2
+vendor/lib64/libssd.so|bcb7c4213115f2377e0d30dd1a05cae5e88212e4
 
 # DRM (Widevine) - from LA.UM.8.6.2.r1-06600-89xx.0
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c9d0e5183fc47388d
@@ -2500,9 +2500,9 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Gatekeeper - from LA.UM.8.6.2.r1-03700-89xx.0
-vendor/lib/hw/gatekeeper.msm8953.so|3746658d0fb38050fb850e4bd91a7c777beda74e
-vendor/lib64/hw/gatekeeper.msm8953.so|aaad6de1e51d86ff822aedb3482f61e0703e3c37
+# Gatekeeper - from LA.UM.8.6.2.r1-06600-89xx.0
+vendor/lib/hw/gatekeeper.msm8953.so|c153dbbd2c31ccee8633837961ce79909257af04
+vendor/lib64/hw/gatekeeper.msm8953.so|2982026cfb7911d279bd4c9be3a02ad21cdb54ec
 
 # GPS - from LA.UM.8.6.2.r1-06600-89xx.0
 vendor/bin/garden_app|816ac78085d9b72f03e29da4661ef12f73c9063f
@@ -2651,6 +2651,10 @@ vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
+
+# Keystore - from LA.UM.8.6.2.r1-06600-89xx.0
+vendor/lib/hw/keystore.msm8953.so|9be4c88926ebed98b2b23725f8118ff9d0bbb2d6
+vendor/lib64/hw/keystore.msm8953.so|9f4d991dfa359299739bd443b63731528d9cb5d0
 
 # Listen - from LA.UM.8.6.r1-02600-89xx.0
 vendor/lib/hw/sound_trigger.primary.msm8953.so|b47051e826382b19894501471eb629173df6a967
@@ -2961,11 +2965,11 @@ vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 -vendor/lib/libtime_genoff.so|b158d87db74d2d7f239b79cfc60b568cd1d959d9
 -vendor/lib64/libtime_genoff.so|216cbb72e22a0ca76d766dc0b84055c5b31e0a4c
 
-# TUI - from LA.UM.8.6.2.r1-03700-89xx.0
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|06dc102cb8c3d86bdf45e960c40dea8cf5d716dd
+# TUI - from LA.UM.8.6.2.r1-06600-89xx.0
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|d4d025e0a12af87f65104fe07801517938733603
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|685a9c0cebc15f5b8b3825fbcd7396d5b3c62385
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|4b884ee86bd3796bf36ec47ceb8a7c53d26f5a42
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|1a3bd8be98867f7af79edd76a25ec00865fd8915
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|1ac676dca4c81094b254b62f1b608e471b385847
 
 # USB firmware - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 etc/firmware/ice40.bin|a29bdcdbfda7f7dae24a3c8921abe2bcda6ae38e
