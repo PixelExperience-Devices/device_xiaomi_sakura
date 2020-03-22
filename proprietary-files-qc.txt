@@ -399,11 +399,11 @@ vendor/lib64/libqti-util.so|45a80be449435d277f09cc59e4a315fa86072c41
 vendor/lib64/vendor.qti.hardware.perf@1.0.so|c2488dcb941e33a910f2096b0953a24e0b4071a3
 vendor/lib64/vendor.qti.hardware.perf@2.0.so|b05e762bf5c7e86b0d6c1be4c8ae91e3f706dca7
 
-# Peripheral manager - from LA.UM.8.6.2.r1-03700-89xx.0
-vendor/bin/pm-proxy|e32473bdd7f59dba3d59717fe68cb8d49b675369
-vendor/bin/pm-service|89b024adc75adcbf2424e8a79df0cda710e71c8d
-vendor/lib/libperipheral_client.so|8b6ed4ea17e10e8de67d666982f23216d9751064
-vendor/lib64/libperipheral_client.so|ca568b0769e86015862b07281539669d1ec0f5e4
+# Peripheral manager - from LA.UM.8.6.2.r1-06600-89xx.0
+vendor/bin/pm-proxy|5bc15d8ed4fffab8b8fa8c721ecc2ab955422d32
+vendor/bin/pm-service|76e55a1f4be7063bb3a22530d1f75f90ec263096
+vendor/lib/libperipheral_client.so|572a1a6b166c3debe8af73cb6c4c4fde3d0f17ce
+vendor/lib64/libperipheral_client.so|e0964ca47b6edff2f4c198f610bcb1511a04c03e
 
 # Postprocessing - from LA.UM.8.6.2.r1-06600-89xx.0
 etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
