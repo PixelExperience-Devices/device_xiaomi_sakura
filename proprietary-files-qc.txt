@@ -366,9 +366,9 @@ vendor/lib64/libOmxWmaDec.so|d1adb0e250ec1d9b2dff87cd4e5f6cf047637c37
 -vendor/lib64/libgpustats.so|0a46526b9659830b93413db57c6d12f4e9c687d2
 vendor/lib64/libmm-color-convertor.so|468dba5a98ea982fc07977a9d5afba1f3180f23f
 
-# Modem - from LA.UM.8.6.2.r1-03700-89xx.0
-vendor/lib/libwms.so|437631b72393961672ff109eab5d9c508326efc6
-vendor/lib64/libwms.so|7475f8d25f144e7f5ef9bfaa20fb552de0a2fba3
+# Modem - from LA.UM.8.6.2.r1-06600-89xx.0
+vendor/lib/libwms.so|741ea8ecbe922db174e4bf0aa2d12cf3b40d5b99
+vendor/lib64/libwms.so|59bfa19fd491c8c987d74604ec97d806399abe83
 
 # Perf - from LA.UM.8.6.2.r1-03700-89xx.0
 product/lib/vendor.qti.hardware.perf@1.0.so|814d83b44640201cb1801d4f174449cb7176d234
