@@ -304,6 +304,10 @@ ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000 \
 ro.surface_flinger.use_color_management=true
 
+# Thermal configs path
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.thermal.data.path=/data/vendor/thermal/
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.delta_time.enable=true \

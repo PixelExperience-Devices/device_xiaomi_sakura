@@ -57,3 +57,6 @@
 
 # Power HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service\.sakura u:object_r:hal_power_default_exec:s0
+
+# Thermal Engine Data
+/data/vendor/thermal(/.*)?   u:object_r:thermal_data_file:s0
