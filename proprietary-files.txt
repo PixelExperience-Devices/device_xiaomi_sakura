@@ -1,75 +1,107 @@
-# ADSP - from sakura
-vendor/bin/adsprpcd
-vendor/lib/libadsprpc.so
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libmdsprpc.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libmdsprpc.so
+# ADSP - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/bin/adsprpcd|a5e878691577485c9f7ee33dfe02384a13f0a265
+vendor/lib/libadsprpc.so|e00e8dcb88e9b204fd90bb2c32afcc7fa28dbad1
+vendor/lib/libadsp_default_listener.so|c9a1ee00b32a93a9496ec84393afa0625e929eed
+vendor/lib/libfastcvadsp_stub.so|996345605e1d631151a6b4e9cd9f65b2c7e82dac
+vendor/lib/libfastcvopt.so|2df00c3827fe1db322084cb3935241f17d1532f4
+vendor/lib/libmdsprpc.so|642f74bfec1098397c7ee025e0744badbf14fc39
+vendor/lib/libsdsprpc.so|2963c73745b8b1ccab64260ce93e3679c7c66113
+vendor/lib64/libadsprpc.so|3dd28423f6b786584a1c80b2cdb6e22a1c00b0ae
+vendor/lib64/libadsp_default_listener.so|d7436ae6255671b4c3af533b5c89d91d75d5069e
+vendor/lib64/libfastcvadsp_stub.so|f101b66fa4a450b5af2e6aa9f7aaa28f9a876005
+vendor/lib64/libfastcvopt.so|f5e25aa055a57e23530b858bf7dd204a6009effc
+vendor/lib64/libmdsprpc.so|38de6a53d3c2ff60a253c7c6a0d3b46962e8e194
+vendor/lib64/libsdsprpc.so|1e89a33bae491abe4c81bb77c8fabf59bff4b853
 
-# ADSP modules - from sakura
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
+# ADSP Modules - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/lib/rfsa/adsp/dirac_resource.dar|d9b3693eab8c520ef859236b8235752188b7cba0
+vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|035272c1d77bcd04e3a838056d512964744c9322
+vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|6a1d6ee55cc65d0f12f6a9bfd04823b46d2d6a24
+vendor/lib/rfsa/adsp/libadsp_hvx_stats.so|2f6abffe644ed918ff1a7e0e330f8e9c32add72c
+vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so|3f82d78a7c9e88c5fdc02dc0761349e4ab95abf8
+vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so|b21151ad414cd7310117fceb924a72fd20e97257
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
+vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
+vendor/lib/rfsa/adsp/libdspCV_skel.so|628985174b0088bed21c866d7984d23855e5e150
+vendor/lib/rfsa/adsp/libfastcvadsp.so|9818625bfa018f517e32a8f4a1e7fb4b255e5049
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb4f7
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
 
-# Audio - from Sakura
-vendor/lib/hw/audio.primary.msm8953.so|BA830639280C8E0151CC77A4D4EAFCBE9DC560E6
-vendor/lib/libaudio_log_utils.so|C0187996E4AA81683518645D1E1931AFEA5491DE
-vendor/lib/libtinycompress_vendor.so|FCB516620A215B7CB2AFEB2626599F69715A3C45
-vendor/lib64/hw/audio.primary.msm8953.so|94A255A6D9B20B80C190B9F1ADDE9C8C79808046
-vendor/lib64/libaudio_log_utils.so|7200B1D05406530EF20FB8AC1BFD2B2E1845D0DD
-vendor/lib64/libtinycompress_vendor.so|27487B2C33AFD2704DEC9A90B6428955AC1E08E8
-etc/permissions/audiosphere.xml
-framework/audiosphere.jar
+# Audio - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+etc/permissions/audiosphere.xml|3c6d8f14bd99e52a424282fd5d0a5b9b06485dea
+framework/audiosphere.jar|c1679f5aca56f0cb24745b3f7d219acd04833bed
+vendor/bin/audioflacapp|a8ae278497715aa53f6fb86d5f5af225da0fc5b0
+vendor/etc/diracvdd.bin|f9b07ace60490649c44411504909c7bf8bc73d59
+vendor/lib/libacdb-fts.so|9fb9fe8f1e22e38e41f1517b8f206a50bbb24419
+vendor/lib/libacdbloader.so|f33941720463b3c8215fc644b7d638c6d8ab74c7
+vendor/lib/libacdbrtac.so|f997dfef5413873af88bd8636a501401e9ea9631
+vendor/lib/libadiertac.so|6cfa3c70f01617a944ed2d8512189400ccdec21e
+vendor/lib/libadm.so|b373d5cb6e4c6e081f1d206f6d9538339f330fda
+vendor/lib/libaudcal.so|8c4d9a610c5cce20dee9721feb4864ea2470caf2
+vendor/lib/libaudioalsa.so|1455df26b622c518c04d7f54746683ed96aaa74f
+vendor/lib/libaudioconfigstore.so|5b4d7d4f6840f65c1c630578fb3611d9ce47e268
+vendor/lib/libaudioparsers.so|4b980c4392b6e800fb23213a0daaa83b35c04051
+-vendor/lib/libaudio_log_utils.so|7fb2bb0abd10ca763ae5d079a8070e9d3d493bf9
+vendor/lib/libdrc.so|55fc13d205ce3199de2cf1f9c1dab479909c15be
+vendor/lib/libqtigef.so|fbedb509c61ff1a7d6e9c4a099af346ca781430a
+vendor/lib/libsurround_3mic_proc.so|d8c1d2cb7d598eee79ccfe5b7ec83a185c8fef6c
+vendor/lib/libtinycompress_vendor.so|4991b78d9ed12b828ceeaf61e5cde6328eb944b9
+vendor/lib/soundfx/libasphere.so|4d0ccf1c282bb70619d20bf7d79021dc3815a579
+vendor/lib/soundfx/libaudiopreprocessing.so|948f18c576254144f48e9051be28e7d23f8562cc
+vendor/lib/soundfx/libqcbassboost.so|bc8ae80ff1ade557ff494631494c2f8261028acb
+vendor/lib/soundfx/libqcreverb.so|1b3cef3c4c9145662fddb03c5e1e7dd3a4f25e1e
+vendor/lib/soundfx/libqcvirt.so|41bf71787ffae3f511d9cb3e32b9e721a0a2e385
+vendor/lib64/libacdb-fts.so|662467af62f9607abfd5acb532dfbf69240bcc70
+vendor/lib64/libacdbloader.so|7c49e7d95090e20f6198f03959323359e4b2ed19
+vendor/lib64/libacdbrtac.so|54d114f280eb99f4aa73890c5e9cfbb5b55eb813
+vendor/lib64/libadiertac.so|5b511a0312721e9e6ff27fae9a3f035cf66ac6f7
+vendor/lib64/libaudcal.so|a2788d71d00be193e9704edefc1b363cbc847942
+vendor/lib64/libaudioalsa.so|0a8f0746cc8fd381d001f52c7eb4460951802ac4
+vendor/lib64/libaudioconfigstore.so|a862e94f4fc75ce3c3274f219be8c128fe58a822
+vendor/lib64/libaudioparsers.so|67f6836de4391c33cc030faa5c885ab250324291
+-vendor/lib64/libaudio_log_utils.so|3670ed70e68b209f67852cad81b74d2dda2de3cd
+vendor/lib64/libqtigef.so|70df5848c061154e4c33b147e06d4979e2391b5e
+vendor/lib64/libtinycompress.so|8d670f7c3079e96b5a36945e95082104876dd64a
+vendor/lib64/libtinycompress_vendor.so|74909f72ee8ebb01c2f4ef717e902055272a5917
+vendor/lib64/soundfx/libasphere.so|f552a053f935299b3fd9be03a596eb4c40dee50e
+vendor/lib64/soundfx/libaudiopreprocessing.so|28e2f7f8ab01a6cc8bc60a278e93704755121f49
+vendor/lib64/soundfx/libqcbassboost.so|0d2afd6f2c5b9aa2397f3e1cb3287bf906cf8fb6
+vendor/lib64/soundfx/libqcreverb.so|fbda7d0189603bb8c0c3e9d92563d75b8ab2dbc8
+vendor/lib64/soundfx/libqcvirt.so|bb046694512d412d6a04bd95ccb2b573454d9717
 
-# Audio ACDB - from Sakura
-vendor/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb|6291d5e7457a962d9ba7bc0b3a33392abfe2cb27
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|5438A8AE33D7F323173779BB81EE0AC42DA879E6
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|AC77C80D2DDC5853F9BCDEB599D4F0C0AD8CDB58
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|279DC326A549DF780082151793ADDE266FEDB480
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|AE8AC3DCE358DBFEACB90B736793D5CA023AA9DB
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|144C397B093137A3AF9CC618A6F5434DA4A01D08
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|DF515758FCD2D5EB6EDFAD627D2C02642D3B5220
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|BA3D7670485F5E3F5D0F4B5753873875408E0746
-vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|B780C7D8FDD350A3F7AEFFAA0BCF311F5FDDA0F6
+# Audio Hardware - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/lib/hw/audio.primary.default.so|ff14977e58b75175644acdc1e94215eeb9808f0b
+vendor/lib/hw/audio.primary.msm8953.so|2e6a9c2539100670a9af36ef2885803ec4bcffee
+vendor/lib64/hw/audio.primary.default.so|21c56b5ff57681e1068de79520e1e3e542392e89
+vendor/lib64/hw/audio.primary.msm8953.so|a60d10ff819ab56ef008d48cc177f179d78e0e6b
 
-# Audio - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
-vendor/lib/libacdb-fts.so|f140cc5c13855f411d9b944316828b42dd6b7d75
-vendor/lib/libacdbloader.so|52fb25441a742d744f6574d1065ae1b822769c48
-vendor/lib/libacdbrtac.so|8a469a26ed1ecff8e22ee141d98bde97513a6212
-vendor/lib/libadiertac.so|e8e2c208abafc6d6c34717aee3d822bfb3a23f76
-vendor/lib/libadm.so|01e2316dfa1afcb000984e9f68903ba6a1220159
-vendor/lib/libaudcal.so|5a6b0fa75e274b07f2dabdcc7381879e1a59898c
-vendor/lib/libaudioalsa.so|920603e464d518c2a46daf1063a65f45f0236d72
-vendor/lib/libdrc.so|7db89c6858c928457a8731d90ba874420972ec9b
-vendor/lib/libqtigef.so|fc40d4dbae0389afed79d2fcb481d1a49c63b749
-vendor/lib/libsurround_3mic_proc.so|832adfad9f3d414234f1b4cfd32b196fe4082bb9
-vendor/lib/soundfx/libqcbassboost.so|0a730813a7335208a5368f48de4790abda536c59
-vendor/lib/soundfx/libqcreverb.so|3cbf222a205e4ccbe812fc69d580abd2237e64d5
-vendor/lib/soundfx/libqcvirt.so|8f60a539fe18de5944d5f1dcd6d0ec5e56b336ea
-vendor/lib64/libacdb-fts.so|1a298a90fe8007fe1a3b352ff7d19ae73734f3cc
-vendor/lib64/libacdbloader.so|2ecf30ba0171aab7fdc720446238d48048cf6b7e
-vendor/lib64/libacdbrtac.so|c44ff9b9aa63e34ca1b77a5f0bfb6a5e50585048
-vendor/lib64/libadiertac.so|aeaf6f057d26acf342609c714213e1c9b3409774
-vendor/lib64/libaudcal.so|96c43cbe0ac304ea128def709d7f3ea99db7f260
-vendor/lib64/libaudioalsa.so|4a27694b5a6842609a2f2572476b7af032ec7201
-vendor/lib64/libqtigef.so|79e811fd04172b0afda1229d182014be28a146b2
-vendor/lib64/soundfx/libqcbassboost.so|0b92d65381d9722c579ccfda12f86c7e3fcaedd1
-vendor/lib64/soundfx/libqcvirt.so|815b3a7cd762cdb6f162dde12c866acb23cdd022
-
-# Audio Dirac - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
-vendor/etc/diracmobile.config|4b12ad67107332a77c308d58065a7e0a77d90566
-vendor/lib/soundfx/libdirac.so|b43db3b8044dc72af1b90fa82321c53c0e4fb24d
-vendor/lib/libDiracAPI_SHARED.so|14f268dde7e13c5721a6eefc300d21d9f9549042
+# Audio ACDB - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/etc/acdbdata/adsp_avs_config.acdb|ac0616af3b2d4f070c0e54c18126a877e528621b
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb|53bdf9cca8a562cf19f4e197ca5434fe33152187
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb|e2740bc5efc17f1cee7302afa605ff1fde09a833
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Global_cal.acdb|61faa3e8361e3684af69eb67467800c2e806ac27
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb|1ee3e11bbc19d3abb8c291894b71e4bc4f2a1780
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb|c2fe203a7d715196b5fe7c527d7a829282f4d551
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb|1010f0ba2b93bd517a5616ef152c61dcbc649b2a
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb|d0db8c712c4b76940a3ce47b974b4b109a006299
+vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_workspaceFile.qwsp|2f69cc59426ee270eee529907b8eaa769685644d
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|ba7ede78c818ee5e597b14d3f0ef60af6731aa4e
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|3e73d98568e523f471a86d301f4bb0b345246de0
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|b9974ab5dfba31a8e27a26c64e19e923248133dc
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|3cdebf51d8ab88fd0fa7b534f9706d6981e5e1dc
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|e6bf45c31fd29bcc28fd066cb97895baaf4a7523
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|1eb1feeeaec701998654effd36e9c722709ecd5e
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|8a3970882672ae8a4c2a901303044c9c320bd13c
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|4b9fd5e21d2df5e9237aa3a07e451c2e236b46bf
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|5438a8ae33d7f323173779bb81ee0ac42da879e6
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|ac77c80d2ddc5853f9bcdeb599d4f0c0ad8cdb58
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|279dc326a549df780082151793adde266fedb480
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|ae8ac3dce358dbfeacb90b736793d5ca023aa9db
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|144c397b093137a3af9cc618a6f5434da4a01d08
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|df515758fcd2d5eb6edfad627d2c02642d3b5220
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|ba3d7670485f5e3f5d0f4b5753873875408e0746
+vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|b780c7d8fdd350a3f7aeffaa0bcf311f5fdda0f6
 
 # ANT+ (system) - from enchilada - PKQ1.180716.001/1904032100
 lib64/com.qualcomm.qti.ant@1.0.so|7b03f4a99e2153a6b0a9bce1ca84f7c7577ec4b1
@@ -2397,8 +2429,8 @@ vendor/lib64/vendor.qti.hardware.factory@1.0.so|7a61c2d4acaf748934d154af3a6b8fe6
 vendor/lib64/vendor.qti.hardware.factory@1.1.so|1bf6d03e47d20df05725dff70c3723d0ac69f4f6
 vendor/lib64/vendor.qti.latency@2.0.so|1b9583d7536064e4f37a4bfeb68f918eaddfee81
 
-# Consumer IR - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
-vendor/lib64/hw/consumerir.default.so|809d49cb2056affc460ba4d707add90f53441bea
+# Consumer IR - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/lib64/hw/consumerir.default.so|391a679b915a433e1ab16806c3c92de839a9531d
 
 # Display Calibration - from sakura
 vendor/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml
@@ -2441,30 +2473,24 @@ vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|e3cb732c0bd519988100675edf385d947abf5f6c
 vendor/lib64/libwvhidl.so|f7c13ba3323b5b4363e013d4f2fd8c979b695c7c
 
-# Fingerprint firmware - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
-etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
-
-# Fingerprint - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
-lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so|00d41f88a980241b29267e16419704f8e05c5bcd
-
-# Fingerprint - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|5e96529091dbf7d46031f932e8cfd5d9fcec21f8
+# Fingerprint - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+-vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|47d6458be8aece1ad609371baa09a1516564b755
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|866b83e0dce24cd3dd7d8a6ef6fec5bd02de499f
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|d3d9c928ec00a43f5b2859dc5541828d9a95728f
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
-vendor/framework/com.fingerprints.extension.jar|4d231542a253a8c56737bfef46a6494de2acaeb0
-vendor/lib64/hw/gf_fingerprint.default.so|476c220ea105a01658ba1dc11c005c48cbc79679
-vendor/lib64/hw/fingerprint.default.so|978bd8d96441bc0613cbf492392b0515ce3bd088
-vendor/lib64/com.fingerprints.extension@1.0.so|8535421abc67ffe1386aa8d7c52455c55007d3dd
-vendor/lib64/libgoodixfingerprintd_binder.so|1d5cd0cc9049d837b5771808a156e0b2df1e045d
-vendor/lib64/libgf_ca.so|d62fecde6046483566af2104d04a69af59a8b3d8
-vendor/lib64/libgf_hal.so|965bcf9d994cdc29e3433fa74eefa8c512744bda
-lib/android.hardware.biometrics.fingerprint@2.1.so|d80e596cd45d77ab506aa7837d88939387d6cd78
-lib64/android.hardware.biometrics.fingerprint@2.1.so|218efa319401f42f3278248f65f3ebaaff575334
-vendor/lib64/com.fingerprints.extension@1.0.so|8535421abc67ffe1386aa8d7c52455c55007d3dd
+vendor/framework/com.fingerprints.extension.jar|7e972c26a5b51fc13bd4eff6584d40a41c5b09c0
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so|2cdf4c51e52d798ee7884af4fdedee43cbf0814e
+vendor/lib64/com.fingerprints.extension@1.0.so|8160005f7c795c14996355e4e26f3257807bc399
+vendor/lib64/hw/fingerprint.default.so|8083a26a87d965b7939a2e802f10cfda0bf5dceb
+vendor/lib64/hw/gf_fingerprint.default.so|b09aba758c469f3e3ff04197a723a15fbdfafea1
+vendor/lib64/libgf_ca.so|a109ea31c3968ecd8298a6316b93e16d5d8dfdcd
+vendor/lib64/libgf_hal.so|7ed7ac6bcc9172d1f36da5dc33b32af97170413e
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|4b3e658f52dfe31d7883f19bbeb8e05d323ba607
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so|c9d0251df63d8e34b6d70a59ad7b774c9f640fa1
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|e60616145136f8042988054d21a53c3496c6e910
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|32fd80d8b19c91216145d30a8b4d7a61f82bc995
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|0c5745649eac2b5478ef891a51b18b999bb45fce
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|28fc1d738cdd5cde4b31595ec819c4267fb367a3
+
+# Fingerprint firmware - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin|cbd87b30f72e82adf87537fe93911fb2d70bce84
 
 # Gatekeeper - from sakura
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -2607,16 +2633,16 @@ vendor/lib64/vendor.display.color@1.2.so|4c8662c993e4af6df2d6ebc4101caee0d629e0d
 vendor/lib64/vendor.display.postproc@1.0.so|0f40f80c20906ff2076c548abc984c01209f24bb
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|123e00986f21e4af7bc107da4f3573f58460ca84
 
-# Graphics firmware - from daisy PKQ1.180917.001.V10.0.18.0.PDLMIXM
+# Graphics firmware - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 vendor/firmware/a506_zap.b00|c45a7b34456844f5deb73e2dce79cbfcfb9ae71c
 vendor/firmware/a506_zap.b01|374b5c4a2212b2636d5dfc2deda66b56b6bf2d03
 vendor/firmware/a506_zap.b02|b79957c47f0a6757ac1d721dbe06551508454634
 vendor/firmware/a506_zap.mdt|621df918f1d6ef0a0c3fe25c8f6a58d56af4b26a
-vendor/firmware/a530_pfp.fw|137b74a30e664f387fcd1e5562474a6c5d8dd6b4
+vendor/firmware/a530_pfp.fw|d027c70fde64241ec13160d09ee1b6c272974a4b
 vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
 
-# Ipacm - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
-vendor/bin/ipacm-diag|9300f8da22941c2bfacc2ff96f83f2beebd4dcc1
+# Ipacm - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/bin/ipacm-diag|f08be0dfb0cedecfdf8fae261a3b06f416b56dc2
 
 # Keymaster - from sakura
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
@@ -2999,12 +3025,12 @@ vendor/lib64/libsensor_reg.so|b977629681598d927830ed99986e818c01c2d34a
 vendor/lib64/libsensor_user_cal.so|a9cd76f06c02e23cb7f1552aa7d51567259faa47
 vendor/lib64/sensors.ssc.so|23f60022a6415f0fb644aed853b3ee5dceecd0de
 
-# Thermal - from Onclite PKQ1.181021.001/V10.2.7.0.PFLCNXM
-vendor/bin/thermal-engine|562035759ae60b3c5267a01293f1aeaa3f40c44b
--vendor/lib/libthermalclient.so|241d1e751b3a96c67ac5b618ef38bb39d2a94fa7
--vendor/lib64/libthermalclient.so|54121e31e4a5170f8c50e36ddb57685b6c538a21
-vendor/lib/libthermalfeature.so|1f1eb616ba26b309a2fda7de40c2163a4acaaa35
+# Thermal - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/bin/thermal-engine|4ab3c410fbcf9f8cae711ea4ba16cd2797712de6
+-vendor/lib/libthermalclient.so|6077e27e15d9e3e43fa57d6d5405c49284f48949
+-vendor/lib64/libthermalclient.so|12b26d4242b1a8913ddcb511f42a1debb83689af
 vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
+vendor/lib64/libthermalioctl.so|24b22582f3f77769c5fbca06fcc1d3b6533cdf40
 
 # Time services - from LA.UM.8.6.2.r1-03700-89xx.0
 -vendor/app/TimeService/TimeService.apk|c935b678fdaed033513f044f6492361c3370f9f0
@@ -3019,7 +3045,7 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|685a9c0cebc15f5b8b3825fbcd7396d5b3c62385
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|4b884ee86bd3796bf36ec47ceb8a7c53d26f5a42
 
-# USB firmware - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
+# USB firmware - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 etc/firmware/ice40.bin|a29bdcdbfda7f7dae24a3c8921abe2bcda6ae38e
 
 # Wi-Fi - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
