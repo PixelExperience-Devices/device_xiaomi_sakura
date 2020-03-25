@@ -32,3 +32,4 @@ allow untrusted_app hwservice_contexts_file:file { getattr };
 allow untrusted_app mac_perms_file:file { getattr };
 allow untrusted_app firmware_file:dir { read };
 allow untrusted_app firmware_file:dir { search };
+allow untrusted_app camera_prop:file { getattr open read };

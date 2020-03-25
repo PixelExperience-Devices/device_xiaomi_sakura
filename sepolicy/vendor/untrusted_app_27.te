@@ -40,3 +40,4 @@ allow untrusted_app_27 sysfs:dir { open };
 allow untrusted_app_27 net_dns_prop:file { getattr };
 allow untrusted_app_27 sysfs:file { getattr };
 allow untrusted_app_27 sysfs:file { open };
+allow untrusted_app_27 persist_camera_prop:file { getattr open read };

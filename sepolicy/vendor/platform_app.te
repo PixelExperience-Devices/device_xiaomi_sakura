@@ -14,3 +14,4 @@ allow platform_app ctl_interface_stop_prop:file { read };
 allow platform_app fs_bpf:dir search;
 allow platform_app sysfs_kgsl:dir search;
 allow platform_app sysfs_kgsl:lnk_file read;
+allow platform_app system_app_data_file:dir getattr;

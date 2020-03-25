@@ -2,6 +2,7 @@
 allow system_server init:binder call;
 
 # camera
+allow system_server mm-qcamerad:binder { call };
 allow system_server sysfs:file read;
 allow system_server bluetooth_prop:file read;
 allow system_server sysfs:file open;
@@ -26,3 +27,4 @@ allow system_server sysfs:file { getattr };
 
 allow system_server default_android_hwservice:hwservice_manager { find };
 allow system_server vendor_file:file { getattr open read };
+allow system_server adb_data_file:file { getattr open read };
