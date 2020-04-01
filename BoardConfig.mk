@@ -153,12 +153,12 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8953
-TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
-
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
+
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sakura
+TARGET_RECOVERY_DEVICE_MODULES := libinit_sakura
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864

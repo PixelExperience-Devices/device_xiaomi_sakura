@@ -1,5 +1,6 @@
 /*
-   Copyright (c) 2016, The CyanogenMod Project
+   Copyright (c) 2014, The Linux Foundation. All rights reserved.
+
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -11,6 +12,7 @@
       with the distribution.
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
+
       from this software without specific prior written permission.
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
@@ -25,44 +27,37 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <fcntl.h>
 #include <stdlib.h>
-#include <sys/sysinfo.h>
+#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/_system_properties.h>
 
-#include "vendor_init.h"
+#include <android-base/properties.h>
 #include "property_service.h"
-#include "log.h"
-
-char const *heapgrowthlimit;
-char const *heapminfree;
+#include "vendor_init.h"
 
 using android::init::property_set;
 
-void check_device()
+void property_override(char const prop[], char const value[])
 {
-    struct sysinfo sys;
+    prop_info *pi;
 
-    sysinfo(&sys);
+    pi = (prop_info*) __system_property_find(prop);
+    if (pi)
+        __system_property_update(pi, value, strlen(value));
+    else
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+}
 
-    if (sys.totalram > 3072ull * 1024 * 1024) {
-        // from - Stock rom
-        heapgrowthlimit = "256m";
-        heapminfree = "4m";
-    } else {
-        // from - phone-xxhdpi-2048-dalvik-heap.mk
-        heapgrowthlimit = "192m";
-        heapminfree = "2m";
-   }
+void property_override_dual(char const system_prop[], char const vendor_prop[],
+    char const value[])
+{
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
 }
 
 void vendor_load_properties()
 {
-    check_device();
-
-    property_set("dalvik.vm.heapstartsize", "16m");
-    property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
-    property_set("dalvik.vm.heapsize", "512m");
-    property_set("dalvik.vm.heaptargetutilization", "0.75");
-    property_set("dalvik.vm.heapminfree", heapminfree);
-    property_set("dalvik.vm.heapmaxfree", "8m");
+    // fingerprint
+    property_override("ro.build.description", "sakura-user 9 PKQ1.180917.001 20.1.9 release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys");
 }
