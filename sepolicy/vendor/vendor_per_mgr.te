@@ -1,0 +1,1 @@
+allow vendor_per_mgr vfat:file { open read };
