@@ -78,22 +78,6 @@ vendor/lib64/hw/audio.primary.msm8953.so|6b826bc4e105cd31de69c039bd235c0e7a95125
 
 # Audio ACDB - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 vendor/etc/acdbdata/adsp_avs_config.acdb|ac0616af3b2d4f070c0e54c18126a877e528621b
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb|53bdf9cca8a562cf19f4e197ca5434fe33152187
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb|e2740bc5efc17f1cee7302afa605ff1fde09a833
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Global_cal.acdb|61faa3e8361e3684af69eb67467800c2e806ac27
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb|1ee3e11bbc19d3abb8c291894b71e4bc4f2a1780
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb|c2fe203a7d715196b5fe7c527d7a829282f4d551
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb|1010f0ba2b93bd517a5616ef152c61dcbc649b2a
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb|d0db8c712c4b76940a3ce47b974b4b109a006299
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_workspaceFile.qwsp|2f69cc59426ee270eee529907b8eaa769685644d
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|ba7ede78c818ee5e597b14d3f0ef60af6731aa4e
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|3e73d98568e523f471a86d301f4bb0b345246de0
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|b9974ab5dfba31a8e27a26c64e19e923248133dc
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|3cdebf51d8ab88fd0fa7b534f9706d6981e5e1dc
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|e6bf45c31fd29bcc28fd066cb97895baaf4a7523
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|1eb1feeeaec701998654effd36e9c722709ecd5e
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|8a3970882672ae8a4c2a901303044c9c320bd13c
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|4b9fd5e21d2df5e9237aa3a07e451c2e236b46bf
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|5438a8ae33d7f323173779bb81ee0ac42da879e6
 vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|ac77c80d2ddc5853f9bcdeb599d4f0c0ad8cdb58
 vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|279dc326a549df780082151793adde266fedb480
