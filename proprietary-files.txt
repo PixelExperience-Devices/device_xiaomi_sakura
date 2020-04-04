@@ -72,9 +72,9 @@ vendor/lib64/soundfx/libqcvirt.so|bb046694512d412d6a04bd95ccb2b573454d9717
 
 # Audio Hardware - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 vendor/lib/hw/audio.primary.default.so|ff14977e58b75175644acdc1e94215eeb9808f0b
-vendor/lib/hw/audio.primary.msm8953.so|2e6a9c2539100670a9af36ef2885803ec4bcffee
+vendor/lib/hw/audio.primary.msm8953.so|dae9377a0e5dac1af746c684863ece5ceea754ac
 vendor/lib64/hw/audio.primary.default.so|21c56b5ff57681e1068de79520e1e3e542392e89
-vendor/lib64/hw/audio.primary.msm8953.so|a60d10ff819ab56ef008d48cc177f179d78e0e6b
+vendor/lib64/hw/audio.primary.msm8953.so|6b826bc4e105cd31de69c039bd235c0e7a951259
 
 # Audio ACDB - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 vendor/etc/acdbdata/adsp_avs_config.acdb|ac0616af3b2d4f070c0e54c18126a877e528621b
@@ -148,7 +148,7 @@ vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|fe0c94096ad70472271c0093ce6b
 # Camera - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 lib64/libseemore.so|eb3d633332755c5153ab0935c784dece0ea8c89e
 vendor/lib/libchromaflash.so|0d91cf7c1996b3dfd42a5afbdf8e450db4d9d2f7
-vendor/lib/hw/camera.msm8953.so|96d0e749fe7e08f056a0e8953c26b17e4ca305c9
+vendor/lib/hw/camera.msm8953.so|7e6d75760d13530a0b44df9c36a9d2cb1767208b
 vendor/lib/libcapiv2svacnn.so|e505e04cb4281bc6e5f2606d4ddf7c46ae151516
 vendor/lib/libcapiv2vop.so|1be48a1445375458880a28272a0538ba8364d523
 vendor/lib/libdualcameraddm.so|48662b4cfce7f8f3ae086ed1798ca34ff9bafbd5
