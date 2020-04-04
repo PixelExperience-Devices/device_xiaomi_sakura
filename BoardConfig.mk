@@ -220,7 +220,6 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_USES_AOSP_WLAN_HAL := true
-BOARD_HAS_QCOM_WLAN_SDK := true
 BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_qcwcn
 BOARD_WLAN_DEVICE := qcwcn
@@ -230,7 +229,6 @@ WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
-WIFI_HIDL_FEATURE_AWARE := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/sakura/BoardConfigVendor.mk

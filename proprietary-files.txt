@@ -2974,21 +2974,11 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|1ac676dca4c81094b254b62f1b608e4
 # USB firmware - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 etc/firmware/ice40.bin|a29bdcdbfda7f7dae24a3c8921abe2bcda6ae38e
 
-# Wi-Fi - from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
+# Wi-Fi - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 lib64/libwifikeystorehalext.so|885f2bc17aa3ef71d9138ad2f2b9af3d92623dbd
-lib64/vendor.qti.hardware.wifi.hostapd@1.0.so|b7f4fbc8477fbecffe6a2076bfbcefac4e3b2c17
-lib64/vendor.qti.hardware.wifi.keystore@1.0.so|7bafd1531818f4b214e9ef925b2c55cb21107168
-lib64/vendor.qti.hardware.wifi.supplicant@2.0.so|2116ac9a4969ccf72100fc32479bdbd8c3c68ab0
-vendor/bin/cnss-daemon|86122ce4b9445e2b01b158fb5846c6d831e3df05
-vendor/bin/cnss_diag|925122f40e634ef2d57a9550e621afebd09d9b37
-vendor/bin/wcnss_service|f8ecd38a41b6b7f832380b489e0c9804c34174d8
-vendor/lib/vendor.qti.hardware.wifi.hostapd@1.0.so|500f0148c08b9790400022a181b49b7afa3e74ed
-vendor/lib/vendor.qti.hardware.wifi.keystore@1.0.so|df78704224ceb89b526f467e4c5c499cc4175a28
-vendor/lib/vendor.qti.hardware.wifi.supplicant@2.0.so|8d150679a225fb5cc78351cb8f83f518b57cd3e0
-vendor/lib64/libwifi-hal-qcom.so|8ed15c6e2e4109f36cd0ba042dba1767c5e0c5b2
-vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so|b7f4fbc8477fbecffe6a2076bfbcefac4e3b2c17
-vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so|7bafd1531818f4b214e9ef925b2c55cb21107168
-vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so|2116ac9a4969ccf72100fc32479bdbd8c3c68ab0
+vendor/bin/cnss-daemon|e835ea5247a480754309b8c1bb267f5cca2e3a11
+vendor/bin/cnss_diag|9189ce1bf89ad9af71efd5f265a7cbadb0d7bcfb
+vendor/bin/wcnss_service|1a7da5ec11248ea69af665d711a846e4cc7c95be
 
 # Wi-Fi Display - from LA.UM.8.6.2.r1-06600-89xx.0
 bin/wfdservice|934817e5689fe6f8b54032902de58c203b8ec2e7
