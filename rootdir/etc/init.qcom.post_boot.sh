@@ -245,7 +245,9 @@ function configure_zram_parameters() {
     fi
 
     if [ -f /sys/block/zram0/disksize ]; then
-        echo 1 > /sys/block/zram0/use_dedup
+        if [ -f /sys/block/zram0/use_dedup ]; then
+            echo 1 > /sys/block/zram0/use_dedup
+        fi
         if [ $MemTotal -le 524288 ]; then
             echo 402653184 > /sys/block/zram0/disksize
         elif [ $MemTotal -le 1048576 ]; then
@@ -253,6 +255,16 @@ function configure_zram_parameters() {
         else
             echo $zRamSizeBytes > /sys/block/zram0/disksize
         fi
+
+        # ZRAM may use more memory than it saves if SLAB_STORE_USER
+        # debug option is enabled.
+        if [ -e /sys/kernel/slab/zs_handle ]; then
+            echo 0 > /sys/kernel/slab/zs_handle/store_user
+        fi
+        if [ -e /sys/kernel/slab/zspage ]; then
+            echo 0 > /sys/kernel/slab/zspage/store_user
+        fi
+
         mkswap /dev/block/zram0
         swapon /dev/block/zram0 -p 32758
     fi
@@ -262,24 +274,22 @@ function configure_read_ahead_kb_values() {
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
 
+    dmpts=$(ls /sys/block/*/queue/read_ahead_kb | grep -e dm -e mmc)
+
     # Set 128 for <= 3GB &
     # set 512 for >= 4GB targets.
     if [ $MemTotal -le 3145728 ]; then
         echo 128 > /sys/block/mmcblk0/bdi/read_ahead_kb
-        echo 128 > /sys/block/mmcblk0/queue/read_ahead_kb
         echo 128 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
-        echo 128 > /sys/block/mmcblk0rpmb/queue/read_ahead_kb
-        echo 128 > /sys/block/dm-0/queue/read_ahead_kb
-        echo 128 > /sys/block/dm-1/queue/read_ahead_kb
-        echo 128 > /sys/block/dm-2/queue/read_ahead_kb
+        for dm in $dmpts; do
+            echo 128 > $dm
+        done
     else
         echo 512 > /sys/block/mmcblk0/bdi/read_ahead_kb
-        echo 512 > /sys/block/mmcblk0/queue/read_ahead_kb
         echo 512 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
-        echo 512 > /sys/block/mmcblk0rpmb/queue/read_ahead_kb
-        echo 512 > /sys/block/dm-0/queue/read_ahead_kb
-        echo 512 > /sys/block/dm-1/queue/read_ahead_kb
-        echo 512 > /sys/block/dm-2/queue/read_ahead_kb
+        for dm in $dmpts; do
+            echo 512 > $dm
+        done
     fi
 }
 
@@ -3228,6 +3238,189 @@ case "$target" in
     ;;
 esac
 
+
+case "$target" in
+    "lito")
+
+    # Core control parameters on silver
+    echo 0 0 0 0 1 1 > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
+    echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
+    echo 60 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
+    echo 40 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
+    echo 8 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
+    echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
+
+    # Disable Core control on gold, prime
+    echo 0 > /sys/devices/system/cpu/cpu6/core_ctl/enable
+    echo 0 > /sys/devices/system/cpu/cpu7/core_ctl/enable
+
+    # Setting b.L scheduler parameters
+    echo 65 85 > /proc/sys/kernel/sched_downmigrate
+    echo 71 95 > /proc/sys/kernel/sched_upmigrate
+    echo 85 > /proc/sys/kernel/sched_group_downmigrate
+    echo 100 > /proc/sys/kernel/sched_group_upmigrate
+    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
+
+    # configure governor settings for silver cluster
+    echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
+    echo 122880 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
+    echo 576000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+
+    # configure governor settings for gold cluster
+    echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy6/scaling_governor
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/up_rate_limit_us
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/down_rate_limit_us
+    echo 122880 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/hispeed_freq
+    echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
+    echo -6 >  /sys/devices/system/cpu/cpu6/sched_load_boost
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/pl
+    echo 672000 > /sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq
+
+    # configure governor settings for gold+ cluster
+    echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
+    echo 122880 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
+    echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
+    echo -6 >  /sys/devices/system/cpu/cpu7/sched_load_boost
+    echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
+    echo 672000 > /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
+
+    # colocation v3 settings
+    echo 650000 > /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz
+    echo 51 > /proc/sys/kernel/sched_min_task_util_for_boost
+    echo 51 > /proc/sys/kernel/sched_min_task_util_for_colocation
+
+    echo "0:122880" > /sys/module/cpu_boost/parameters/input_boost_freq
+    echo 120 > /sys/module/cpu_boost/parameters/input_boost_ms
+
+    # Set Memory parameters
+    configure_memory_parameters
+
+    # Enable bus-dcvs
+    for device in /sys/devices/platform/soc
+    do
+        for cpubw in $device/*cpu-cpu-llcc-bw/devfreq/*cpu-cpu-llcc-bw
+        do
+            echo "bw_hwmon" > $cpubw/governor
+            echo 50 > $cpubw/polling_interval
+            echo "2288 4577 7110 9155 12298 14236 16265" > $cpubw/bw_hwmon/mbps_zones
+            echo 4 > $cpubw/bw_hwmon/sample_ms
+            echo 68 > $cpubw/bw_hwmon/io_percent
+            echo 20 > $cpubw/bw_hwmon/hist_memory
+            echo 0 > $cpubw/bw_hwmon/hyst_length
+            echo 80 > $cpubw/bw_hwmon/down_thres
+            echo 0 > $cpubw/bw_hwmon/guard_band_mbps
+            echo 250 > $cpubw/bw_hwmon/up_scale
+            echo 1600 > $cpubw/bw_hwmon/idle_mbps
+        done
+
+        for llccbw in $device/*cpu-llcc-ddr-bw/devfreq/*cpu-llcc-ddr-bw
+        do
+            echo "bw_hwmon" > $llccbw/governor
+            echo 50 > $llccbw/polling_interval
+            echo "1144 1720 2086 2929 3879 5931 6881 7980" > $llccbw/bw_hwmon/mbps_zones
+            echo 4 > $llccbw/bw_hwmon/sample_ms
+            echo 68 > $llccbw/bw_hwmon/io_percent
+            echo 20 > $llccbw/bw_hwmon/hist_memory
+            echo 0 > $llccbw/bw_hwmon/hyst_length
+            echo 80 > $llccbw/bw_hwmon/down_thres
+            echo 0 > $llccbw/bw_hwmon/guard_band_mbps
+            echo 250 > $llccbw/bw_hwmon/up_scale
+            echo 1600 > $llccbw/bw_hwmon/idle_mbps
+        done
+
+        for npubw in $device/*npu*-ddr-bw/devfreq/*npu*-ddr-bw
+        do
+            echo 1 > /sys/devices/virtual/npu/msm_npu/pwr
+            echo "bw_hwmon" > $npubw/governor
+            echo 40 > $npubw/polling_interval
+            echo "1144 1720 2086 2929 3879 5931 6881 7980" > $npubw/bw_hwmon/mbps_zones
+            echo 4 > $npubw/bw_hwmon/sample_ms
+            echo 80 > $npubw/bw_hwmon/io_percent
+            echo 20 > $npubw/bw_hwmon/hist_memory
+            echo 10 > $npubw/bw_hwmon/hyst_length
+            echo 30 > $npubw/bw_hwmon/down_thres
+            echo 0 > $npubw/bw_hwmon/guard_band_mbps
+            echo 250 > $npubw/bw_hwmon/up_scale
+            echo 0 > $npubw/bw_hwmon/idle_mbps
+            echo 0 > /sys/devices/virtual/npu/msm_npu/pwr
+        done
+
+        for npullccbw in $device/*npu*-llcc-bw/devfreq/*npu*-llcc-bw
+	do
+            echo 1 > /sys/devices/virtual/npu/msm_npu/pwr
+	    echo "bw_hwmon" > $npullccbw/governor
+            echo 40 > $npullccbw/polling_interval
+            echo "2288 4577 7110 9155 12298 14236 16265" > $npullccbw/bw_hwmon/mbps_zones
+            echo 4 > $npullccbw/bw_hwmon/sample_ms
+            echo 100 > $npullccbw/bw_hwmon/io_percent
+            echo 20 > $npullccbw/bw_hwmon/hist_memory
+            echo 10 > $npullccbw/bw_hwmon/hyst_length
+            echo 30 > $npullccbw/bw_hwmon/down_thres
+            echo 0 > $npullccbw/bw_hwmon/guard_band_mbps
+            echo 250 > $npullccbw/bw_hwmon/up_scale
+            echo 0 > /sys/devices/virtual/npu/msm_npu/pwr
+	done
+
+        #Enable mem_latency governor for L3, LLCC, and DDR scaling
+	for memlat in $device/*qcom,devfreq-l3/*cpu*-lat/devfreq/*cpu*-lat
+        do
+            echo "mem_latency" > $memlat/governor
+            echo 10 > $memlat/polling_interval
+            echo 400 > $memlat/mem_latency/ratio_ceil
+        done
+
+	#Enable cdspl3 governor for L3 cdsp nodes
+	for l3cdsp in $device/*qcom,devfreq-l3/*cdsp-l3-lat/devfreq/*cdsp-l3-lat
+	do
+            echo "powersave" > $l3cdsp/governor
+	done
+
+	#Enable mem_latency governor for LLCC and DDR scaling
+	for memlat in $device/*cpu*-lat/devfreq/*cpu*-lat
+	do
+	    echo "mem_latency" > $memlat/governor
+	    echo 10 > $memlat/polling_interval
+	    echo 400 > $memlat/mem_latency/ratio_ceil
+        done
+
+        #Gold L3 ratio ceil
+	for l3gold in $device/*qcom,devfreq-l3/*cpu6-cpu-l3-lat/devfreq/*cpu6-cpu-l3-lat
+        do
+            echo 4000 > $l3gold/mem_latency/ratio_ceil
+        done
+
+        #Prime L3 ratio ceil
+	for l3prime in $device/*qcom,devfreq-l3/*cpu7-cpu-l3-lat/devfreq/*cpu7-cpu-l3-lat
+        do
+            echo 4000 > $l3prime/mem_latency/ratio_ceil
+        done
+
+        #Enable compute governor for gold latfloor
+        for latfloor in $device/*cpu*-ddr-latfloor*/devfreq/*cpu-ddr-latfloor*
+        do
+            echo "compute" > $latfloor/governor
+            echo 10 > $latfloor/polling_interval
+        done
+    done
+
+    # cpuset parameters
+    echo 0-5 > /dev/cpuset/background/cpus
+    echo 0-5 > /dev/cpuset/system-background/cpus
+
+    # Turn off scheduler boost at the end
+    echo 0 > /proc/sys/kernel/sched_boost
+
+    # Turn on sleep modes
+    echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
+    ;;
+esac
+
+
 case "$target" in
     "qcs605")
 
@@ -3941,9 +4134,6 @@ case "$target" in
 	echo 85 85 > /proc/sys/kernel/sched_downmigrate
 	echo 100 > /proc/sys/kernel/sched_group_upmigrate
 	echo 10 > /proc/sys/kernel/sched_group_downmigrate
-	echo 0 > /proc/sys/kernel/sched_min_task_util_for_boost
-	echo 0 > /proc/sys/kernel/sched_min_task_util_for_colocation
-	echo 0 > /proc/sys/kernel/sched_little_cluster_coloc_fmin_khz
 	echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
 	# cpuset parameters
@@ -4093,7 +4283,7 @@ case "$target" in
         "MTP" | "Surf" | "RCM" )
             # Start Host based Touch processing
             case "$platform_subtype_id" in
-                "0" | "1")
+                "0" | "1" | "2" | "4")
                     start_hbtp
                     ;;
             esac
@@ -4438,7 +4628,7 @@ case "$target" in
         start mpdecision
         echo 512 > /sys/block/mmcblk0/bdi/read_ahead_kb
     ;;
-    "msm8994" | "msm8992" | "msm8996" | "msm8998" | "sdm660" | "apq8098_latv" | "sdm845" | "sdm710" | "msmnile" | "qcs605" | "sm6150" | "trinket")
+    "msm8994" | "msm8992" | "msm8996" | "msm8998" | "sdm660" | "apq8098_latv" | "sdm845" | "sdm710" | "msmnile" | "qcs605" | "sm6150" | "trinket" | "lito")
         setprop vendor.post_boot.parsed 1
     ;;
     "apq8084")
