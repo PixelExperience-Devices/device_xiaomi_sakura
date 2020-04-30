@@ -204,15 +204,15 @@ vendor/lib64/libssd.so|bcb7c4213115f2377e0d30dd1a05cae5e88212e4
 vendor/lib/hw/gatekeeper.msm8953.so|c153dbbd2c31ccee8633837961ce79909257af04
 vendor/lib64/hw/gatekeeper.msm8953.so|2982026cfb7911d279bd4c9be3a02ad21cdb54ec
 
-# GPS - from LA.UM.8.6.2.r1-06600-89xx.0
+# GPS - from LA.UM.8.6.2.r1-07100-89xx.0
 vendor/bin/garden_app|816ac78085d9b72f03e29da4661ef12f73c9063f
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti|6b0264fb87b4caab908a706fc5d979df5173a311
 vendor/bin/loc_launcher|9623f5f96bd262abc5c883610feca43a5ab214b3
-vendor/bin/lowi-server|2ae6f0aa1acb397db521a5a3087e63e7c0a6b42a
+vendor/bin/lowi-server|f6491867cd28b2091bf129bcdc7b6ee7507fd959
 vendor/bin/slim_daemon|b3e151709e8972553c947086aa33386fade75580
-vendor/bin/xtra-daemon|6791e02a42d3c729acdfac0edb00ea597e0b2623
-vendor/bin/xtwifi-client|4777d4dd92142ba05edeb42d2277c9f208e0d62f
-vendor/bin/xtwifi-inet-agent|45a5db235eb12c322b9ef65797d1650772fbb0b6
+vendor/bin/xtra-daemon|f4668d983df021400430fc1f41426f71c50ba7dd
+vendor/bin/xtwifi-client|1366af957b99c00926f6f549485cc128ca2ff19d
+vendor/bin/xtwifi-inet-agent|b738b9d19afff4e8c317e2dfedd3ae3668a68caa
 vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc|8e0b0596a13b8d653e6f5415c41d8a53bb12b73a
 vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml|8d7eafd68db9bbe7ec7a5c4d547f026869766081
 vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml|9b2f6691d6c224bcb9ab9a0d57adfb9e52f1b53e
@@ -220,13 +220,13 @@ vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so|9867e9bb8422099a10a5984d23
 vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so|6040c00f58e18c0a54e86694813ef997417775d2
 vendor/lib64/libbatching.so|b0751bd8bdacbe6aa9a36476c51c1740652ed18b
 vendor/lib64/libdataitems.so|af5f0d8f90f3a2637d159f30a448b501882295b4
-vendor/lib64/libgdtap.so|5fc6beb99cf918967fd1f3d0cac8b25113d4175a
+vendor/lib64/libgdtap.so|b3135dcc4c290cb61b8a959b1fb6ce0897539905
 vendor/lib64/libgeofencing.so|d99213573aaff17376dda1c1446f212e13f8d84b
 vendor/lib64/libgnsspps.so|8e74447368d804c983950185fb565d22e0d7c769
 vendor/lib64/libgnss.so|66525742d87914c9746de4805214685f94c8d23a
 vendor/lib64/libgps.utils.so|90d371a6f07025aa6ccc7d67d3d96d479d84ad5c
 vendor/lib64/libizat_client_api.so|2343abbe03743adb24a79762feb89a2174b9b838
-vendor/lib64/libizat_core.so|05fb75e5e61a811646f2901209c960b2a7538240
+vendor/lib64/libizat_core.so|71e96c55fc0001b6cb1c3ae98485bab5f4e66882
 vendor/lib64/liblbs_core.so|f92314bcf1c10e0887acc5b86257ed69c5c8d2d6
 -vendor/lib64/libloc_api_v02.so|8d68c6faf7b4b8f37d90cd6dcef5561d2c05e1c9
 vendor/lib64/liblocation_api.so|a6b5fc3360fdcadadcc7b751518433660c6123bb
@@ -234,10 +234,10 @@ vendor/lib64/liblocationservice_glue.so|b972df9aa9175cc938e0b903efd7718802022e4d
 vendor/lib64/liblocationservice.so|9c3614d42fbdc22996254e0cc937b37570067658
 vendor/lib64/libloc_core.so|218a13a30401da082cce26e56c0c51ea3fdec5f0
 vendor/lib64/liblowi_client.so|bdc72f191fb383661838b611d18d9fefdec4157c
-vendor/lib64/liblowi_wifihal.so|7bad1b9b7835397d3e5ea3e0abf173278833e74a
-vendor/lib64/libqdma_file_agent.so|bb7b35dae09848f2fceddaac17344d2b7ef4e944
+vendor/lib64/liblowi_wifihal.so|d628c63dbd4ce14a958989ce52cd58abe2dea84d
+vendor/lib64/libqdma_file_agent.so|80c6afee744cb147f30a2b971fff1638a7c0c4e2
 vendor/lib64/libslimclient.so|e8d0ec174f5e103ec1e2b029abd053da638d9231
-vendor/lib64/libxtadapter.so|14488cedaa1b375f99f973d166674b15f47ad5dc
+vendor/lib64/libxtadapter.so|e19d870575cc226e61a4ad9c86660e472b6ca52c
 vendor/lib64/vendor.qti.gnss@1.0.so|1cce445261939c7a1eace33742e16c09dffe5c0e
 vendor/lib64/vendor.qti.gnss@1.1.so|e9371f32bd2c463e8a9b0197263a96f8f7cc50bb
 vendor/lib64/vendor.qti.gnss@1.2.so|6a2d413eebe1189c361b1c18215c6d90783a65b2
