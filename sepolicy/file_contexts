@@ -16,7 +16,7 @@
 
 # Input devices
 /(vendor|system/vendor)/usr/idc(/.*)?                         u:object_r:idc_file:s0
-/(vendor|system/vendor)/usr/keylayout(/.*)?                   u:object_r:keylayout_file:s0
+/(vendor|system/vendor)/usr/keylayout(/.*)?                   u:object_r:vendor_keylayout_file:s0
 
 # Location
 /data/vendor/location/xtra/socket_hal_xtra    u:object_r:location_socket:s0
@@ -32,3 +32,7 @@
 
 # Root folders
 /firmware(/.*)?          u:object_r:firmware_file:s0
+
+# Same process hal files
+/(product|system/product)/lib(64)?/vendor\.display\.config@1\.[0-9]+\.so	u:object_r:same_process_hal_file:s0
+/(product|system/product)/lib(64)?/vendor\.qti\.hardware\.cryptfshw@1\.0\.so	u:object_r:same_process_hal_file:s0

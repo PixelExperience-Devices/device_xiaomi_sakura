@@ -11,3 +11,5 @@ allow qti_init_shell vfat:dir { open };
 allow qti_init_shell vfat:file { read };
 allow qti_init_shell vfat:file { open };
 allow qti_init_shell qti_init_shell:capability { kill };
+
+r_dir_file(qti_init_shell, vfat)

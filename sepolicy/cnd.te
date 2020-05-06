@@ -1,0 +1,1 @@
+allow cnd hal_slmadapter_hwservice:hwservice_manager find;
