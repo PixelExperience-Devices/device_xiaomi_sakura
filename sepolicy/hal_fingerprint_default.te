@@ -1,1 +1,0 @@
-allow hal_fingerprint_default sdcardfs:dir { search };

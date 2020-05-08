@@ -1,0 +1,1 @@
+allow thermal-engine sysfs:dir { read open };

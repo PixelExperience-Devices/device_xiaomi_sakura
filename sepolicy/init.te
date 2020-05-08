@@ -1,1 +1,13 @@
 allow init proc_boot_reason:file r_file_perms;
+allow init hal_memtrack_default:process noatsecure;
+allow hal_memtrack_default sysfs_kgsl:lnk_file read;
+allow system_app sysfs_kgsl:lnk_file read;
+allow hal_fingerprint_default storage_file:lnk_file read;
+allow init vendor_file:file { execute };
+allow init hwservicemanager:binder { call };
+allow init hwservicemanager:binder { transfer };
+allow init sysfs_graphics:file { read };
+allow init sysfs_graphics:file { open };
+allow init sysfs_graphics:file { write };
+allow init sysfs_leds:file { read };
+allow init sysfs_leds:lnk_file { read };
