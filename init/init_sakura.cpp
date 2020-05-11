@@ -59,5 +59,5 @@ void vendor_load_properties()
 {
     // fingerprint
     property_override("ro.build.description", "sakura-user 9 PKQ1.180917.001 20.1.9 release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/flame/flame:10/QQ2A.200501.001.B2/6352890:user/release-keys");
 }
