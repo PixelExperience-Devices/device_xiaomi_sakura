@@ -128,7 +128,7 @@ vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
-vendor.video.disable.ubwc=1
+vendor.video.disable.ubwc=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
 vendor.video.disable.ubwc=1
@@ -191,7 +191,7 @@ ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,20 \
 persist.sys.fflag.override.settings_network_and_internet_v2=true \
 service.qti.ims.enabled=1 \
-persist.vendor.vt.supported=1
+persist.vendor.vt.supported=1 \
 persist.vendor.sys.cnd.iwlan=1 \
 persist.vendor.cne.logging.qxdm=3974
 
