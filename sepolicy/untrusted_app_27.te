@@ -1,0 +1,12 @@
+allow untrusted_app_27 theme_prop:file { read };
+allow untrusted_app_27 theme_prop:file { open };
+allow untrusted_app_27 theme_prop:file { getattr };
+allow untrusted_app_27 rootfs:dir { read };
+allow untrusted_app_27 rootfs:dir { open };
+allow untrusted_app_27 proc_zoneinfo:file { read };
+allow untrusted_app_27 proc:file { getattr };
+allow untrusted_app_27 proc_qtaguid_stat:file { read };
+allow untrusted_app_27 proc_qtaguid_stat:file { open };
+allow untrusted_app_27 proc_qtaguid_stat:file { getattr };
+allow untrusted_app_27 proc_zoneinfo:file { open };
+allow untrusted_app_27 proc_zoneinfo:file { getattr };

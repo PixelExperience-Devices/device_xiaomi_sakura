@@ -1,0 +1,1 @@
+allow energyawareness energyawareness:capability { sys_admin };

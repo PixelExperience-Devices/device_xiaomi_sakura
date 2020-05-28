@@ -1,0 +1,1 @@
+allow dpmd dpmd:capability { sys_admin };

@@ -1,0 +1,1 @@
+allow adbd adbd:capability { sys_admin };

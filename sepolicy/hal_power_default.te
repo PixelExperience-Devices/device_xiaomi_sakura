@@ -3,3 +3,6 @@ allow hal_power_default proc_touchpanel:dir search;
 allow hal_power_default proc_touchpanel:file rw_file_perms;
 allow hal_power_default proc:file { write };
 allow hal_power_default proc:file { open };
+allow hal_power_default input_device:dir { search };
+allow hal_power_default input_device:chr_file { read write };
+allow hal_power_default input_device:chr_file { open };

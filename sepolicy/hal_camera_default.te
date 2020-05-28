@@ -5,3 +5,6 @@ allow hal_camera_default vendor_default_prop:property_service set;
 
 hal_client_domain(hal_camera_default, hal_graphics_allocator)
 hal_client_domain(hal_camera_default, hal_configstore)
+allow hal_camera_default sysfs:file { read };
+allow hal_camera_default sysfs:file { open };
+allow hal_camera_default sysfs:file { getattr };

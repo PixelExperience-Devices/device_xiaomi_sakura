@@ -12,3 +12,6 @@ allow init sysfs_graphics:file { write };
 allow init sysfs_leds:file { read };
 allow init sysfs_leds:lnk_file { read };
 r_dir_file(init, vfat)
+allow init sysfs_kgsl:file { setattr };
+allow init sysfs_kgsl:lnk_file { read };
+allow init sysfs:file { setattr };

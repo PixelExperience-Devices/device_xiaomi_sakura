@@ -1,2 +1,3 @@
 allow thermal-engine sysfs:dir { read open };
 r_dir_file(thermal-engine, sysfs)
+allow thermal-engine thermal-engine:capability { sys_admin };

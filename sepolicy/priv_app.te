@@ -9,3 +9,6 @@ allow priv_app proc_interrupts:file { open };
 allow priv_app sysfs_android_usb:file { open };
 allow priv_app sysfs_graphics:file { read };
 allow priv_app sysfs_graphics:file { open };
+allow priv_app proc_net:file { read };
+allow priv_app proc_net:file { open };
+allow priv_app proc_net:file { getattr };
