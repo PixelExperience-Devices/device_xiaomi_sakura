@@ -244,7 +244,6 @@ persist.radio.VT_ENABLE=1 \
 persist.radio.VT_CAM_INTERFACE=2 \
 persist.radio.volte.dan_support=true \
 persist.sys.cust.lte_config=true \
-persist.vendor.radio.aosp_usr_pref_sel=true \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.data_con_rprt=1 \
