@@ -3,6 +3,53 @@ PRODUCT_PROPERTY_OVERRIDES += \
 dalvik.vm.dex2oat-filter=speed \
 dalvik.vm.image-dex2oat-filter=speed
 
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+af.fast_track_multiplier=1 \
+audio.deep_buffer.media=true \
+audio.offload.min.duration.secs=30 \
+audio.offload.video=true \
+av.debug.disable.pers.cache=1 \
+persist.dirac.acs.controller=qem \
+persist.dirac.acs.ignore_error=1 \
+persist.dirac.acs.storeSettings=1 \
+persist.vendor.audio.hw.binder.size_kbyte=1024 \
+persist.vendor.audio.speaker.prot.enable=false \
+ro.af.client_heap_size_kbyte=7168 \
+ro.audio.soundfx.dirac=true \
+ro.vendor.audio.sdk.ssr=false \
+ro.vendor.audio.sos=true \
+ro.vendor.audio.voice.volume.boost=manual \
+vendor.audio.chk.cal.spk=0 \
+vendor.audio.chk.cal.us=0 \
+vndor.audio.dolby.ds2.enabled=false \
+vendor.audio.dolby.ds2.hardbypass=false \
+vendor.audio.flac.sw.decoder.24bit=true \
+vendor.audio.hw.aac.encoder=true \
+vendor.audio.offload.buffer.size.kb=64 \
+vendor.audio.offload.gapless.enabled=true \
+vendor.audio.offload.multiaac.enable=true \
+vendor.audio.offload.multiple.enabled=false \
+vendor.audio.offload.passthrough=false \
+vendor.audio.offload.track.enable=true \
+vendor.audio.parser.ip.buffer.size=262144 \
+vendor.audio.playback.mch.downsample=true \
+vendor.audio.pp.asphere.enabled=false \
+vendor.audio.safx.pbe.enabled=true \
+vendor.audio.tunnel.encode=false \
+vendor.audio.use.sw.alac.decoder=true \
+vendor.audio.use.sw.ape.decoder=true \
+vendor.audio_hal.period_size=192 \
+vendor.voice.conc.fallbackpath=deep-buffer \
+vendor.voice.path.for.pcm.voip=true \
+vendor.voice.playback.conc.disabled=true \
+vendor.voice.record.conc.disabled=false \
+vendor.voice.voip.conc.disabled=true
+
+# Audio Feature
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.audio.feature.kpi_optimize.enable=false
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
