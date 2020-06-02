@@ -53,14 +53,11 @@ vendor.audio.feature.kpi_optimize.enable=false
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
-vendor.qcom.bluetooth.soc=smd \
+vendor.qcom.bluetooth.soc=pronto \
+vendor.bluetooth.soc=pronto \
 ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd \
 persist.vendor.bt.aac_frm_ctl.enabled=true \
-
-# Boot
-PRODUCT_PROPERTY_OVERRIDES += \
-sys.vendor.shutdown.waittime=500
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -101,9 +98,7 @@ ro.vendor.qti.core_ctl_max_cpu=4
 
 # Dirac - D2AO-1004
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.dirac.acs.controller=afm \
 persist.dirac.afm.mode=global \
-persist.dirac.acs.storeSettings=1 \
 persist.dirac.poolsize=3
 
 # Display
@@ -118,13 +113,13 @@ persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
 debug.sdm.support_writeback=0 \
 ro.vendor.display.cabl=2 \
 sdm.debug.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.display.disable_skip_validate=1 \
-vendor.gralloc.enable_fb_ubwc=1 \
-persist.vendor.max.brightness=475
+vendor.gralloc.enable_fb_ubwc=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -134,7 +129,7 @@ drm.service.enabled=true
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.qfp=false
 
-# Fm
+# FM
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.fm.transmitter=false \
 vendor.hw.fm.init=0
@@ -142,6 +137,10 @@ vendor.hw.fm.init=0
 # Frp
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
+
+# Keystore
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.hardware.keystore_desede=true
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -164,6 +163,10 @@ persist.vendor.ims.disableDebugLogs=1 \
 persist.vendor.ims.disableIMSLogs=1 \
 persist.vendor.ims.disableQXDMLogs=1
 
+# Location
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.backup.ntpServer=0.pool.ntp.org
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.hw.aac.encoder=true \
@@ -178,26 +181,6 @@ vendor.video.disable.ubwc=1
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.netflix.bsp_rev=Q660-13149-1
-
-# Perf
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.sys.fw.dex2oat_thread_count=8 \
-ro.vendor.extension_library=libqti-perfd-client.so \
-ro.vendor.qti.sys.fw.bservice_enable=true
-
-# Qualcomm
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-ro.vendor.qti.va_aosp.support=1
-
-# QTI Performance
-PRODUCT_PROPERTY_OVERRIDES += \
-vendor.enable_prefetch=1 \
-vendor.iop.enable_uxe=1 \
-vendor.iop.enable_prefetch_ofr=1 \
-vendor.perf.iop_v3.enable=1 \
-ro.vendor.gt_library=libqti-gt.so \
-ro.vendor.at_library=libqti-at.so \
-persist.vendor.qti.games.gt.prof=1
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -216,6 +199,27 @@ persist.vendor.radio.nitz_sons_0="" \
 persist.vendor.radio.nitz_sons_1="" \
 persist.vendor.radio.nitz_sons_2="" \
 persist.vendor.radio.nitz_sons_3=""
+
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.sys.fw.dex2oat_thread_count=8 \
+ro.vendor.extension_library=libqti-perfd-client.so \
+ro.vendor.qti.sys.fw.bservice_enable=true
+
+# Qualcomm
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.va_aosp.support=1
+
+# QTI Performance
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.at_library=true \
+vendor.iop.enable_uxe=1 \
+vendor.perf.iop_v3.enable=true \
+vendor.perf.iop_v3.enable.debug=false \
+vendor.enable.prefetch=false \
+vendor.iop.enable_prefetch_ofr=false \
+vendor.perf.gestureflingboost.enable=true \
+vendor.perf.workloadclassifier.enable=true
 
 # Rescue party
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -260,7 +264,12 @@ persist.vendor.radio.data_con_rprt=1 \
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # SurfaceFlinger
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.surface_flinger.protected_contents=true \
+debug.sf.early_phase_offset_ns=1500000 \
+debug.sf.early_app_phase_offset_ns=1500000 \
+debug.sf.early_gl_phase_offset_ns=3000000 \
+debug.sf.early_gl_app_phase_offset_ns=15000000 \
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
 ro.surface_flinger.max_virtual_display_dimension=4096
 
@@ -295,14 +304,8 @@ wifi.interface=wlan0
 # Unsorted properties
 PRODUCT_PROPERTY_OVERRIDES += \
 keyguard.no_require_sim=true \
-persist.backup.ntpServer=0.pool.ntp.org \
-persist.dirac.acs.controller=afm \
-persist.dirac.acs.storeSettings=1 \
-persist.dirac.afm.mode=global \
-persist.dirac.poolsize=3 \
 persist.fuse_sdcard=true \
 persist.mm.sta.enable=0 \
-persist.vendor.audio.speaker.prot.enable=false \
 persist.vendor.data.profile_update=true \
 persist.vendor.radio.prefer_spn=1 \
 ro.memperf.lib=libmemperf.so \
@@ -315,8 +318,4 @@ ro.vendor.qti.sys.fw.empty_app_percent=50 \
 ro.vendor.qti.sys.fw.trim_cache_percent=100 \
 ro.vendor.qti.sys.fw.trim_empty_percent=100 \
 ro.vendor.qti.sys.fw.trim_enable_memory=2147483648 \
-ro.vendor.qti.sys.fw.use_trim_settings=true \
-sys.vendor.shutdown.waittime=500 \
-vendor.audio.dolby.ds2.enabled=false \
-vendor.audio.dolby.ds2.hardbypass=false \
-vendor.audio.offload.passthrough=false
+ro.vendor.qti.sys.fw.use_trim_settings=true
