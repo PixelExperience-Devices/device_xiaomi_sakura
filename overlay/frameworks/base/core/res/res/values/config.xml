@@ -242,6 +242,16 @@
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">1</integer>
 
+    <!-- Integer parameters of the wifi to cellular handover feature
+         wifi should not stick to bad networks -->
+     <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_24GHz">-83</integer>
+     <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-80</integer>
+     <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_24GHz">-73</integer>
+     <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_5GHz">-70</integer>
+
+     <!-- Regex of wired ethernet ifaces -->
+      <string name="config_ethernet_iface_regex">eth\\d</string>
+
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
@@ -390,6 +400,9 @@
     <!-- MMS user agent prolfile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
+    <!--  Define Google play service package for FRP-->
+     <string name="config_persistentDataPackageName">com.google.android.gms</string>
+
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
          The default is false. -->
@@ -404,6 +417,9 @@
 
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">true</bool>
+
+    <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
+     <bool name="config_cellBroadcastAppLinks">true</bool>
 
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
@@ -420,6 +436,11 @@
          state changes. Voice radio tech change will always trigger an update of
          phone object irrespective of this config -->
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
+
+    <!-- When true, the tethering upstream network follows the current default
+         Internet network (except when the current default network is mobile,
+         in which case a DUN network will be used if required). -->
+     <bool name="config_tether_upstream_automatic">true</bool>
 
     <!-- IWLAN data service package name to bind to by default. If none is specified in an overlay, an
          empty string is passed in -->
