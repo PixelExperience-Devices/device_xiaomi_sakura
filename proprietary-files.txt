@@ -72,9 +72,9 @@ vendor/lib64/soundfx/libqcvirt.so|bb046694512d412d6a04bd95ccb2b573454d9717
 
 # Audio Hardware - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 vendor/lib/hw/audio.primary.default.so|ff14977e58b75175644acdc1e94215eeb9808f0b
-vendor/lib/hw/audio.primary.msm8953.so|dae9377a0e5dac1af746c684863ece5ceea754ac
+vendor/lib/hw/audio.primary.msm8953.so|52212e3cce3fb4ff7bb54824dd96545d3744410b
 vendor/lib64/hw/audio.primary.default.so|21c56b5ff57681e1068de79520e1e3e542392e89
-vendor/lib64/hw/audio.primary.msm8953.so|6b826bc4e105cd31de69c039bd235c0e7a951259
+vendor/lib64/hw/audio.primary.msm8953.so|485a8578983b6bd2fc449df579f080593ea9aa72
 
 # Audio ACDB - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 vendor/etc/acdbdata/adsp_avs_config.acdb|ac0616af3b2d4f070c0e54c18126a877e528621b
@@ -87,17 +87,15 @@ vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|df515758fcd2d5eb6edfad627d2c02642d3
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|ba3d7670485f5e3f5d0f4b5753873875408e0746
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|b780c7d8fdd350a3f7aeffaa0bcf311f5fdda0f6
 
-# ANT+ (system) - from enchilada - PKQ1.180716.001/1904032100
-lib64/com.qualcomm.qti.ant@1.0.so|7b03f4a99e2153a6b0a9bce1ca84f7c7577ec4b1
-lib/com.qualcomm.qti.ant@1.0.so|0072c1caf854732b64365702bba060597cd5d333
+# ANT - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+product/lib/com.qualcomm.qti.ant@1.0.so|8119c98f53a94736d95a2fb59225e0a054e038b8
+product/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
+vendor/lib/com.qualcomm.qti.ant@1.0.so|54a38803c3ff4df697dd1aabdc374a4c9828d53c
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|05e6190e6feb2f23b86e1ce4517b73712465bb2d
 
-# ANT+ (vendor) - from enchilada - PKQ1.180716.001/1904032100
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|30e9721d990e7fe018f0397e7ed5fff4a688400e
-vendor/lib64/com.qualcomm.qti.ant@1.0.so|3facdbf7d1204ae99cf4da813233dfea2492754f
-
-# Bluetooth (aptX) - from crosshatch - PQ3A.190505.002/5450365
-lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
-lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
+# Bluetooth AptX - from Crosshatch 10 QP1A.190711.020 5800535
+product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Bluetooth - from LA.UM.8.6.2.r1-06600-89xx.0
 -lib/libbtconfigstore.so|b631dd3c97fc138807ba872242087a910b13e565
@@ -2462,7 +2460,7 @@ vendor/lib64/libwvhidl.so|4af61fdcf1186700ea7ee23c607fb9ce5fd0f0e8
 # Fingerprint - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|47d6458be8aece1ad609371baa09a1516564b755
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|866b83e0dce24cd3dd7d8a6ef6fec5bd02de499f
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|d3d9c928ec00a43f5b2859dc5541828d9a95728f
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|e60616145136f8042988054d21a53c3496c6e910
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
 vendor/framework/com.fingerprints.extension.jar|7e972c26a5b51fc13bd4eff6584d40a41c5b09c0
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so|2cdf4c51e52d798ee7884af4fdedee43cbf0814e
@@ -2727,35 +2725,6 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|fbf078c47a2a67be329e8390c988255dd578949c
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|f48d221f6678ff39bdb3e667c6e1a0f399c29232
 
-# QCOM Boost framework from Tissot PKQ1.180917.001-V10.0.17.0.PDHMIXM
-bin/perfservice
-etc/init/perfservice.rc
-etc/perf/whitelistedapps.xml
--framework/QPerformance.jar
--framework/UxPerformance.jar
-lib/libqti-at.so
-lib/libqti-iopd-client_system.so
-lib/libqti-perfd-client_system.so
-lib/libqti-util_system.so
-lib/libqti_performance.so
-lib/vendor.qti.hardware.iop@1.0.so
-lib/vendor.qti.hardware.iop@2.0.so
-lib64/libqti-at.so
-lib64/libqti-iopd-client_system.so
-lib64/libqti-perfd-client_system.so
-lib64/libqti-util_system.so
-lib64/libqti_performance.so
-lib64/vendor.qti.hardware.iop@1.0.so
-lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-
 # QC RIL - from LA.UM.8.6.2.r1-06600-89xx.0
 vendor/bin/hw/qcrild|da6f617f9e4645e7147cf7d41ad924e37056db97
 vendor/etc/init/qcrild.rc|f9c32f5e7a8e7f4a0df1dcce174de169b8d7c060
@@ -2796,6 +2765,20 @@ vendor/lib64/libqmi_common_so.so|325a41290032b082248db307481811b2319284cc
 vendor/lib64/libqmi_csi.so|f1ff32c9bcaa77fe1af4088a847f0b6ce3470f79
 vendor/lib64/libqmi_encdec.so|eedf39676bf4447cb2e3f629d1d18dcad846ab85
 vendor/lib64/libqmiservices.so|f45895756b1882093f2b1cf0c20377fff8dc2a05
+
+# QTEE - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|4d4f6f54c856ccdab0fbdda7a5064b24cf72fcd9
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|f3f5c4216b9a505affbe955a85a56bd39ca1ab74
+vendor/lib/libGPQTEEC_vendor.so|ff57cecc96e32f96564a3b1bb113546eeda045d2
+vendor/lib/libGPTEE_vendor.so|5e817e8ea584fbc02b0098e37f76ccb9d0d2d066
+vendor/lib/libQTEEConnector_vendor.so|dc6380f349dfae6258478b3bf9d329c182e12350
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|aa174ab5a60ba9ade3f90f13ae535e1ecdd9e9ec
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|bc058b17763ed26f882d1042d2012f05022fa8f4
+vendor/lib64/libGPQTEEC_vendor.so|f378e4434df01922c9829406121d77bb3c6afd2c
+vendor/lib64/libGPTEE_vendor.so|0bc88c8e6bbe3b38e5c2229f5dfedf38c0e320d8
+vendor/lib64/libQTEEConnector_vendor.so|68128f4409069546f0dcfabb379e3ec031ce3a36
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|7bc3032b846e896c67dac44f413db78d2acbf99b
 
 # Radio - from LA.UM.8.6.2.r1-07100-89xx.0
 -product/app/datastatusnotification/datastatusnotification.apk|9d0bae96aa9f156534074b515c66126d13db5413
@@ -2935,12 +2918,16 @@ vendor/lib64/libsensor_reg.so|b977629681598d927830ed99986e818c01c2d34a
 vendor/lib64/libsensor_user_cal.so|a9cd76f06c02e23cb7f1552aa7d51567259faa47
 vendor/lib64/sensors.ssc.so|23f60022a6415f0fb644aed853b3ee5dceecd0de
 
-# Thermal - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
-vendor/bin/thermal-engine|4ab3c410fbcf9f8cae711ea4ba16cd2797712de6
--vendor/lib/libthermalclient.so|6077e27e15d9e3e43fa57d6d5405c49284f48949
--vendor/lib64/libthermalclient.so|12b26d4242b1a8913ddcb511f42a1debb83689af
+# Thermal - from Onclite
+vendor/bin/thermal-engine|26371fe1e22775bb17753a9c0a72db8256aa1c71
+vendor/etc/thermal-engine-map.conf|39bc5cdd1bb71ad44bd35d1b833acadfef487735
+vendor/etc/thermal-engine-normal.conf|eb3f26e0b06b5ffc50942856f76075e3dbd901d9
+vendor/etc/thermal-engine-video.conf|eb3f26e0b06b5ffc50942856f76075e3dbd901d9
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+-vendor/lib/libthermalclient.so|241d1e751b3a96c67ac5b618ef38bb39d2a94fa7
+vendor/lib/libthermalfeature.so|1f1eb616ba26b309a2fda7de40c2163a4acaaa35
+-vendor/lib64/libthermalclient.so|54121e31e4a5170f8c50e36ddb57685b6c538a21
 vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
-vendor/lib64/libthermalioctl.so|24b22582f3f77769c5fbca06fcc1d3b6533cdf40
 
 # Time services - from LA.UM.8.6.2.r1-06600-89xx.0
 -vendor/app/TimeService/TimeService.apk|4a37afd1395758d946580af184a738e3c657b1e2
