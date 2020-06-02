@@ -3,6 +3,7 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 #<src>						<mnt_point>		<type>	<mnt_flags and options>						<fs_mgr_flags>
+/dev/block/zram0                                none                    swap    defaults                                                        zramsize=2147483648,max_comp_streams=8
 /dev/block/bootdevice/by-name/boot		/boot			emmc	defaults							defaults
 /dev/block/bootdevice/by-name/recovery		/recovery		emmc	defaults							defaults
 

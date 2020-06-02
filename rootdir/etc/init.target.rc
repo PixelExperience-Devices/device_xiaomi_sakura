@@ -40,9 +40,6 @@ on fs
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/bms 0700 root system
     restorecon_recursive /mnt/vendor/persist
-	
-    chmod 0664 /sys/class/thermal/thermal_message/sconfig
-    chown system system /sys/class/thermal/thermal_message/sconfig
 
 on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
@@ -69,10 +66,7 @@ on post-fs-data
     mkdir /persist/data/sfs 0700 system system
     mkdir /persist/data/tz 0700 system system
     mkdir /persist/qti_fp 0700 system system
-    mkdir /data/misc/seemp 0700 system system
     mkdir /data/misc/audio_pp 0771 media audio
-    mkdir /data/vendor/thermal 0771 root system
-    mkdir /data/vendor/thermal/config 0771 root system
 
 #Create folder for mm-qcamera-daemon
 mkdir /data/vendor/camera 0770 camera camera
@@ -105,7 +99,6 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
-    stop vendor.ims_rtp_daemon
 
 service vendor.qseecomd /vendor/bin/qseecomd
    class core
@@ -129,23 +122,23 @@ service adsprpcd /system/vendor/bin/adsprpcd
    group media
 
 service wcnss-service /system/vendor/bin/wcnss_service
-    class late_start
+    class main
     user system
     group system wifi radio
     oneshot
 
-service vendor.imsqmidaemon /vendor/bin/imsqmidaemon
+service vendor.imsqmidaemon /system/vendor/bin/imsqmidaemon
     class main
-    user radio
+    user system
     socket ims_qmid stream 0660 system radio
     group radio log diag
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
+service vendor.imsdatadaemon /system/vendor/bin/imsdatadaemon
     class main
-    user radio
+    user system
     socket ims_datad stream 0660 system radio
-    group radio wifi inet log diag
+    group system wifi radio inet log diag
     writepid /dev/cpuset/system-background/tasks
     disabled
 
@@ -154,26 +147,35 @@ on property:vendor.ims.QMI_DAEMON_STATUS=1
 
 service vendor.ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
    class main
-   user radio
-   group radio vendor_qti_diag inet log
+   user system
+   group radio diag inet log
    writepid /dev/cpuset/system-background/tasks
 
 service vendor.imsrcsservice /system/vendor/bin/imsrcsd
    class main
-   user radio
+   user system
    group radio diag inet log wakelock
    writepid /dev/cpuset/system-background/tasks
 
 on property:vendor.ims.DATA_DAEMON_STATUS=1
    restart vendor.ims_rtp_daemon
 
-on property:init.svc.hwcomposer-2-1=stopped
+on property:init.svc.surfaceflinger=stopped
     stop ppd
 
-on property:init.svc.hwcomposer-2-1=running
+on property:init.svc.surfaceflinger=running
     start ppd
 
-on property:init.svc.hwcomposer-2-1=restarting
+on property:init.svc.surfaceflinger=restarting
+    stop ppd
+
+on property:init.svc.zygote=stopped
+    stop ppd
+
+on property:init.svc.zygote=running
+    start ppd
+
+on property:init.svc.zygote=restarting
     stop ppd
 
 service energy-awareness /system/vendor/bin/energy-awareness
@@ -182,22 +184,20 @@ service energy-awareness /system/vendor/bin/energy-awareness
     group system
     oneshot
 
+service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
+    class main
+    user root
+    group system wakelock
+
 on charger
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
+    wait /dev/block/bootdevice/by-name/system
+    mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
     start vendor.hvdcp_opti
-    start vendor.power_off_alarm
-    start thermal-engine
 
 on boot
-    # Update cpusets on boot and we want better load balancing
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-6
-    write /dev/cpuset/background/cpus 0-1
-    write /dev/cpuset/system-background/cpus 0-3
-    write /dev/cpuset/restricted/cpus 0-3
-
     # add a cpuset for the camera daemon
     # we want all cores for camera
     mkdir /dev/cpuset/camera-daemon
@@ -207,6 +207,10 @@ on boot
     chown system system /dev/cpuset/camera-daemon/tasks
     chmod 0664 /dev/cpuset/camera-daemon/tasks
     chown system system /sys/kernel/hbtp/display_pwr
+
+# access permission for DT2W
+    chown system system /proc/touchpanel/wakeup_gesture
+    chmod 0660 /proc/touchpanel/wakeup_gesture
 
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
@@ -219,12 +223,6 @@ on boot
     setprop vendor.usb.rmnet.func.name "rmnet_bam"
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
-
-# Camera Blobs
-    mount none /system/lib/android.frameworks.sensorservice@1.0-v27.so /vendor/lib/android.frameworks.sensorservice@1.0-v27.so bind
-    mount none /system/lib/libvidhance_gyro.so /vendor/lib/libvidhance_gyro.so bind
-    mount none /system/lib/hw/camera.msm8953.so /vendor/lib/hw/camera.msm8953.so bind
-    mount none /system/lib64/android.frameworks.sensorservice@1.0-v27.so /vendor/lib64/android.frameworks.sensorservice@1.0-v27.so bind
 
 service ppd /vendor/bin/mm-pp-dpps
     class late_start

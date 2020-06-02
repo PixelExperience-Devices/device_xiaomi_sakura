@@ -31,7 +31,7 @@
 firmware_directories /vendor/firmware_mnt/image/
 
 # the DIAG device node is not world writable/readable.
-/dev/diag                 0660   system     oem_2901
+/dev/diag                 0666   system     oem_2901
 
 /dev/genlock              0666   system     system
 /dev/wlan                 0660   wifi       wifi
@@ -55,8 +55,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/dpl_ctrl             0660   usb        usb
 /dev/ipa_odl_ctl          0660   radio      radio
 /dev/ipa_adpl             0660   system     oem_2905
-/dev/hab                  0666   system     system
 /dev/synx_device          0660   root       camera
+/dev/hab                  0666   system     system
 
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
@@ -146,7 +146,6 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/iuicc                0660   system     system
 /dev/iuicc0               0660   system     system
 /dev/iuicc1               0660   system     system
-/dev/cam-hyp-intf*        0660   system     camera
 /dev/gemini0              0660   system     camera
 /dev/jpeg0                0660   system     camera
 /dev/jpeg1                0660   system     camera
@@ -156,7 +155,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/adsprpc-smd-secure   0644   system     system
 /dev/system_health_monitor 0644  radio      system
 /dev/mdss_rotator         0664   system     system
-/dev/cpu_dma_latency      0660   root       system
+#for ir
+/dev/spidev6.1            0660   system    system
 
 #QDSS
 /dev/byte-cntr            0660   system    oem_2902
@@ -229,7 +229,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/i2c-5                0660   media       media
 /dev/avtimer              0660   system     audio
 /dev/spidev2.0            0660   system     audio
+
 /dev/aud_pasthru_adsp     0660   system     audio
+
 # DVB devices
 /dev/dvb/adapter0/demux*  0440   media       media
 /dev/dvb/adapter0/dvr*    0660   media       media
@@ -334,7 +336,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/ramdump*             0640   system     system
 
 # Fingerprint device
-/dev/qbt1000              0660   system     system
+/dev/qbt*                 0660   system     system
 /sys/class/fts/touch_aoi aoi_set 0660 root system
 /sys/class/fts/touch_aoi power_set 0660 root system
 
@@ -411,17 +413,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/graphics/fb0     mode                     0664    system  graphics
 /sys/class/graphics/fb0     msm_cmd_autorefresh_en   0664    system  graphics
 /sys/class/graphics/fb0     dynamic_bitclk           0664    system  graphics
-/sys/class/kgsl/kgsl-3d0    pwrscale                 0664    root  system
-/sys/class/kgsl/kgsl-3d0    devfreq/governor         0664    root  system
-/sys/class/kgsl/kgsl-3d0    force_rail_on            0664    root  system
-/sys/class/kgsl/kgsl-3d0    force_bus_on             0664    root  system
-/sys/class/kgsl/kgsl-3d0    force_clk_on             0664    root  system
-/sys/class/kgsl/kgsl-3d0    bus_split                0664    root  system
-/sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
 
-#QG device
-/dev/qg               0660   system     system
-/dev/qg_battery       0660   system     system
+/sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
 
 # lirc
 /dev/lirc0                0660   system     system

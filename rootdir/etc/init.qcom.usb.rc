@@ -26,7 +26,6 @@
 #
 
 on charger
-    setprop sys.usb.configfs 1
     mkdir /dev/usb-ffs 0770 shell shell
     mkdir /dev/usb-ffs/adb 0770 shell shell
     mount configfs none /config
@@ -101,12 +100,11 @@ on boot
     mkdir /dev/usb-ffs/adb 0770 shell system
     mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=1000,rmode=0770,fmode=0660
     write /sys/class/android_usb/android0/f_ffs/aliases adb
-    setprop sys.usb.mtp.device_type 2
     setprop vendor.usb.controller ${sys.usb.controller}
 
     write /sys/class/android_usb/f_mass_storage/lun/nofua 1
     write /sys/class/android_usb/android0/f_rndis_qc/rndis_transports BAM2BAM_IPA
-    write /sys/module/g_android/parameters/mtp_tx_req_len 131072 
+    write /sys/module/g_android/parameters/mtp_tx_req_len 131072
     write /sys/module/g_android/parameters/mtp_rx_req_len 131072
 
 on property:persist.vendor.usb.config=*
@@ -1661,4 +1659,3 @@ on property:sys.usb.config=diag,adb,uac2,video && property:sys.usb.configfs=0
     write /sys/class/android_usb/android0/enable 1
     start adbd
     setprop sys.usb.state ${sys.usb.config}
-
