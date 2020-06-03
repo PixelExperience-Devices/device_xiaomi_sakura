@@ -324,3 +324,7 @@ ro.vendor.qti.sys.fw.trim_cache_percent=100 \
 ro.vendor.qti.sys.fw.trim_empty_percent=100 \
 ro.vendor.qti.sys.fw.trim_enable_memory=2147483648 \
 ro.vendor.qti.sys.fw.use_trim_settings=true
+
+# Zygote preforking
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.device_config.runtime_native.usap_pool_enabled=true
