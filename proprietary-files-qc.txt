@@ -502,39 +502,41 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|fbf078c47a2a67be329e8390c988255dd578949c
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|f48d221f6678ff39bdb3e667c6e1a0f399c29232
 
-# QMI - from LA.UM.8.6.2.r1-06600-89xx.0
+# QMI - from LA.UM.8.6.2.r1-07600-89xx.0
+etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
-product/lib64/libdiag_system.so|3d8c3d4dbdbf1c85088af966d9ad6bf5d24477d2
 vendor/bin/irsc_util|6dfe682b6e12be1cb26c0b497681c3e55441b4c5
 vendor/bin/pd-mapper|f5e529a32a816ad9a05abd746a9dd8e6ff443ee1
-vendor/lib/libdiag.so|d040b2b5a0d074c7066e6f519a7484f7307b1824
-vendor/lib/libdsutils.so|b52b9f7dc6d86ccba539d05896957d81f58bbb9d
-vendor/lib/libidl.so|ab8568ccf0a903f966495f440b5703e0fc1a4b66
-vendor/lib/libqcci_legacy.so|ed704fcd6a326d70a8a58dabcdf9b9120111f8b8
-vendor/lib/libqdi.so|77a0a352a7084e65a8b6e2d4adcd7ff382f135f7
-vendor/lib/libqdp.so|1ccab66ac89e8c795b7323670c401f116d9cfd06
-vendor/lib/libqmi.so|801f718c09f9a2ad173887920368a3bcabdf85f8
-vendor/lib/libqmi_cci.so|eac6d3f84feb2c2460e63b0d23492017b9a594a1
-vendor/lib/libqmi_client_helper.so|9b2f541091e6d69ea61bdbe19938917f3f6e3ce6
-vendor/lib/libqmi_client_qmux.so|b99fbd10eb4fd12f47a56702548014953f9f742c
+vendor/lib/libdiag.so|d5c7a684584bf91580b87de3aba71646b16adf59
+vendor/lib/libdsutils.so|cc4a198446b05292e1a57fe86ced20cb3d17d49e
+vendor/lib/libidl.so|73f7ef692c31ae7bc5a5a4b66664a138af5990c4
+vendor/lib/libminksocket.so|b8982fdd1c4b8f64271ed34070e6fa8756ec2f2c
+vendor/lib/libqcci_legacy.so|0d375f47b47fc4010d46187963320332d961401b
+vendor/lib/libqdi.so|139e70792968041428e79d218631909050a08000
+vendor/lib/libqdp.so|cfeda3ed17763a4a3ad0c7b4432f35e56923fa28
+vendor/lib/libqmi.so|5791e64d90551ab1aef287368829e79972764b58
+vendor/lib/libqmiservices.so|1789eae7991343a001366a1954bb2c195939c63d
+vendor/lib/libqmi_cci.so|1c8ea224e329a03f475cb33a4d1a0bb186e1aa9b
+vendor/lib/libqmi_client_helper.so|f361e65dff3e5363ee0344f2bca735c9a8f2dc77
+vendor/lib/libqmi_client_qmux.so|36de1862d47c755eddc6b36674667d659f91fb7e
 vendor/lib/libqmi_common_so.so|30156c81aa55fa2ff2d10e37cd8acce31cb2ade5
-vendor/lib/libqmi_csi.so|afab372b955a945cfd1111745aa1aab877f0a401
+vendor/lib/libqmi_csi.so|5709de91a29c8f2c18d21580ac9bdb197be5e429
 vendor/lib/libqmi_encdec.so|2fe9b7d557c0298b9cfc47271a7d74adc5b57290
-vendor/lib/libqmiservices.so|1d63a629d120b0541fa1ad070a1be1266e3b81b0
-vendor/lib64/libdiag.so|8762b195d220e2401d0490106fa6e716a4079563
-vendor/lib64/libdsutils.so|f6aa8e284ceb2ebcbc1b51d462561d7405f35512
-vendor/lib64/libidl.so|fda78e792c95e858ce9c1eb43d08b1c742c2a867
-vendor/lib64/libqcci_legacy.so|7bdff248e382a2cc884195cbf8c09c2d7eaf533d
-vendor/lib64/libqdi.so|1016f85ac1d78461d76ca57ea00ac885ad5078e2
-vendor/lib64/libqdp.so|295d8de3e2ac187c236617c981189a90f57c676f
-vendor/lib64/libqmi.so|e89f638ad5f3ec77921ac1ceb121ef42132c34a6
-vendor/lib64/libqmi_cci.so|48f5c785a8ef70442f905237b0dd2278eff3f2c7
-vendor/lib64/libqmi_client_helper.so|fbc6bce96555d195fe66eb3d1518806c8b115dca
-vendor/lib64/libqmi_client_qmux.so|801ea0523c890d9500c0f03e484280da56c1a2f8
+vendor/lib64/libdiag.so|17291a8e16864198f32be56fc0dcf60d28025ac8
+vendor/lib64/libdsutils.so|d025d87b6f8dfd081ebd9c2b800d7603d83ca33c
+vendor/lib64/libidl.so|b8921518cd9cd1be048901df57d419e6bdc38986
+vendor/lib64/libminksocket.so|57dd1ef7283ae755d54479b82d410e7b0d3559f9
+vendor/lib64/libqcci_legacy.so|663829f4f5d60e6ec44a9daefca50ae0ea3e67f2
+vendor/lib64/libqdi.so|5d7cdfc5359a58e4c20a636c4ea4ae4fd60bd341
+vendor/lib64/libqdp.so|3500cc224eafd17d9d9c6e9c61b2b85b613cd083
+vendor/lib64/libqmi.so|25edd20ba9bf2f24ab231a9b6a8e9e3c12a85a11
+vendor/lib64/libqmiservices.so|6499b183e0757387fa919ceb5b2c2991566569be
+vendor/lib64/libqmi_cci.so|7d5b9384c2ff94a760e501e93044c436035fd2cf
+vendor/lib64/libqmi_client_helper.so|cb849751403e4708c24be92c43e71fc458ae25b5
+vendor/lib64/libqmi_client_qmux.so|f4c5999b23454fe14e9667b2d3d066f93af5494c
 vendor/lib64/libqmi_common_so.so|325a41290032b082248db307481811b2319284cc
-vendor/lib64/libqmi_csi.so|f1ff32c9bcaa77fe1af4088a847f0b6ce3470f79
+vendor/lib64/libqmi_csi.so|0c7cfb4bee5479961a8c3942e03f5d25a342663e
 vendor/lib64/libqmi_encdec.so|eedf39676bf4447cb2e3f629d1d18dcad846ab85
-vendor/lib64/libqmiservices.so|f45895756b1882093f2b1cf0c20377fff8dc2a05
 
 # Radio - from LA.UM.8.6.2.r1-07600-89xx.0
 -product/app/atfwd/atfwd.apk|2cdfbd4649a4087fda35995cf66236dbd1113972
