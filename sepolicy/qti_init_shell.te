@@ -1,0 +1,8 @@
+allow qti_init_shell proc_touchpanel:dir { r_dir_perms setattr };
+allow qti_init_shell proc_touchpanel:file { getattr setattr };
+allow qti_init_shell bluetooth_data_file:file r_file_perms;
+allow qti_init_shell ctl_default_prop:property_service set;
+allow qti_init_shell ctl_start_prop:property_service set;
+allow qti_init_shell sysfs_devices_system_cpu:dir write;
+allow qti_init_shell sysfs_lowmemorykiller:dir write;
+allow qti_init_shell self:capability dac_override;
