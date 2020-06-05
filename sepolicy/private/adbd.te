@@ -1,2 +1,2 @@
-allow adbd vendor_file:file getattr;
 allow adbd oemfs:dir search;
+allow adbd adbd:capability { sys_admin };

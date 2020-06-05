@@ -1,4 +1,3 @@
-allow shell kernel:system syslog_read;
 allow shell vendor_file:file getattr;
 allow shell vendor_firmware_file:dir getattr;
 allow shell adb_data_file:file { execute getattr open read };

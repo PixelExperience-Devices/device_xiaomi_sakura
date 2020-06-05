@@ -1,2 +1,5 @@
 allow hal_wifi_default kernel:system module_request;
-allow hal_wifi_default proc_net:file write;
+allow hal_wifi_default default_prop:file { read };
+allow hal_wifi_default proc_net:file { write };
+allow hal_wifi_default mnt_vendor_file:dir { search };
+allow hal_wifi_default wifi_vendor_data_file:dir { search };
