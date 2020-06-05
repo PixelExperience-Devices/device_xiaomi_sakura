@@ -1,0 +1,21 @@
+# Bluetooth SOC type
+persist.vendor.btstack.enable.splita2dp=false
+
+# Camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,com.google.android.GoogleCamera
+vendor.camera.aux.packagelist2=com.android.systemui,com.huaqin.cameraautotest,com.huaqin.runtime
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,com.mi.AutoTest
+
+# Media
+av.debug.disable.pers.cache=1
+media.aac_51_output_enabled=true
+media.msm8956hw=0
+media.stagefright.audio.sink=280
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mm.enable.sec.smoothstreaming=true
+mmp.enable.3g2=true
+
+# WFD
+debug.sf.enable_hwc_vds=1
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
