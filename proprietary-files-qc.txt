@@ -707,6 +707,42 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so|45fd8c212f51977663082b496755911c986
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so|6e2a43648da6dc872f6b8fa2ba757add9b39b5c9
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so|780288d1d8d79fa16fbbe9bce6edaa4e1424cdb1
 
+# SCVE - from LA.UM.8.6.2.r1-07600-89xx.0
+product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so|97ff4c73cfc6f35c2bb8d0f856ff94861b9bc743
+product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|ce0a4105a89b59e8eeccaa8bd613ec0a0a418352
+product/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so|114d426a70fdce7b682b745a7883d6bd36826a90
+product/lib/vendor.qti.hardware.scve.panorama@1.0.so|75573ce58abb6734f0c402d1f1ff89d7a373273c
+product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so|e89f71d9c13b4e786c5f0e53a48fd5e904aa6d08
+product/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|0c0b59128e49ab37fd3683e5637b78b4885de986
+product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so|bfccb8aafa34a23cae702e92e407614ef2e0c2a2
+product/lib64/vendor.qti.hardware.scve.panorama@1.0.so|a3afd70cdb872f86dbc67cc05f287b57e8057102
+vendor/lib/libscveBlobDescriptor.so|0afe5c5b2d4b68f853d920ae13aaef6dbb0a6c82
+vendor/lib/libscveBlobDescriptor_stub.so|ae73faad7aac56bd6092d4101b5f94ee07fb9778
+vendor/lib/libscveCommon.so|67f25579aca75ba555ec6fe069b1aebd6c77f4b7
+vendor/lib/libscveCommon_stub.so|db2a1085df6fca1227bb5ae8692a016bf3f349bc
+vendor/lib/libscveObjectSegmentation.so|6abb4a7031895a59ed5bbde8054c8b63fd6a0d25
+vendor/lib/libscveObjectSegmentation_stub.so|22f8dae40921084d0c7015be86f507fae1fd7a7d
+vendor/lib/libscveObjectTracker.so|1890431e4ca076c2fb1bc9d3276c2eb52b2d87d3
+vendor/lib/libscveObjectTracker_stub.so|16443dc9e2b322c1d41a3f6ca7f84e63b03c03ef
+vendor/lib/libscvePanorama.so|88310b3c2bd9e0605782dcf54dee7650ad1a4dbe
+vendor/lib/libscvePanorama_lite.so|05d31892de5465a4e8efb0f86a35570b0fb5b6bd
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|3e9c52069ff07e50191d3b3afb33b30409241ab6
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|944169db3ac67056b92ef4f850f69346958370b5
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|d5502a8575c471596ca56b59cbfc9bdacab184f3
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so|16d295502f29dc0823ee742f0874fd99114c0400
+vendor/lib64/libscveBlobDescriptor.so|72661600356de2ab68f8b3df42e6e667d7ba5365
+vendor/lib64/libscveCommon.so|5372998421c1e0dfa0ecf729e57a5256b378aed2
+vendor/lib64/libscveCommon_stub.so|63b46b8076971ebc95ba4d426ce694f3e02b5f87
+vendor/lib64/libscveObjectSegmentation.so|18b4b6eeedec7f13c31cff50249eaf009b9767f2
+vendor/lib64/libscveObjectSegmentation_stub.so|e92865a35364ae1ec647337ed44e952639d5cc73
+vendor/lib64/libscveObjectTracker.so|e3debe7dd4b4846fbc649cdd6bca5b0ae9746b74
+vendor/lib64/libscveObjectTracker_stub.so|8867ee697681c82c55762a18bfc447c7a2555811
+vendor/lib64/libscvePanorama.so|1c92af5a0b8ab9d2acf5484d02f8db4b92e1f45c
+vendor/lib64/libscvePanorama_lite.so|66a74d3b441bb2e8e5011187f0b2e40bcb77693c
+vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|f0fd75e94929412ae02cb32c38b05faef8cfd259
+vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so|ad0bfe312f3d63cf5414087fb2aef4459ec72183
+
 # Sensors
 vendor/bin/sensors.qti
 vendor/lib/hw/activity_recognition.msm8953.so
