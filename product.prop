@@ -7,11 +7,6 @@ ro.vendor.audio.sdk.fluencetype=fluence
 # Bluetooth SOC type
 persist.vendor.btstack.enable.splita2dp=false
 
-# Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,com.google.android.GoogleCamera
-vendor.camera.aux.packagelist2=com.android.systemui,com.huaqin.cameraautotest,com.huaqin.runtime
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaqin.factory,com.mi.AutoTest
-
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.dpm.feature=0

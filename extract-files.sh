@@ -60,9 +60,4 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
 
 BLOB_ROOT="${AOSP_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
 
-sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${BLOB_ROOT}/vendor/lib/hw/camera.msm8953.so"
-
-patchelf --add-needed "libprocessgroup.so" "${BLOB_ROOT}/vendor/lib/hw/audio.primary.msm8953.so"
-patchelf --add-needed "libprocessgroup.so" "${BLOB_ROOT}/vendor/lib64/hw/audio.primary.msm8953.so"
-
 "${MY_DIR}/setup-makefiles.sh"
