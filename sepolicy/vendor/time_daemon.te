@@ -1,0 +1,2 @@
+allow time_daemon mnt_vendor_file:file { read write };
+allow time_daemon mnt_vendor_file:file { open };

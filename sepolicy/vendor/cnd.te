@@ -1,2 +1,2 @@
-allow cnd hostapd:process { sigkill };
-allow cnd wifi_prop:file { read open getattr };
+allow cnd hal_slmadapter_hwservice:hwservice_manager find;
+allow cnd wifi_prop:file { getattr open read };

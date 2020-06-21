@@ -1,0 +1,2 @@
+allow healthd sysfs:file { getattr };
+allow healthd healthd:capability { sys_admin };

@@ -1,0 +1,5 @@
+allow rfs_access vfat:dir { search };
+allow rfs_access vfat:file { read };
+allow rfs_access vfat:file { open };
+allow rfs_access vfat:file { getattr };
+allow rfs_access rfs_access:capability { sys_admin };

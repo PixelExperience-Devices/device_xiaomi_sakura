@@ -1,0 +1,1 @@
+allow blkid_untrusted blkid_untrusted:capability { sys_admin };
