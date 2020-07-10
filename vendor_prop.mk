@@ -99,7 +99,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
-debug.sf.enable_hwc_vds=1 \
+debug.sf.enable_hwc_vds=0 \
 debug.sf.hw=0 \
 debug.egl.hw=0 \
 debug.sf.latch_unsignaled=1 \
@@ -171,7 +171,6 @@ persist.backup.ntpServer=0.pool.ntp.org
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
-debug.sf.enable_hwc_vds=1 \
 media.aac_51_output_enabled=true \
 media.msm8956hw=0 \
 media.stagefright.audio.sink=280 \
