@@ -104,9 +104,6 @@ TARGET_TS_MAKEUP := true
 # Config
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
-# CNE / DPM
-BOARD_USES_QCNE := true
-
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
