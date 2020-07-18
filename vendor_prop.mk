@@ -5,34 +5,26 @@ dalvik.vm.image-dex2oat-filter=speed
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
-af.fast_track_multiplier=1 \
+af.fast_track_multiplier=2 \
 audio.deep_buffer.media=true \
+audio.offload.disable=true \
 audio.offload.min.duration.secs=30 \
 audio.offload.video=true \
-av.debug.disable.pers.cache=1 \
-persist.dirac.acs.controller=qem \
-persist.dirac.acs.ignore_error=1 \
-persist.dirac.acs.storeSettings=1 \
-persist.vendor.audio.hw.binder.size_kbyte=1024 \
-persist.vendor.audio.speaker.prot.enable=false \
-ro.af.client_heap_size_kbyte=7168 \
-ro.audio.soundfx.dirac=true \
+ro.config.media_vol_steps=25 \
+ro.config.vc_call_vol_steps=7 \
+persist.vendor.audio.fluence.speaker=true \
+persist.vendor.audio.fluence.voicecall=true \
+persist.vendor.audio.fluence.voicerec=false \
+persist.vendor.btstack.enable.splita2dp=false \
 ro.vendor.audio.sdk.ssr=false \
-ro.vendor.audio.sos=true \
-ro.vendor.audio.voice.volume.boost=manual \
-vendor.audio.chk.cal.spk=0 \
-vendor.audio.chk.cal.us=0 \
-vndor.audio.dolby.ds2.enabled=false \
-vendor.audio.dolby.ds2.hardbypass=false \
+ro.vendor.audio.sdk.fluencetype=fluence \
 vendor.audio.flac.sw.decoder.24bit=true \
-vendor.audio.hw.aac.encoder=true \
 vendor.audio.offload.buffer.size.kb=64 \
 vendor.audio.offload.gapless.enabled=true \
 vendor.audio.offload.multiaac.enable=true \
 vendor.audio.offload.multiple.enabled=false \
-vendor.audio.offload.passthrough=false \
 vendor.audio.offload.track.enable=true \
-vendor.audio.parser.ip.buffer.size=262144 \
+vendor.audio.parser.ip.buffer.size=0 \
 vendor.audio.playback.mch.downsample=true \
 vendor.audio.pp.asphere.enabled=false \
 vendor.audio.safx.pbe.enabled=true \
@@ -81,7 +73,8 @@ persist.camera.HAL3.enabled=1
 
 # Cne
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.cne.feature=1
+persist.vendor.cne.feature=1 \
+persist.vendor.dpm.feature=0
 
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -105,19 +98,27 @@ persist.dirac.poolsize=3
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
+debug.mdpcomp.logs=0 \
+debug.sf.enable_hwc_vds=1 \
+debug.sf.hw=0 \
+debug.egl.hw=0 \
+debug.sf.latch_unsignaled=1 \
+debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
 debug.sf.enable_gl_backpressure=1 \
 dev.pm.dyn_samplingrate=1 \
+persist.debug.wfd.enable=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
+ro.sf.lcd_density=420 \
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
 debug.sdm.support_writeback=0 \
 ro.vendor.display.cabl=2 \
 sdm.debug.disable_skip_validate=1 \
-vendor.display.enable_default_color_mode=1 \
+vendor.display.enable_default_color_mode=0 \
 vendor.display.disable_skip_validate=1 \
 vendor.gralloc.enable_fb_ubwc=1
 
@@ -169,14 +170,27 @@ persist.backup.ntpServer=0.pool.ntp.org
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
-vendor.audio.hw.aac.encoder=true \
+av.debug.disable.pers.cache=1 \
+debug.sf.enable_hwc_vds=1 \
+media.aac_51_output_enabled=true \
+media.msm8956hw=0 \
+media.stagefright.audio.sink=280 \
 vendor.mm.enable.qcom_parser=1048575 \
+mm.enable.smoothstreaming=true \
+mmp.enable.3g2=true \
+vendor.audio.hw.aac.encoder=true \
 vendor.vidc.dec.downscalar_height=1088 \
 vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
+vendor.video.disable.ubwc=1 \
+vendor.gralloc.enable_fb_ubwc=1 \
 vendor.video.disable.ubwc=1
+
+# Memory optimizations
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -260,7 +274,7 @@ rild.libargs=-d/dev/smd0 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.iwlan_operation_mode=legacy \
 ro.telephony.call_ring.multiple=false \
-ro.telephony.default_network=20,20 \
+ro.telephony.default_network=22,20 \
 persist.sys.fflag.override.settings_network_and_internet_v2=true \
 service.qti.ims.enabled=1 \
 telephony.lteOnCdmaDevice=1 \
@@ -287,6 +301,7 @@ sys.thermal.data.path=/data/vendor/thermal/
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
+persist.timed.enable=true \
 persist.vendor.delta_time.enable=true \
 persist.delta_time.enable=true
 
