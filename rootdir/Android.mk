@@ -6,7 +6,11 @@ include $(CLEAR_VARS)
 LOCAL_MODULE       := fstab.qcom
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
+ifeq ($(ENABLE_AB), true)
+LOCAL_SRC_FILES    := fstab_AB.qcom
+else
 LOCAL_SRC_FILES    := fstab.qcom
+endif
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
 include $(BUILD_PREBUILT)
 
