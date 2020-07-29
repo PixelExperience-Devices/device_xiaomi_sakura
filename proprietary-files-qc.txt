@@ -87,8 +87,6 @@ lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Bluetooth - from LA.UM.8.6.2.r1-07600-89xx.0
--lib/libbtconfigstore.so|eeab5725457493c975bd6d2f2790fec778eaf2fc
--lib64/libbtconfigstore.so|abbfd1a5e773fba69dccb3121861ef3fec2cdab9
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|8429b451d671b1b5d55e171bf824952f4f67c381
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|7387026509e6667af413387944ff9dd4fe791387
@@ -279,9 +277,11 @@ vendor/lib/vendor.qti.esepowermanager@1.0.so|4182f556a9c30900231505a53afc04ec13a
 vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|34206c519a4ccd08545921d68db74b22ab3a0a93
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|b5b39c4f3aedc09bced70f0348980e3eccd71fca
 
-# Gatekeeper - from LA.UM.8.6.2.r1-06600-89xx.0
-vendor/lib/hw/gatekeeper.msm8953.so|c153dbbd2c31ccee8633837961ce79909257af04
-vendor/lib64/hw/gatekeeper.msm8953.so|2982026cfb7911d279bd4c9be3a02ad21cdb54ec
+# Gatekeeper
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GPS - from LA.UM.8.6.2.r1-07600-89xx.0
 vendor/bin/garden_app|666cbf8b4dcc31b84aa62d374fc3f662f5347a71
@@ -412,9 +412,17 @@ vendor/lib64/vendor.qti.hardware.iop@2.0.so|7fdc8d9219a6d7a335fc91edb4837bccbac9
 # Ipacm
 vendor/bin/ipacm-diag
 
-# Keystore - from LA.UM.8.6.2.r1-06600-89xx.0
-vendor/lib/hw/keystore.msm8953.so|9be4c88926ebed98b2b23725f8118ff9d0bbb2d6
-vendor/lib64/hw/keystore.msm8953.so|9f4d991dfa359299739bd443b63731528d9cb5d0
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib/libkeymasterdeviceutils.so
+vendor/lib/libkeymasterprovision.so
+vendor/lib/libkeymasterutils.so
+vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
 
 # Latency - from LA.UM.8.6.2.r1-07600-89xx.0
 product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar|c6c5d5bbf50b068df0184aef8551b95daa5f4791
