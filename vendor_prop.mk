@@ -130,11 +130,6 @@ drm.service.enabled=true
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.qfp=false
 
-# FM
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.fm.transmitter=false \
-vendor.hw.fm.init=0
-
 # Frp
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
