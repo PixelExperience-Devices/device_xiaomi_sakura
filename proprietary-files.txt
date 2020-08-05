@@ -1134,16 +1134,11 @@ vendor/lib64/libsensor_reg.so|b977629681598d927830ed99986e818c01c2d34a
 vendor/lib64/libsensor_user_cal.so|a9cd76f06c02e23cb7f1552aa7d51567259faa47
 vendor/lib64/sensors.ssc.so|23f60022a6415f0fb644aed853b3ee5dceecd0de
 
-# Thermal - from Onclite
-vendor/bin/thermal-engine|26371fe1e22775bb17753a9c0a72db8256aa1c71
-vendor/etc/thermal-engine-map.conf|39bc5cdd1bb71ad44bd35d1b833acadfef487735
-vendor/etc/thermal-engine-normal.conf|eb3f26e0b06b5ffc50942856f76075e3dbd901d9
-vendor/etc/thermal-engine-video.conf|eb3f26e0b06b5ffc50942856f76075e3dbd901d9
-vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
--vendor/lib/libthermalclient.so|241d1e751b3a96c67ac5b618ef38bb39d2a94fa7
-vendor/lib/libthermalfeature.so|1f1eb616ba26b309a2fda7de40c2163a4acaaa35
--vendor/lib64/libthermalclient.so|54121e31e4a5170f8c50e36ddb57685b6c538a21
-vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
+# Thermal - from olive
+vendor/bin/thermal-engine|7b59145e9e75cdc8b491f2ed7a04c0880899fc74
+-vendor/lib/libthermalclient.so|2c91276835c185e47a66916d24b3adc98b17e6eb
+-vendor/lib64/libthermalclient.so|faf92c38d52487cb8fa350f1ec786af17ac716cb
+vendor/lib64/libthermalfeature.so|8306e4bc55a4b9c7cb52a19fed11a9f48a604444
 
 # Time services - from LA.UM.8.6.2.r1-06600-89xx.0
 -vendor/app/TimeService/TimeService.apk|4a37afd1395758d946580af184a738e3c657b1e2
