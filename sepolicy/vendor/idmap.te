@@ -1,1 +1,1 @@
-allow idmap installd:file read;
+allow idmap installd:file r_file_perms;

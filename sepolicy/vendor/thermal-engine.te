@@ -9,7 +9,7 @@ allow thermal-engine thermal-engine:capability { sys_admin };
 allow thermal-engine thermal_data_file:dir rw_dir_perms;
 allow thermal-engine sysfs:dir { open read };
 allow thermal-engine sysfs:file { open read write };
-allow thermal-engine property_socket:sock_file write;
+allow thermal-engine property_socket:sock_file { getattr read ioctl write };
 allow thermal-engine init:unix_stream_socket connectto;
 allow thermal-engine self:capability { chown fowner };
 

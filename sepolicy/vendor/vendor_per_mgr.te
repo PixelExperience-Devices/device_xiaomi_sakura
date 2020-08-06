@@ -1,1 +1,1 @@
-allow vendor_per_mgr vfat:file { open read };
+allow vendor_per_mgr vfat:file r_file_perms;

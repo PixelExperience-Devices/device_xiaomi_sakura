@@ -3,13 +3,14 @@ type_transition mm-qcamerad camera_data_file:sock_file camera_socket "cam_socket
 type_transition mm-qcamerad camera_data_file:sock_file camera_socket "cam_socket2";
 
 allow mm-qcamerad vendor_camera_data_file:file { create write open getattr };
-allow mm-qcamerad persist_camera_prop:file { getattr open read };
-allow mm-qcamerad sysfs_kgsl:lnk_file read;
-allow mm-qcamerad diag_device:chr_file { ioctl open read write };
-allow mm-qcamerad persist_camera_prop:property_service set;
+allow mm-qcamerad sysfs_kgsl:lnk_file r_file_perms;
+allow mm-qcamerad diag_device:chr_file rw_file_perms;
 allow mm-qcamerad camera_socket:dir w_dir_perms;
 allow mm-qcamerad camera_socket:sock_file { create unlink write };
 allow mm-qcamerad sysfs_graphics:file r_file_perms;
 allow mm-qcamerad camera_data_file:file create_file_perms;
 allow mm-qcamerad camera_data_file:dir w_dir_perms;
 allow mm-qcamerad fwk_sensor_hwservice:hwservice_manager find;
+
+get_prop(mm-qcamerad, persist_camera_prop)
+set_prop(mm-qcamerad, persist_camera_prop)

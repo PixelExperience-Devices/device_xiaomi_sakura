@@ -1,4 +1,4 @@
-allow surfaceflinger device:chr_file ioctl;
-allow surfaceflinger sysfs_kgsl:lnk_file read;
-allow surfaceflinger sysfs_kgsl:file { getattr read open };
-allow surfaceflinger firmware_file:dir search;
+allow surfaceflinger device:chr_file { getattr ioctl lock map watch watch_reads };
+allow surfaceflinger sysfs_kgsl:lnk_file r_file_perms;
+allow surfaceflinger sysfs_kgsl:file r_file_perms;
+allow surfaceflinger firmware_file:dir r_dir_perms;

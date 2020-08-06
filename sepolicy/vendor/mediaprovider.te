@@ -1,2 +1,3 @@
-allow mediaprovider boottime_prop:file read;
-allow mediaprovider mnt_media_rw_file:dir getattr;
+allow mediaprovider mnt_media_rw_file:dir rw_dir_perms;
+
+get_prop(mediaprovider, boottime_prop)

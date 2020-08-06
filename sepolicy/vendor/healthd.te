@@ -1,2 +1,2 @@
-allow healthd sysfs:file { getattr };
+allow healthd sysfs:file { getattr map watch watch_reads };
 allow healthd healthd:capability { sys_admin };

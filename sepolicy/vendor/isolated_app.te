@@ -1,3 +1,4 @@
-allow isolated_app boottime_prop:file read;
-allow isolated_app cnd_vendor_prop:file { read };
-allow isolated_app app_data_file:dir { getattr };
+allow isolated_app app_data_file:dir r_dir_perms;
+
+get_prop(isolated_app, boottime_prop)
+get_prop(isolated_app, cnd_vendor_prop)
