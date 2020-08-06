@@ -7,9 +7,6 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/sakura/sakura-vendor.mk)
 
-# Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
