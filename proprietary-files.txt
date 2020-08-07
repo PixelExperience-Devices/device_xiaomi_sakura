@@ -48,7 +48,6 @@ vendor/lib/libqtigef.so|fbedb509c61ff1a7d6e9c4a099af346ca781430a
 vendor/lib/libsurround_3mic_proc.so|d8c1d2cb7d598eee79ccfe5b7ec83a185c8fef6c
 vendor/lib/libtinycompress_vendor.so|4991b78d9ed12b828ceeaf61e5cde6328eb944b9
 vendor/lib/soundfx/libasphere.so|4d0ccf1c282bb70619d20bf7d79021dc3815a579
-vendor/lib/soundfx/libaudiopreprocessing.so|948f18c576254144f48e9051be28e7d23f8562cc
 vendor/lib/soundfx/libqcbassboost.so|bc8ae80ff1ade557ff494631494c2f8261028acb
 vendor/lib/soundfx/libqcreverb.so|1b3cef3c4c9145662fddb03c5e1e7dd3a4f25e1e
 vendor/lib/soundfx/libqcvirt.so|41bf71787ffae3f511d9cb3e32b9e721a0a2e385
@@ -62,10 +61,8 @@ vendor/lib64/libaudioconfigstore.so|a862e94f4fc75ce3c3274f219be8c128fe58a822
 vendor/lib64/libaudioparsers.so|67f6836de4391c33cc030faa5c885ab250324291
 -vendor/lib64/libaudio_log_utils.so|3670ed70e68b209f67852cad81b74d2dda2de3cd
 vendor/lib64/libqtigef.so|70df5848c061154e4c33b147e06d4979e2391b5e
-vendor/lib64/libtinycompress.so|8d670f7c3079e96b5a36945e95082104876dd64a
 vendor/lib64/libtinycompress_vendor.so|74909f72ee8ebb01c2f4ef717e902055272a5917
 vendor/lib64/soundfx/libasphere.so|f552a053f935299b3fd9be03a596eb4c40dee50e
-vendor/lib64/soundfx/libaudiopreprocessing.so|28e2f7f8ab01a6cc8bc60a278e93704755121f49
 vendor/lib64/soundfx/libqcbassboost.so|0d2afd6f2c5b9aa2397f3e1cb3287bf906cf8fb6
 vendor/lib64/soundfx/libqcreverb.so|fbda7d0189603bb8c0c3e9d92563d75b8ab2dbc8
 vendor/lib64/soundfx/libqcvirt.so|bb046694512d412d6a04bd95ccb2b573454d9717
@@ -113,19 +110,13 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so|9c1b952043c7722fd27bfd971ecebb2584671
 vendor/lib64/hw/audio.bluetooth_qti.default.so|102539a0013edf06790215b21bed68c704437a96
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|93f09e7ee848e2d6fee7f0810ad8a3e57346b72c
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|ebdfcc7064fc144acf6cba300486c6394af3d73b
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|5e06b7b33d084975d6326875268cb237ad6d8559
 vendor/lib64/libbluetooth_audio_session_qti.so|c2b100d5fbce3d219515f8c359c6990a08e9fa94
-vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so|288a9824ae282cad32f02fbf0ee723a50702e923
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|9b7ae20ce9d6d2a67fdac94268cec441278cca3d
-vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|e08969ef1897ec5958894323f7d6e730a1d7ce25
 vendor/lib/hw/audio.bluetooth_qti.default.so|0bd3f25837d1aa37fb8e15316308afd710af6503
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|bec45d727a5e8977ddb7ddc4ee6856bdfdf5824e
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|84f86d20af330ee0bd44e6609c3df1149d04a1a6
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|63a54ed76fdfee5d7c1be4d756ec8ce4080072d4
 vendor/lib/libbluetooth_audio_session_qti.so|e4c2908f8257b403610a93df094c8717dc87ffd0
-vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so|b6e5d67869138d102595dd03562314d33c2e825e
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|e9cffc642dc8f15492ca316c276e02c7e146b90d
-vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|fe0c94096ad70472271c0093ce6be226f74e40f4
 
 # Camera - from LA.UM.8.6.2.r1-07600-89xx.0
 lib64/libseemore.so
@@ -135,7 +126,6 @@ vendor/lib/libcapiv2vop.so
 vendor/lib/libdualcameraddm.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libft2vendor.so
-vendor/lib/libgui_vendor.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
@@ -639,22 +629,17 @@ vendor/lib64/libssd.so|bcb7c4213115f2377e0d30dd1a05cae5e88212e4
 
 # DRM (Widevine) - from LA.UM.8.6.2.r1-06600-89xx.0
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c9d0e5183fc47388d
-vendor/bin/hw/android.hardware.drm@1.2-service.clearkey|96007d6d553925bec04412293e3a5fcfb4928bb0
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|e3cb732c0bd519988100675edf385d947abf5f6c
-vendor/etc/init/android.hardware.drm@1.2-service.clearkey.rc|a3f4d3a6ddbdf66d56e5951454660b1a12fab89a
-vendor/lib/mediadrm/libdrmclearkeyplugin.so|0eed3e515e175010abbd567827a0b73b846d06b5
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so|1b9850ee390f932c34f667883278ce3a7bc9b3fa
 vendor/lib64/libwvhidl.so|4af61fdcf1186700ea7ee23c607fb9ce5fd0f0e8
 
 # Fingerprint - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|47d6458be8aece1ad609371baa09a1516564b755
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|866b83e0dce24cd3dd7d8a6ef6fec5bd02de499f
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|e60616145136f8042988054d21a53c3496c6e910
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_sakura|866b83e0dce24cd3dd7d8a6ef6fec5bd02de499f
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service_sakura.rc|ede68c7afd70cc239db34e20864f4049427804b6
 vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
 vendor/framework/com.fingerprints.extension.jar|7e972c26a5b51fc13bd4eff6584d40a41c5b09c0
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so|2cdf4c51e52d798ee7884af4fdedee43cbf0814e
 vendor/lib64/com.fingerprints.extension@1.0.so|8160005f7c795c14996355e4e26f3257807bc399
-vendor/lib64/hw/fingerprint.default.so|8083a26a87d965b7939a2e802f10cfda0bf5dceb
+vendor/lib64/hw/fingerprint.vendor.default.so|8083a26a87d965b7939a2e802f10cfda0bf5dceb
 vendor/lib64/hw/gf_fingerprint.default.so|b09aba758c469f3e3ff04197a723a15fbdfafea1
 vendor/lib64/libgf_ca.so|a109ea31c3968ecd8298a6316b93e16d5d8dfdcd
 vendor/lib64/libgf_hal.so|7ed7ac6bcc9172d1f36da5dc33b32af97170413e
@@ -985,7 +970,6 @@ vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
 vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/init-qcril-data.rc|890ac72fa49d0e52a263175a7b5b550539287800
 vendor/etc/init/ipacm-diag.rc|cacc1fce2e7123f6fdcaa408e66c3dfb9870f1bf
-vendor/etc/init/ipacm.rc|85cde517971d2b293d29cbc20b24331489059d32
 vendor/etc/init/netmgrd.rc|711a0b87943ecd5308dc875395a9d67bd080dcef
 vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
@@ -1006,7 +990,6 @@ vendor/lib64/libpdnotifier.so|0bc6da506a281b210cc6bb96d2fe655eaec2a737
 vendor/lib64/libqcmaputils.so|825484b9fb16f15af43f44122b698aa2d0512a88
 vendor/lib64/libqrtr.so|c7ca700c1f4759aa673a6c5478ca492487bbea70
 vendor/lib64/libqsocket.so|40816476d857f2ad07490415f6ff7433517ccef8
-vendor/lib64/libqti_vndfwk_detect.so|d1da6c6253eb4a37c87faf510cae4c9e01fe95eb
 vendor/lib64/libril-qc-ltedirectdisc.so|a46e74110f2a7bf6b37bd7b5cbcd8953174c9229
 vendor/lib64/libril-qc-qmi-1.so|d3255d52d1cc778e032e6182a5b650d34aa07ef9
 vendor/lib64/libril-qc-radioconfig.so|ad51e1c96961e6057dfb88ae1926af5b91530f26
@@ -1157,7 +1140,6 @@ etc/firmware/ice40.bin|a29bdcdbfda7f7dae24a3c8921abe2bcda6ae38e
 lib64/libwifikeystorehalext.so|885f2bc17aa3ef71d9138ad2f2b9af3d92623dbd
 vendor/bin/cnss-daemon|e835ea5247a480754309b8c1bb267f5cca2e3a11
 vendor/bin/cnss_diag|9189ce1bf89ad9af71efd5f265a7cbadb0d7bcfb
-vendor/bin/wcnss_service|1a7da5ec11248ea69af665d711a846e4cc7c95be
 
 # Wi-Fi Display - from LA.UM.8.6.2.r1-07600-89xx.0
 bin/wfdservice|934817e5689fe6f8b54032902de58c203b8ec2e7

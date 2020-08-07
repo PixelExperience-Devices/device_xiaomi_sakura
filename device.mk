@@ -85,13 +85,16 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
-    libvolumelistener
+    libvolumelistener \
+    libaudiopreprocessing \
+    libtinycompress \
 
 # A2DP
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     android.hardware.bluetooth.a2dp@1.0-impl \
-    android.hardware.bluetooth.a2dp@1.0-service
+    android.hardware.bluetooth.a2dp@1.0-service \
+    vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -119,6 +122,10 @@ PRODUCT_COPY_FILES += \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
+# Biometrics
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
@@ -136,7 +143,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5 \
     android.hardware.camera.device@3.4 \
-    vendor.qti.hardware.camera.device@1.0
+    vendor.qti.hardware.camera.device@1.0 \
+    libgui_vendor
 
 # Codec2
 PRODUCT_PACKAGES += \
@@ -309,7 +317,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libjson \
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -427,6 +437,7 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
     dhcpcd.conf \
+    wcnss_service \
     wpa_supplicant \
     wpa_supplicant.conf \
     libwifi-hal-qcom \
