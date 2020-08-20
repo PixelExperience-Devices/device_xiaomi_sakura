@@ -1,0 +1,25 @@
+# Initialization
+on property:sys.boot_completed=1
+
+# Set default profile on first boot
+    exec u:r:init:s0 root root -- /vendor/bin/init.camera.sh
+    exec u:r:magisk:s0 root root -- /vendor/bin/init.camera.sh
+
+# Enable CameraHal support
+   setprop camera.support 1
+
+# 0 - Enable Hal1
+on property:persist.camera.profile=0
+    setprop persist.vendor.camera.HAL3.enabled 0
+    stop vendor.camera-provider-2-4
+    stop cameraserver
+    start vendor.camera-provider-2-4
+    start cameraserver
+
+# 1 - Enable Hal3
+on property:persist.camera.profile=1
+    setprop persist.vendor.camera.HAL3.enabled 1
+    stop vendor.camera-provider-2-4
+    stop cameraserver
+    start vendor.camera-provider-2-4
+    start cameraserver

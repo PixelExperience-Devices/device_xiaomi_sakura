@@ -23,6 +23,7 @@ import android.content.Intent;
 import android.util.Log;
 
 import org.lineageos.settings.doze.DozeUtils;
+import org.lineageos.settings.camera.CameraUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 

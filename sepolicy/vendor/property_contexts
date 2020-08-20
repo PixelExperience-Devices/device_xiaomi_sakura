@@ -39,3 +39,6 @@ sys.thermal.                                                  u:object_r:thermal
 
 # Dirac
 persist.audio.dirac.                                          u:object_r:dirac_prop:s0
+
+# HAL3 | HAL1 Switch
+persist.camera.profile                                        u:object_r:camera_prop:s0
