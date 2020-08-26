@@ -21,3 +21,5 @@ allow qti_init_shell system_data_file:dir { open };
 allow qti_init_shell system_data_file:file { getattr };
 allow qti_init_shell system_data_file:dir { remove_name };
 allow qti_init_shell system_data_file:dir { rmdir };
+
+dontaudit qti_init_shell self:capability dac_override;

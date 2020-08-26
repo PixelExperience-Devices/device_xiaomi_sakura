@@ -4,3 +4,4 @@ allow hal_wifi_default mnt_vendor_file:dir r_dir_perms;
 allow hal_wifi_default wifi_vendor_data_file:dir r_dir_perms;
 
 get_prop(hal_wifi_default, default_prop)
+set_prop(hal_wifi_default, vendor_default_prop)

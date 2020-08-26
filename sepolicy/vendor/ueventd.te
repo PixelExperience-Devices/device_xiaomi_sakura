@@ -11,3 +11,4 @@ r_dir_file(ueventd, vfat)
 allow ueventd vfat:dir r_dir_perms;
 allow ueventd vfat:file r_file_perms;
 allow ueventd ueventd:capability { sys_admin };
+allow ueventd self:capability sys_nice;
