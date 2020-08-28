@@ -49,7 +49,7 @@ vendor.qcom.bluetooth.soc=pronto \
 vendor.bluetooth.soc=pronto \
 ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd \
-persist.vendor.bt.aac_frm_ctl.enabled=true \
+persist.vendor.bt.aac_frm_ctl.enabled=true
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -90,17 +90,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.vendor.qti.core_ctl_min_cpu=2 \
 ro.vendor.qti.core_ctl_max_cpu=4
 
-# Dirac - D2AO-1004
+# Data
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.dirac.afm.mode=global \
-persist.dirac.poolsize=3
+persist.vendor.data.profile_update=true \
+persist.vendor.radio.prefer_spn=1
+
+# Dirac
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.dirac.acs.controller=qem \
+persist.dirac.acs.ignore_error=1 \
+persist.dirac.acs.storeSettings=1 \
+ro.audio.soundfx.dirac=true
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
-debug.sf.enable_hwc_vds=0 \
+debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=0 \
 debug.egl.hw=0 \
 debug.sf.latch_unsignaled=1 \
@@ -110,7 +117,6 @@ debug.sf.enable_gl_backpressure=1 \
 dev.pm.dyn_samplingrate=1 \
 persist.debug.wfd.enable=1 \
 persist.demo.hdmirotationlock=false \
-persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
@@ -118,6 +124,7 @@ ro.sf.lcd_density=420 \
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
 debug.sdm.support_writeback=0 \
 ro.vendor.display.cabl=2 \
+ro.vendor.display.sensortype=2 \
 sdm.debug.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=0 \
 vendor.display.disable_skip_validate=1 \
@@ -139,20 +146,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.hardware.keystore_desede=true
 
-# HWUI
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.hwui.texture_cache_size=72 \
-ro.hwui.layer_cache_size=48 \
-ro.hwui.r_buffer_cache_size=8 \
-ro.hwui.path_cache_size=32 \
-ro.hwui.gradient_cache_size=1 \
-ro.hwui.drop_shadow_cache_size=6 \
-ro.hwui.texture_cache_flushrate=0.4 \
-ro.hwui.text_small_cache_width=1024 \
-ro.hwui.text_small_cache_height=1024 \
-ro.hwui.text_large_cache_width=2048 \
-ro.hwui.text_large_cache_height=1024
-
 # IMS debug
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.ims.disableADBLogs=1 \
@@ -172,6 +165,7 @@ media.msm8956hw=0 \
 media.stagefright.audio.sink=280 \
 media.stagefright.thumbnail.prefer_hw_codecs=true \
 vendor.mm.enable.qcom_parser=1048575 \
+persist.mm.sta.enable=0 \
 mm.enable.smoothstreaming=true \
 mmp.enable.3g2=true \
 vendor.audio.hw.aac.encoder=true \
@@ -181,8 +175,7 @@ vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
 vendor.video.disable.ubwc=1 \
-vendor.gralloc.enable_fb_ubwc=1 \
-vendor.video.disable.ubwc=1
+vendor.gralloc.enable_fb_ubwc=1
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -214,11 +207,10 @@ persist.vendor.radio.nitz_sons_3=""
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.sys.fw.dex2oat_thread_count=8 \
 ro.vendor.extension_library=libqti-perfd-client.so \
+ro.vendor.qti.am.reschedule_service=true \
+ro.vendor.qti.sys.fw.bservice_age=5000 \
+ro.vendor.qti.sys.fw.bservice_limit=5 \
 ro.vendor.qti.sys.fw.bservice_enable=true
-
-# Qualcomm
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-ro.vendor.qti.va_aosp.support=1
 
 # QTI Performance
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -230,10 +222,6 @@ vendor.enable.prefetch=false \
 vendor.iop.enable_prefetch_ofr=false \
 vendor.perf.gestureflingboost.enable=true \
 vendor.perf.workloadclassifier.enable=true
-
-# Rescue party
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.sys.disable_rescue=true
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -265,31 +253,13 @@ persist.vendor.radio.sw_mbn_update=0 \
 persist.vendor.radio.sib16_support=1 \
 persist.vendor.radio.iwlan.enable=1 \
 persist.vendor.data.iwlan.enable=true \
-ril.subscription.types=NV,RUIM \
-rild.libargs=-d/dev/smd0 \
-rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-ro.telephony.iwlan_operation_mode=legacy \
-ro.telephony.call_ring.multiple=false \
-ro.telephony.default_network=22,20 \
-persist.sys.fflag.override.settings_network_and_internet_v2=true \
-service.qti.ims.enabled=1 \
-telephony.lteOnCdmaDevice=1 \
 persist.vendor.vt.supported=1 \
 persist.vendor.sys.cnd.iwlan=1 \
 persist.vendor.cne.logging.qxdm=3974
 
-# SurfaceFlinger
+# SD Card
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.surface_flinger.protected_contents=true \
-debug.sf.early_phase_offset_ns=1500000 \
-debug.sf.early_app_phase_offset_ns=1500000 \
-debug.sf.early_gl_phase_offset_ns=3000000 \
-debug.sf.early_gl_app_phase_offset_ns=15000000 \
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
-ro.surface_flinger.max_virtual_display_dimension=4096
-
-PRODUCT_PROPERTY_OVERRIDES += \
-debug.sf.disable_backpressure=1
+persist.fuse_sdcard=true
 
 # Thermal configs path
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -312,25 +282,6 @@ persist.vendor.usb.config.extra=none
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
-
-# Unsorted properties
-PRODUCT_PROPERTY_OVERRIDES += \
-keyguard.no_require_sim=true \
-persist.fuse_sdcard=true \
-persist.mm.sta.enable=0 \
-persist.vendor.data.profile_update=true \
-persist.vendor.radio.prefer_spn=1 \
-ro.memperf.lib=libmemperf.so \
-ro.memperf.enable=false \
-ro.vendor.display.sensortype=2 \
-ro.vendor.qti.am.reschedule_service=true \
-ro.vendor.qti.sys.fw.bservice_age=5000 \
-ro.vendor.qti.sys.fw.bservice_limit=5 \
-ro.vendor.qti.sys.fw.empty_app_percent=50 \
-ro.vendor.qti.sys.fw.trim_cache_percent=100 \
-ro.vendor.qti.sys.fw.trim_empty_percent=100 \
-ro.vendor.qti.sys.fw.trim_enable_memory=2147483648 \
-ro.vendor.qti.sys.fw.use_trim_settings=true
 
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \

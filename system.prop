@@ -1,0 +1,66 @@
+# Audio
+ro.config.safe_vol_default=8
+ro.config.media_vol_default=10
+ro.config.alarm_vol_default=3
+
+# Bluetooth SOC type
+persist.vendor.btstack.enable.splita2dp=false
+
+# DPM
+persist.vendor.dpm.feature=0
+
+# Game Detection Feature
+vendor.debug.enable.gamed=0
+
+# HWUI
+ro.hwui.texture_cache_size=72
+ro.hwui.layer_cache_size=48
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.path_cache_size=32
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_small_cache_height=1024
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=1024
+
+# Media
+av.debug.disable.pers.cache=1
+media.aac_51_output_enabled=true
+media.msm8956hw=0
+media.stagefright.audio.sink=280
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mm.enable.sec.smoothstreaming=true
+mmp.enable.3g2=true
+
+# Memperf
+ro.memperf.lib=libmemperf.so
+ro.memperf.enable=false
+
+# Qualcomm
+ro.vendor.qti.va_aosp.support=1
+
+# Radio
+keyguard.no_require_sim=true
+ril.subscription.types=NV,RUIM
+rild.libargs=-d/dev/smd0
+rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+ro.telephony.iwlan_operation_mode=legacy
+ro.telephony.call_ring.multiple=false
+ro.telephony.default_network=20,20
+persist.sys.fflag.override.settings_network_and_internet_v2=true
+service.qti.ims.enabled=1
+telephony.lteOnCdmaDevice=1
+
+# Trim Properties
+ro.vendor.qti.sys.fw.use_trim_settings=true
+ro.vendor.qti.sys.fw.empty_app_percent=50
+ro.vendor.qti.sys.fw.trim_empty_percent=100
+ro.vendor.qti.sys.fw.trim_cache_percent=100
+ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
+
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+persist.hwc.enable_vds=1

@@ -1,19 +1,6 @@
-# Audio
-persist.vendor.audio.fluence.speaker=true
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=false
-ro.vendor.audio.sdk.fluencetype=fluence
-
-# Bluetooth SOC type
-persist.vendor.btstack.enable.splita2dp=false
-
-# DPM
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.dpm.feature=0
-
 # LMKD
 ro.lmk.low=1001
-ro.lmk.medium=800
+ro.lmk.medium=0
 ro.lmk.critical=0
 ro.lmk.critical_upgrade=false
 ro.lmk.upgrade_pressure=100
@@ -21,16 +8,4 @@ ro.lmk.downgrade_pressure=100
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
-
-# Media
-av.debug.disable.pers.cache=1
-media.aac_51_output_enabled=true
-media.msm8956hw=0
-media.stagefright.audio.sink=280
-media.stagefright.thumbnail.prefer_hw_codecs=true
-mm.enable.sec.smoothstreaming=true
-mmp.enable.3g2=true
-
-# WFD
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
+ro.lmk.log_stats=true
