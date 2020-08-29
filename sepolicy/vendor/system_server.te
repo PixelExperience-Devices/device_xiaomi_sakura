@@ -1,6 +1,9 @@
+# Bluetooth
+get_prop(system_server, bluetooth_prop)
+
 # camera
 allow system_server mm-qcamerad:binder { call };
-get_prop(system_server, bluetooth_prop)
+get_prop(system_server, camera_prop)
 
 # smart charging
 allow system_server sysfs_battery_supply:file rw_file_perms;

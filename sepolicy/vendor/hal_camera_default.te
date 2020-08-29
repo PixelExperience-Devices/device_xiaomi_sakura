@@ -5,6 +5,11 @@ allow hal_camera_default sysfs_kgsl:lnk_file r_file_perms;
 allow hal_camera_default sysfs_kgsl:file r_file_perms;
 allow hal_camera_default hal_configstore_default:binder call;
 allow hal_camera_default hal_graphics_allocator_default:binder call;
+allow hal_camera_default hal_graphics_allocator_hwservice:hwservice_manager find;
+allow hal_camera_default hal_configstore_ISurfaceFlingerConfigs:hwservice_manager find;
+
+hal_client_domain(hal_camera_default, hal_graphics_allocator)
+hal_client_domain(hal_camera_default, hal_configstore)
 
 get_prop(hal_camera_default, default_prop)
 set_prop(hal_camera_default, persist_camera_prop)

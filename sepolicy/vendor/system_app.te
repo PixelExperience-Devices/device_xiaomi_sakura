@@ -1,0 +1,2 @@
+get_prop(system_app, camera_prop)
+set_prop(system_app, camera_prop)
