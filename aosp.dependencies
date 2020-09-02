@@ -3,7 +3,7 @@
    "repository": "vendor_xiaomi_sakura",
    "target_path": "vendor/xiaomi/sakura",
    "branch": "ten",
-   "remote":"pixel-devices-bitbucket"
+   "remote":"pixel-devices-blobs"
  },
  {
    "repository": "kernel_xiaomi_msm8953",
