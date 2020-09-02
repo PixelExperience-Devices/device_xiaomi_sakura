@@ -619,6 +619,9 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|dfedda144d19622e3e579186033da2b
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|c0cc6212b3c0dbe51544c012dc21971caea13466
 vendor/lib64/vendor.qti.latency@2.0.so|fe4691e922ec926bd723ac79e6a11ba1d75db75a
 
+# Consumer IR - from Daisy QKQ1.191002.002 V11.0.2.0.QDLMIXM
+vendor/lib64/hw/consumerir.default.so|391a679b915a433e1ab16806c3c92de839a9531d
+
 # Display Calibration - from sakura
 vendor/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml|750a2797b45e36812761d6a26a9ba2b91e970c55
 vendor/etc/qdcm_calib_data_ili7807_fhdplus_video_mode_dsi_panel.xml|36055e8ba9bbda48a3a3d083b6ab553578e6d680
