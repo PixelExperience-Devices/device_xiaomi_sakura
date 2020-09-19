@@ -151,6 +151,7 @@ vendor/lib/libvidhance.so|92307ce9587e3bee93f5c7df1b97d695917df8a1
 vendor/lib/libXMFD_AgeGender.so|52fe8abb44c6633b6e854a1ba3dffeee51e94e61
 vendor/lib/lib_lowlight.so|4d3badf9ff8c4b0bb1e0116052bafb0cf4c9ab18
 vendor/lib/mibokeh_625_opencl.bin|a9142c25b36ecc531ed0ad595dfaa7c801be6f63
+vendor/lib/libgui_vendor.so|90c020e795df4dfdfd6a5722816929069161b42c
 vendor/lib64/libcapiv2svacnn.so|87b7602b1013180a4f4ce41c811aedaa445c583f
 vendor/lib64/libcapiv2vop.so|c0e918a02e679985ef8707e11d29c563382a48b0
 vendor/lib64/libdualcameraddm.so|41f53a101ff23a93ffdd12c66d46e4525452b3b3
@@ -489,6 +490,8 @@ vendor/lib/camera.device@3.5-impl.so|c84f8ee05be9f6b0bf41f07444dbfed91721e6c1
 vendor/lib64/camera.device@3.5-impl.so|c3f431ca6ebb78e5d77495fa02126ca8b4283138
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so|4b0048fdbd35a1332b231dead5f208b6e6afe29c
 vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|f1a3d481099331ba4f881131c01ca14c94ddba16
+vendor/lib/android.hardware.camera.provider@2.4-external.so|7818e9b652844f94de7722ff518af907332fd023
+vendor/lib64/android.hardware.camera.provider@2.4-external.so|fbe302ddf6e54f079b1178f5943fcf32ecb693ed
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so|1579f2b4a695bacdf6dff80e1129c330dd9b5a60
 
 # camera - from tissot [Fix green photo back camera in the whatsapp]
