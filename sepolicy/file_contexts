@@ -47,3 +47,4 @@
 
 # Root folders
 /firmware(/.*)?          u:object_r:firmware_file:s0
+/persist(/.*)?        u:object_r:mnt_vendor_file:s0
