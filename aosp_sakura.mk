@@ -32,4 +32,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="sakura" \
     TARGET_DEVICE="sakura"
 
+# Fingerprint
+BUILD_FINGERPRINT := google/sunfish/sunfish:11/RP1A.201005.006/6828489:user/release-keys
+BUILD_DESCRIPTION := sunfish-user 11 RP1A.201005.006 6828489 release-keys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
