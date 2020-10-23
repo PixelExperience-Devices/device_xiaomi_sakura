@@ -115,6 +115,11 @@ PRODUCT_COPY_FILES += \
 	$(TOPDIR)frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
 	$(TOPDIR)frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
+# Binder
+PRODUCT_PACKAGES += \
+    libhwbinder \
+    libhwbinder.vendor
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
@@ -199,8 +204,7 @@ PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0 \
-    libhidltransport \
-    libhwbinder
+    libhidltransport
 
 # HW crypto
 PRODUCT_PACKAGES += \
