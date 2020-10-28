@@ -264,3 +264,7 @@ wifi.interface=wlan0
 # XML
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.binary_xml=false
+
+# Zygote
+PRODUCT_PROPERTY_OVERRIDES += \
+zygote.critical_window.minute=10
