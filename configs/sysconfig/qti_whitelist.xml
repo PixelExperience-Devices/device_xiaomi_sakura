@@ -37,11 +37,6 @@
     <allow-in-power-save package="com.qualcomm.qcrilmsgtunnel" />
     <allow-in-power-save package="com.qualcomm.qti.ims" />
     <allow-in-power-save package="com.qualcomm.qti.radioconfiginterface" />
-    <allow-in-power-save package="com.qualcomm.simcontacts" />
-    <allow-in-power-save package="com.qualcomm.qti.autoregistration" />
-    <allow-in-power-save package="com.qualcomm.qti.server.wigigapp" />
-    <allow-in-power-save package="com.qualcomm.qti.StatsPollManager" />
-    <allow-in-power-save package="com.qualcomm.qti.gsma.services.nfc" />
     <allow-in-power-save package="com.quicinc.voice.activation" />
     <allow-in-power-save package="com.android.mms" />
     <allow-in-power-save package="com.android.exchange" />
@@ -52,9 +47,6 @@
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteserver" />
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteclient" />
     <hidden-api-whitelisted-app package="com.qualcomm.atfwd" />
-    <hidden-api-whitelisted-app package="com.qualcomm.qti.autoregistration" />
-    <hidden-api-whitelisted-app package="com.qualcomm.qti.callenhancement" />
-    <hidden-api-whitelisted-app package="com.qualcomm.qti.callfeaturessetting" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.confdialer" />
     <hidden-api-whitelisted-app package="org.codeaurora.dialer" />
     <hidden-api-whitelisted-app package="com.qti.qualcomm.datastatusnotification" />
@@ -67,7 +59,6 @@
     <hidden-api-whitelisted-app package="com.qualcomm.qti.radioconfigtest" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.roamingsettings" />
     <hidden-api-whitelisted-app package="com.qualcomm.simcontacts" />
-    <hidden-api-whitelisted-app package="com.qualcomm.qti.simsettings" />
     <hidden-api-whitelisted-app package="org.codeaurora.ims" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.ims" />
     <hidden-api-whitelisted-app package="com.qti.xdivert" />
