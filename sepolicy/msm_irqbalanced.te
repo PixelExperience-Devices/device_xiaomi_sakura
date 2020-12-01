@@ -1,1 +1,0 @@
-allow msm_irqbalanced msm_irqbalanced:capability { sys_admin };

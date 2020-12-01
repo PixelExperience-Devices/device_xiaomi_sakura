@@ -12,3 +12,6 @@ allow tee vendor_data_file:dir { write };
 allow tee vendor_data_file:dir { add_name };
 allow tee vendor_data_file:file { create };
 allow tee vendor_data_file:file { read write open };
+
+allow tee fingerprintd_data_file:dir rw_dir_perms;
+allow tee fingerprintd_data_file:file create_file_perms;

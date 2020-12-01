@@ -5,3 +5,6 @@ allow system_server vendor_keylayout_file:dir r_dir_perms;
 allow system_server vendor_keylayout_file:file r_file_perms;
 
 allow system_server sysfs_rtc:file r_file_perms;
+
+# fingerprint
+allow system_server goodix_fp_hwservice:hwservice_manager find;

@@ -1,5 +1,5 @@
 allow hal_camera_default camera_data_file:sock_file write;
-allow hal_camera_default persist_camera_prop:file { getattr read open };
+allow hal_camera_default vendor_persist_camera_prop:file { getattr read open };
 allow hal_camera_default apexd_prop:file { open getattr };
 allow hal_camera_default vendor_default_prop:property_service set;
 
