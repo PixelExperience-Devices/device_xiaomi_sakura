@@ -147,10 +147,6 @@ DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/vintf/vendor.qti.gnss@3.0-service.xml
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8953
-TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
-
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
