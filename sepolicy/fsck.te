@@ -1,2 +1,2 @@
-allow fsck tmpfs:blk_file { getattr };
-allow fsck fsck:capability { sys_admin };
+allow fsck tmpfs:blk_file r_file_perms;
+allow fsck fsck:capability sys_admin;

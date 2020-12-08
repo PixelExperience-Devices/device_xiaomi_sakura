@@ -11,7 +11,6 @@ type fpc_sysfs, fs_type, sysfs_type;
 type gx_fpd_data_file, file_type, core_data_file_type, data_file_type;
 
 # Input devices
-type idc_file, file_type, vendor_file_type;
 type keylayout_file, file_type, vendor_file_type;
 
 # Rild
@@ -22,4 +21,3 @@ type debugfs_rmt, debugfs_type, fs_type;
 
 # Touchscreen
 type proc_touchpanel, fs_type, sysfs_type, proc_type;
-

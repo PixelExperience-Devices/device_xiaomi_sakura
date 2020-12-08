@@ -1,1 +1,0 @@
-allow netd netd:capability { sys_admin };

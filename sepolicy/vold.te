@@ -1,2 +1,2 @@
 allow vold proc_touchpanel:dir r_dir_perms;
-allow vold same_process_hal_file:file { execute getattr open read };
+allow vold same_process_hal_file:file { r_file_perms execute };

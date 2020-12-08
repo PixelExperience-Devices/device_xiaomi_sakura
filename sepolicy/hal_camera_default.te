@@ -1,10 +1,8 @@
-allow hal_camera_default camera_data_file:sock_file write;
-allow hal_camera_default vendor_persist_camera_prop:file { getattr read open };
-allow hal_camera_default apexd_prop:file { open getattr };
-allow hal_camera_default vendor_default_prop:property_service set;
-
 hal_client_domain(hal_camera_default, hal_graphics_allocator)
 hal_client_domain(hal_camera_default, hal_configstore)
-allow hal_camera_default sysfs:file { read };
-allow hal_camera_default sysfs:file { open };
-allow hal_camera_default sysfs:file { getattr };
+
+allow hal_camera_default camera_data_file:sock_file write;
+allow hal_camera_default sysfs:file r_file_perms;
+
+get_prop(hal_camera_default, vendor_persist_camera_prop)
+set_prop(hal_camera_default, vendor_default_prop)

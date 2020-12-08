@@ -1,1 +1,1 @@
-allow proc_net proc:filesystem { associate };
+allow proc_net proc:filesystem associate;

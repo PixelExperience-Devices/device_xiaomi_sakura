@@ -1,1 +1,1 @@
-allow irsc_util irsc_util:capability { sys_admin };
+allow irsc_util irsc_util:capability sys_admin;

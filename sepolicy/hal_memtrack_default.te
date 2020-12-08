@@ -1,2 +1,2 @@
-allow hal_memtrack_default sysfs_kgsl:lnk_file { read };
+allow hal_memtrack_default sysfs_kgsl:lnk_file r_file_perms;
 r_dir_file(hal_memtrack_default, sysfs_kgsl)

@@ -1,1 +1,1 @@
-allow adbd adbd:capability { sys_admin };
+allow adbd adbd:capability sys_admin;

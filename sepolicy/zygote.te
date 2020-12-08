@@ -1,1 +1,1 @@
-allow zygote zygote:capability { kill };
+allow zygote zygote:capability kill;

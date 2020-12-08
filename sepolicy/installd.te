@@ -1,1 +1,1 @@
-allow installd installd:capability { kill };
+allow installd installd:capability kill;

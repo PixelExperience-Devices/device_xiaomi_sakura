@@ -1,1 +1,1 @@
-allow usbd usbd:capability { sys_admin };
+allow usbd usbd:capability sys_admin;
