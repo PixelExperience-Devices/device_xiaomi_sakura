@@ -10,5 +10,11 @@
    "target_path" : "vendor/xiaomi/sakura",
    "remote"      : "pixel-devices-blobs",
    "branch"      : "eleven"
+ },
+ {
+   "repository"  : "kdrag0n/proton-clang",
+   "target_path" : "prebuilts/clang/host/linux-x86/clang-proton",
+   "remote"      : "github",
+   "branch"      : "master"
  }
 ]
