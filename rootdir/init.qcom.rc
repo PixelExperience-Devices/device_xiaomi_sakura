@@ -582,13 +582,6 @@ on charger
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
 
-#Mixed HWC versions among targets
-on property:init.svc.surfaceflinger=restarting
-    stop  vendor.hwcomposer-2-1
-    stop  vendor.hwcomposer-2-2
-    start vendor.hwcomposer-2-1
-    start vendor.hwcomposer-2-2
-
 service vendor.move_time_data /system/bin/move_time_data.sh
     class main
     user system
