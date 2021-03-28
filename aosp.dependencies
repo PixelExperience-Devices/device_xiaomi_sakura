@@ -1,7 +1,7 @@
 [
  {
    "repository"  : "kernel_xiaomi_msm8953",
-   "target_path" : "kernel/xiaomi/sakura",
+   "target_path" : "kernel/xiaomi/msm8953",
    "remote"      : "pixel-devices",
    "branch"      : "eleven"
  },
@@ -10,11 +10,5 @@
    "target_path" : "vendor/xiaomi/sakura",
    "remote"      : "pixel-devices-blobs",
    "branch"      : "eleven"
- },
- {
-   "repository"  : "kdrag0n/proton-clang",
-   "target_path" : "prebuilts/clang/host/linux-x86/clang-proton",
-   "remote"      : "github",
-   "branch"      : "master"
  }
 ]
