@@ -349,7 +349,8 @@ PRODUCT_BOOT_JARS += \
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    TetheringConfigOverlay
+    TetheringConfigOverlay \
+    WifiOverlay
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
