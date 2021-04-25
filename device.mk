@@ -139,7 +139,7 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libstdc++.vendor \
-    Snap
+    Camera2
 
 # Component overrides
 PRODUCT_COPY_FILES += \
