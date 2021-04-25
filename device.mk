@@ -306,7 +306,6 @@ PRODUCT_PACKAGES += \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.sh \
-    init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc
 
@@ -374,6 +373,13 @@ PRODUCT_COPY_FILES += \
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
+
+PRODUCT_PACKAGES += \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh
+
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/usb/etc
 
 # VNDK
 PRODUCT_PACKAGES += \
