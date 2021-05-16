@@ -1,0 +1,7 @@
+binder_call(radio, cnd)
+binder_call(radio, gpuservice)
+allow radio system_app_data_file:dir r_dir_perms;
+allow radio hal_datafactory_hwservice:hwservice_manager find;
+allow radio hal_iwlan_hwservice:hwservice_manager find;
+
+get_prop(radio, vendor_qcom_ims_prop)
