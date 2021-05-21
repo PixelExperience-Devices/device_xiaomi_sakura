@@ -433,6 +433,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/sensors/,$(TARGET_COPY_OUT_VENDOR)/etc/sensors)
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0.vendor \

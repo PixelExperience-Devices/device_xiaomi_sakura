@@ -167,9 +167,6 @@ VENDOR_SECURITY_PATCH := 2020-02-05
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
-
 # Telephony
 TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 
