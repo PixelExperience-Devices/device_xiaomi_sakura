@@ -98,7 +98,7 @@ esac
 
 case "$target" in
     "msm8953")
-	start_msm_irqbalance_8939
+	start_msm_irqbalance
         ;;
 esac
 
