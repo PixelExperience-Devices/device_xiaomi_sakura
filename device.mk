@@ -139,6 +139,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4 \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libdng_sdk.vendor \
+    camera.msm8953 \
+    libmm-qcamera \
     libgui_vendor \
     libstdc++.vendor \
     Camera2
