@@ -443,9 +443,10 @@
     <!-- Whether or not swipe up gesture is enabled by default -->
     <bool name="config_swipe_up_gesture_default">true</bool>
 
-    <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">94.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dp</dimen>
+    <!-- Height of the status bar.
+         Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
+         -->
+    <dimen name="status_bar_height">89.0px</dimen>
 
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
