@@ -27,7 +27,7 @@
 /dev/peel_ir					u:object_r:lirc_device:s0
 
 # Light
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.sakura	    u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi	    u:object_r:hal_light_default_exec:s0
 
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril\.db			u:object_r:rild_file:s0

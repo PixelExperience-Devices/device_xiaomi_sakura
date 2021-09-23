@@ -288,7 +288,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.sakura
+    android.hardware.light-service.xiaomi
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
@@ -435,7 +435,8 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/xiaomi
 
 # Thermal
 PRODUCT_PACKAGES += \
