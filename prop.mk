@@ -89,6 +89,7 @@ debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=0 \
 debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
+debug.renderengine.backend=threaded \
 dev.pm.dyn_samplingrate=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
