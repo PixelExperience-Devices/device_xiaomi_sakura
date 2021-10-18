@@ -238,3 +238,7 @@ persist.vendor.usb.config.extra=none
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
+
+# XML
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.binary_xml=false
