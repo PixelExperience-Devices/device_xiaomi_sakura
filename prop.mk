@@ -63,6 +63,7 @@ persist.vendor.camera.gyro.disable=0 \
 persist.vendor.camera.isp.clock.optmz=0 \
 persist.vendor.camera.stats.test=5 \
 persist.vendor.camera.CDS=off \
+persist.vendor.camera.aux.camera=1 \
 persist.camera.HAL3.enabled=1
 
 # Charger
