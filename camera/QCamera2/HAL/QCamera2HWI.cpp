@@ -2554,14 +2554,12 @@ uint8_t QCamera2HardwareInterface::getBufNumRequired(cam_stream_type_t stream_ty
                         !mLongshotEnabled) {
                     // Single ZSL snapshot case
                     bufferCnt = zslQBuffers + CAMERA_MIN_STREAMING_BUFFERS +
-                            mParameters.getNumOfExtraBuffersForImageProc() +
-                            mParameters.getNumOfExtraHDRInBufsIfNeeded();
+                            mParameters.getNumOfExtraBuffersForImageProc();
                 }
                 else {
                     // ZSL Burst or Longshot case
                     bufferCnt = zslQBuffers + minCircularBufNum +
-                            mParameters.getNumOfExtraBuffersForImageProc() +
-                            mParameters.getNumOfExtraHDRInBufsIfNeeded();
+                            mParameters.getNumOfExtraBuffersForImageProc();
                 }
                 if (getSensorType() == CAM_SENSOR_YUV && bufferCnt > CAMERA_ISP_PING_PONG_BUFFERS) {
                     //ISP allocates native buffers in YUV case
