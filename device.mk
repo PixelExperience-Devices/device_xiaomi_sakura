@@ -130,6 +130,11 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
@@ -144,6 +149,16 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libstdc++.vendor \
     Camera2
+
+PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
+    android.hardware.camera.device@3.3.vendor \
+    android.hardware.camera.device@3.4.vendor \
+    android.hardware.camera.device@3.5.vendor \
+    android.hardware.camera.device@3.6.vendor \
+    android.hardware.camera.provider@2.4.vendor \
+    android.hardware.camera.provider@2.5.vendor \
+    android.hardware.camera.provider@2.6.vendor
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -173,9 +188,16 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
+    libdisplayconfig.qti \
     libqdMetaData.system \
     libgenlock \
+    libtinyxml.vendor \
     libtinyxml
+
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-resources.vendor \
+    android.hidl.allocator@1.0.vendor \
+    android.hardware.memtrack@1.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -183,10 +205,27 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service-lazy \
     android.hardware.drm@1.3-service.clearkey
 
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor
+
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
+# Gnss
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss.visibility_control@1.0.vendor \
+    android.hardware.gnss.measurement_corrections@1.1.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -254,6 +293,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sysconfig/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.sakura
@@ -282,6 +325,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor
 
+# Network
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.2.vendor \
+    android.hardware.neuralnetworks@1.3.vendor
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -307,6 +359,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
@@ -317,6 +374,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson \
     libjson.vendor
+
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.0.vendor \
+    android.hardware.radio.config@1.1.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.secure_element@1.0.vendor \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -382,6 +451,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
 # Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0.vendor \
+    android.hardware.thermal@2.0.vendor
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
