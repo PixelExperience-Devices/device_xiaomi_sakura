@@ -1236,7 +1236,6 @@ vendor/lib64/qcrild_librilutils.so|22ae52ea7750c9011e3880852d800d94d54b030e
 
 # Radio - from LA.UM.8.6.2.r1-08400-89xx.0
 -product/app/atfwd/atfwd.apk|2cdfbd4649a4087fda35995cf66236dbd1113972
--product/app/datastatusnotification/datastatusnotification.apk|4685df4bb2446950bcb37da83f4acefc69bfcdc3
 -product/app/embms/embms.apk|079f2395e1921c5c9df77423ab989e6a9a1219fd
 -product/app/QtiTelephonyService/QtiTelephonyService.apk|9758fbbaa7b2a18c01a32200b3a86a4dbc798d3c
 product/etc/permissions/embms.xml|5589ed8da213acd27e2ad2109094561eb1be30a7
