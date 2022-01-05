@@ -1,2 +1,11 @@
 # Dirac
 vendor_internal_prop(dirac_prop)
+
+# Fingerprint
+vendor_internal_prop(vendor_fingerprint_prop)
+
+# SLM
+vendor_public_prop(vendor_slm_prop)
+
+# Wi-Fi prop
+vendor_internal_prop(vendor_wifi_prop)

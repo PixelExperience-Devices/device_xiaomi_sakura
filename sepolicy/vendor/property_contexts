@@ -1,17 +1,44 @@
-sys.listeners.registered   u:object_r:vendor_tee_listener_prop:s0
-sys.post_boot.parsed       u:object_r:vendor_mpctl_prop:s0
-persist.net.doxlat         u:object_r:vendor_xlat_prop:s0
-camera.dual.mode           u:object_r:camera_prop:s0
-persist.camera.            u:object_r:camera_prop:s0
-persist.vendor.camera.     u:object_r:camera_prop:s0
-vendor.camera.             u:object_r:camera_prop:s0
-hardware.camera.autohdr    u:object_r:camera_prop:s0
-wifi.active.interface      u:object_r:exported_wifi_prop:s0
+# Camera
+camera.dual.mode                     u:object_r:camera_prop:s0
+persist.camera.                      u:object_r:camera_prop:s0
+persist.vendor.camera.               u:object_r:camera_prop:s0
+vendor.camera.                       u:object_r:camera_prop:s0
+hardware.camera.autohdr              u:object_r:camera_prop:s0
+camera.clientname                    u:object_r:camera_prop:s0
+persist.vidhance.                    u:object_r:camera_prop:s0
+
+# Dynamic colors
+persist.bootanim.color1              u:object_r:bootanim_system_prop:s0
+persist.bootanim.color2              u:object_r:bootanim_system_prop:s0
+persist.bootanim.color3              u:object_r:bootanim_system_prop:s0
+persist.bootanim.color4              u:object_r:bootanim_system_prop:s0
 
 # Dirac
-persist.audio.dirac.                                          u:object_r:dirac_prop:s0
+persist.audio.dirac.                 u:object_r:dirac_prop:s0
 
 # FP
-ctl.vendor.imsrcsd				u:object_r:vendor_ctl_vendor_imsrcsservice_prop:s0
-sys.fp.goodix					    u:object_r:fingerprint_prop:s0
-sys.fp.vendor					    u:object_r:fingerprint_prop:s0
+sys.fp.goodix                        u:object_r:vendor_fingerprint_prop:s0
+sys.fp.vendor                        u:object_r:vendor_fingerprint_prop:s0
+persist.sys.fp.                      u:object_r:vendor_fingerprint_prop:s0
+gf.debug.dump_data                   u:object_r:vendor_fingerprint_prop:s0
+
+# IMS
+ctl.vendor.imsrcsd		     u:object_r:vendor_ctl_vendor_imsrcsservice_prop:s0
+
+# MPCTL
+sys.post_boot.parsed                 u:object_r:vendor_mpctl_prop:s0
+
+# Netmgrd
+persist.net.doxlat                   u:object_r:vendor_xlat_prop:s0
+
+# SLM
+persist.vendor.slm.                  u:object_r:vendor_slm_prop:s0
+
+# Tee
+sys.listeners.registered             u:object_r:vendor_tee_listener_prop:s0
+
+# Wi-Fi
+vendor.wlan.driver.ath               u:object_r:vendor_wifi_prop:s0
+vendor.wlan.driver.config            u:object_r:vendor_wifi_prop:s0
+persist.sys.dynamic.nv               u:object_r:vendor_wifi_prop:s0
+wifi.active.interface                u:object_r:vendor_wifi_prop:s0

@@ -20,17 +20,21 @@
 /data/gf_data(/.*)?                             u:object_r:gx_fpd_data_file:s0
 /persist/data/gxfp(/.*)?			u:object_r:gx_fpd_data_file:s0
 
-# HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.sakura	    u:object_r:hal_light_default_exec:s0
-
 # Input devices
 /(vendor|system/vendor)/usr/keylayout(/.*)?                   u:object_r:vendor_keylayout_file:s0
 
 # Ir
 /dev/peel_ir					u:object_r:lirc_device:s0
 
+# Light
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.sakura	    u:object_r:hal_light_default_exec:s0
+
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril\.db			u:object_r:rild_file:s0
+
+# Root folders
+/firmware(/.*)?    u:object_r:firmware_file:s0
+/persist(/.*)?     u:object_r:mnt_vendor_file:s0
 
 # Shell Script
 /(vendor|system/vendor)/bin/init\.goodix\.sh	u:object_r:init_fingerprint_exec:s0
@@ -40,8 +44,4 @@
 /sys/devices(/platform)?/soc/leds-qpnp-[0-9]+/leds(/.*)?			u:object_r:sysfs_leds:s0
 /sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/enable_dt2w		u:object_r:proc_touchpanel:s0
 /sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/disable_keys        u:object_r:proc_touchpanel:s0
-/sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/wakeup_gesture       u:object_r:proc_touchpanel:s0
-
-# Root folders
-/firmware(/.*)?    u:object_r:firmware_file:s0
-/persist(/.*)?     u:object_r:mnt_vendor_file:s0
+/sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/wakeup_gesture      u:object_r:proc_touchpanel:s0

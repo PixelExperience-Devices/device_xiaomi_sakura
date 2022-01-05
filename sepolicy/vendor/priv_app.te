@@ -7,3 +7,4 @@ allow priv_app proc_interrupts:file r_file_perms;
 allow priv_app sysfs_android_usb:file r_file_perms;
 allow priv_app sysfs_graphics:file r_file_perms;
 allow priv_app proc_net:file r_file_perms;
+allow priv_app zygote:unix_stream_socket getopt;
