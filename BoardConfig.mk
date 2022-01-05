@@ -163,6 +163,7 @@ TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Recovery
+TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Security Patch Level
