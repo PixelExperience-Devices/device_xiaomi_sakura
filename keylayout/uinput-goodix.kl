@@ -1,8 +1,8 @@
-##################################
 #
-#add for goodix fingerprints
+# Copyright (C) 2022 The Android Open-Source Project
 #
-##################################
+# SPDX-License-Identifier: Apache-2.0
+#
 
 key 195 SYSTEM_NAVIGATION_UP
 key 196 SYSTEM_NAVIGATION_DOWN
