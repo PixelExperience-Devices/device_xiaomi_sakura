@@ -348,7 +348,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Properties
--include device/xiaomi/sakura/prop.mk
+include device/xiaomi/sakura/prop.mk
 
 # QMI
 PRODUCT_PACKAGES += \
