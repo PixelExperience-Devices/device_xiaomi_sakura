@@ -57,6 +57,17 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib64/libgf_ca.so)
+            sed -i 's|/vendor/firmware_mnt/image|/vendor/firmware_fp\x0\x0\x0\x0\x0\x0\x0|g' "${2}"
+            ;;
+        vendor/lib64/hw/fingerprint.fpc.default.so)
+            sed -i 's|/vendor/firmware_mnt/image|/vendor/firmware_fp\x0\x0\x0\x0\x0\x0\x0|g' "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 

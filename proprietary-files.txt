@@ -860,7 +860,7 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Fingerprint firmware - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
-etc/firmware/goodix_firmware.bin
+etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
 vendor/firmware/fpctzapp.b00
 vendor/firmware/fpctzapp.b01
 vendor/firmware/fpctzapp.b02
@@ -877,6 +877,24 @@ vendor/firmware/goodixfp.b04
 vendor/firmware/goodixfp.b05
 vendor/firmware/goodixfp.b06
 vendor/firmware/goodixfp.mdt
+
+# Fingerprint Firmware (modem)
+vendor/firmware_fp/fpctzapp.b00
+vendor/firmware_fp/fpctzapp.b01
+vendor/firmware_fp/fpctzapp.b02
+vendor/firmware_fp/fpctzapp.b03
+vendor/firmware_fp/fpctzapp.b04
+vendor/firmware_fp/fpctzapp.b05
+vendor/firmware_fp/fpctzapp.b06
+vendor/firmware_fp/fpctzapp.mdt
+vendor/firmware_fp/goodixfp.b00
+vendor/firmware_fp/goodixfp.b01
+vendor/firmware_fp/goodixfp.b02
+vendor/firmware_fp/goodixfp.b03
+vendor/firmware_fp/goodixfp.b04
+vendor/firmware_fp/goodixfp.b05
+vendor/firmware_fp/goodixfp.b06
+vendor/firmware_fp/goodixfp.mdt
 
 # DPM - from LA.UM.9.6.2.r1-02800-89xx.0
 system_ext/bin/dpmd|fd992da979dafa1822f7aca32d7a30fd54558724
