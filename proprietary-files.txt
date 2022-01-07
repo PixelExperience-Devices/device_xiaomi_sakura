@@ -1052,9 +1052,6 @@ vendor/firmware/a506_zap.mdt
 vendor/firmware/a530_pfp.fw
 vendor/firmware/a530_pm4.fw
 
-# Ipacm
-vendor/bin/ipacm-diag
-
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
@@ -1260,8 +1257,6 @@ vendor/etc/data/netmgr_config.xml|8d745575cd538f44259047209375db7fa09edfcf
 vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
 vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/init-qcril-data.rc|890ac72fa49d0e52a263175a7b5b550539287800
-vendor/etc/init/ipacm-diag.rc|cacc1fce2e7123f6fdcaa408e66c3dfb9870f1bf
-vendor/etc/init/ipacm.rc|85cde517971d2b293d29cbc20b24331489059d32
 vendor/etc/init/netmgrd.rc|711a0b87943ecd5308dc875395a9d67bd080dcef
 vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
