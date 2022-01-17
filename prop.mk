@@ -257,6 +257,10 @@ net.tcp.2g_init_rwnd=10
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.usb.config.extra=none
 
+# Watchdog
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.hw_timeout_multiplier=3
+
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
