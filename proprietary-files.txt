@@ -1015,7 +1015,6 @@ vendor/lib/hw/vulkan.msm8953.so|3ef65f298981f2edcec7e6fab91f2c44b1116cab
 vendor/lib/libC2D2.so|e85a06abb140e40b88b119a53f62a96c584a4233
 vendor/lib/libCB.so|e9f6737be8ecc8cf0f035c13754f2b0c833df26b
 vendor/lib/libOpenCL.so|90dd47a0a0bdcd5632e437d0c66a4e9aed9aa419
-vendor/lib/libRSDriver_adreno.so|9822b808be17d2f9683edd8936d9bdf0f2bb78be
 vendor/lib/libadreno_utils.so|d04e68dafe329eaea684b9f1ea2adac7dda10556
 vendor/lib/libbccQTI.so|428e8c5c5c86bce857a4c0deca2cd3797c775e2b
 vendor/lib/libc2d30_bltlib.so|d0428f5543b9c689d065a5c2fdc4bc3d6c585cfe
@@ -1036,7 +1035,6 @@ vendor/lib64/hw/vulkan.msm8953.so|264f8e9d39e82ef74a53f970f639f01f311fa485
 vendor/lib64/libC2D2.so|802802ac7ce0bb8bfc6918449a89ec820c6cfd53
 vendor/lib64/libCB.so|336f122d0b2eb287f8634637876427b52dcc12ab
 vendor/lib64/libOpenCL.so|d6bb350254707592d6f6360c06d4c3336f8f1155
-vendor/lib64/libRSDriver_adreno.so|dbeb4122053e468b8fe52496f8c93261945ffe99
 vendor/lib64/libadreno_utils.so|b46bdecaef58fbf040b7a472d54ad19b6b34b26d
 vendor/lib64/libbccQTI.so|42fdea81ea505ccadbf6d24af7ba37cf83760391
 vendor/lib64/libc2d30_bltlib.so|f76972674b571b32356c055c7703d33abfeeb3b9
