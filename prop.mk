@@ -255,6 +255,9 @@ net.tcp.2g_init_rwnd=10
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
+vendor.usb.rmnet.func.name=rmnet_bam \
+vendor.usb.rmnet.inst.name=rmnet \
+vendor.usb.rndis.func.name=rndis_bam \
 persist.vendor.usb.config.extra=none
 
 # Watchdog
