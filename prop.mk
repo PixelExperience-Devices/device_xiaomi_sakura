@@ -45,6 +45,7 @@ persist.vendor.btstack.enable.splita2dp=false \
 qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd \
+bluetooth.profile.asha.central=false \
 bluetooth.device.class_of_device=90,2,12
 
 # Camera
