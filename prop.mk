@@ -122,6 +122,10 @@ vendor.gralloc.enable_fb_ubwc=1
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=true
 
+# Encryption
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.crypto.volume.contents_mode=aes-256-xts
+
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.qfp=false
