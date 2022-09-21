@@ -44,7 +44,8 @@ bluetooth.hfp.client=1 \
 persist.vendor.btstack.enable.splita2dp=false \
 qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
-ro.qualcomm.bt.hci_transport=smd
+ro.qualcomm.bt.hci_transport=smd \
+bluetooth.device.class_of_device=90,2,12
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
