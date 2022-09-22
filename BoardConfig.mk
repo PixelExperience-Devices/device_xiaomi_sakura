@@ -37,6 +37,10 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 TARGET_KERNEL_CONFIG := sakura_defconfig
 TARGET_KERNEL_VERSION := 4.9
 
+# Kernel additional flags
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
