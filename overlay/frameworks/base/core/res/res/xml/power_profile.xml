@@ -12,25 +12,25 @@
         <value>52</value>
     </array>
     <array name="cpu.speeds">
-        <value>200000</value>
-        <value>499200</value>
-        <value>533333</value>
-        <value>800000</value>
-        <value>998400</value>
-        <value>1094400</value>
-        <value>1209600</value>
+        <value>652800</value>
+        <value>1036800</value>
+        <value>1401600</value>
+        <value>1689600</value>
+        <value>1804800</value>
+        <value>1958400</value>
+        <value>2016000</value>
     </array>
     <array name="cpu.active">
-        <value>151</value>
-        <value>169</value>
-        <value>177</value>
-        <value>195</value>
-        <value>259</value>
-        <value>307</value>
-        <value>353</value>
+        <value>13</value>
+        <value>23</value>
+        <value>33</value>
+        <value>44</value>
+        <value>55</value>
+        <value>68</value>
+        <value>76</value>
     </array>
-    <item name="cpu.idle">1.6</item>
-    <item name="cpu.suspend">1.6</item>
+    <item name="cpu.idle">4</item>
+    <item name="cpu.suspend">3</item>
     <item name="battery.capacity">4000</item>
     <item name="bluetooth.controller.voltage">3300</item>
 </device>
