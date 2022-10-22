@@ -183,7 +183,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libdisplayconfig.qti \
     libqdMetaData.system \
-    libgenlock \
     libtinyxml.vendor \
     libtinyxml
 
@@ -307,7 +306,6 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
@@ -360,7 +358,6 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
-    init.qcom.bt.sh \
     init.qcom.post_boot.sh
 
 PRODUCT_PACKAGES += \
@@ -371,7 +368,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
     librmnetctl \
-    libcnefeatureconfig \
     libxml2 \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
@@ -445,10 +441,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     libcld80211 \
-    libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
-    dhcpcd.conf \
     wificond \
     wcnss_service \
     wpa_supplicant \
