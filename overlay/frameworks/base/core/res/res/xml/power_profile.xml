@@ -2,15 +2,6 @@
 <device name="Android">
     <item name="screen.on.display0">63</item>
     <item name="screen.full.display0">261</item>
-    <array name="cpu.core_power.cluster0">
-        <value>10</value>
-        <value>15</value>
-        <value>20</value>
-        <value>30</value>
-        <value>35</value>
-        <value>45</value>
-        <value>52</value>
-    </array>
     <array name="cpu.speeds">
         <value>652800</value>
         <value>1036800</value>
