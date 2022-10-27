@@ -227,7 +227,8 @@ persist.sys.fflag.override.settings_network_and_internet_v2=true \
 service.qti.ims.enabled=1 \
 persist.vendor.vt.supported=1 \
 persist.vendor.sys.cnd.iwlan=1 \
-persist.vendor.cne.logging.qxdm=3974
+persist.vendor.cne.logging.qxdm=3974 \
+ro.telephony.block_binder_thread_on_incoming_calls=false
 
 # SoC
 PRODUCT_PROPERTY_OVERRIDES += \
