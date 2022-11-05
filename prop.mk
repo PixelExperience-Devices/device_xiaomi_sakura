@@ -70,7 +70,6 @@ persist.vendor.camera.display.lmax=1280x720 \
 persist.vendor.camera.display.umax=1920x1080 \
 vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk,com.whatsapp \
 vendor.camera.lowpower.record.enable=1 \
-vendor.camera.aux.packageblacklist=com.discord \
 persist.vendor.qti.telephony.vt_cam_interface=2 \
 persist.vendor.camera.dual.camera=0 \
 persist.vendor.camera.eis.enable=1 \
