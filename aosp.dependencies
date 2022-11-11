@@ -3,18 +3,18 @@
    "repository"  : "hardware_xiaomi",
    "target_path" : "hardware/xiaomi",
    "remote"      : "pixel",
-   "branch"      : "twelve"
+   "branch"      : "thirteen"
  },
  {
    "repository"  : "kernel_xiaomi_msm8953",
    "target_path" : "kernel/xiaomi/msm8953",
    "remote"      : "pixel-devices",
-   "branch"      : "twelve"
+   "branch"      : "thirteen"
  },
  {
    "repository"  : "vendor_xiaomi_sakura",
    "target_path" : "vendor/xiaomi/sakura",
    "remote"      : "pixel-devices-blobs",
-   "branch"      : "twelve"
+   "branch"      : "thirteen"
  }
 ]
