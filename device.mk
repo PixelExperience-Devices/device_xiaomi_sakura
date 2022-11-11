@@ -138,8 +138,7 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     libmm-qcamera \
     libgui_vendor \
-    libstdc++.vendor \
-    Camera2
+    libstdc++.vendor
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
